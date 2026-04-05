@@ -1,0 +1,457 @@
+{
+  "header.lang": "Idioma",
+  "header.theme": "Tema",
+  "actions.install": "Instal·lar app",
+  "actions.close": "Tancar",
+  "install.hint": "Quan el teu navegador ho permeti, aquí podràs instal·lar l'app.",
+  "install.ready": "Instal·lació a punt: prem «Instal·lar app».",
+  "install.unavailable": "La instal·lació no està disponible en aquest dispositiu.",
+  "install.accepted": "Instal·lació iniciada.",
+  "install.dismissed": "Instal·lació cancel·lada.",
+  "install.installed": "App instal·lada.",
+  "install.thanks": "Gràcies per instal·lar GUI‑on!",
+  "coherence.title": "Coherència Universal",
+  "coherence.p1": "Que aquesta obra serveixi com a agraïment i com a compromís: pensar, sentir i actuar en la mateixa direcció, sense 'adorns'; continuar creant amb ètica, amb alegria i amb respecte per tot allò que ens connecta.",
+  "coherence.p2": "Quan escrius amb aquesta eina ets lliure d'explorar qualsevol món, però et convido a recordar això: una història esdevé poderosa quan personatges, decisions i univers vibren en coherència.",
+  "brand.subtitle": "Editor/Creador de Guions PRO — 100% offline",
+  "badge.offline": "Offline llest",
+  "steps.1": "1. Inici & Metadades",
+  "steps.2": "2. Personatges & Estructura",
+  "steps.3": "3. Editor",
+  "steps.4": "4. Exportar",
+  "steps.5": "5. Previsualització",
+  "preview.auto": "Auto",
+  "preview.refresh": "Actualitzar",
+  "preview.zoom": "Zoom",
+  "actions.update": "Actualitzar",
+  "fmt.label.SLUGLINE": "Capçalera",
+  "fmt.label.SCENE": "Secció",
+  "fmt.label.ACTION": "Acció/Descripció",
+  "fmt.label.CHAR": "Personatge",
+  "fmt.label.PAREN": "Apart",
+  "fmt.label.DIALOGUE": "Diàleg",
+  "fmt.label.TRANS": "Transició",
+  "fmt.label.SFX": "SFX / Acotació",
+  "fmt.label.MUSIC": "Música",
+  "fmt.label.NOTE": "Nota",
+  "fmt.label.TIME": "Timecode",
+  "fmt.character": "Personatge",
+  "fmt.global": "(Global)",
+  "fmt.font": "Font",
+  "fmt.font.sans": "Sans",
+  "fmt.font.mono": "Mono",
+  "fmt.size": "Mida",
+  "fmt.align": "Alineació",
+  "fmt.align.left": "Esquerra",
+  "fmt.align.center": "Centrat",
+  "fmt.align.right": "Dreta",
+  "fmt.align.justify": "Justificat",
+  "fmt.color": "Color",
+  "fmt.alpha": "Alpha",
+  "fmt.bold": "Negreta",
+  "fmt.italic": "Cursiva",
+  "fmt.underline": "Subratllat",
+  "fmt.ok": "OK",
+  "presets.choose": "(tria una plantilla)",
+  "presets.name.podcastStd": "Podcast estàndard",
+  "presets.name.theatreStd": "Teatre estàndard",
+  "presets.name.filmStd": "Cinema estàndard",
+  "p1.type": "Tipus de guió",
+  "types.film": "Cinema",
+  "types.theatre": "Teatre",
+  "types.podcast": "Podcast",
+  "p1.title": "Títol",
+  "p1.logline": "Logline / Premissa",
+  "p1.author": "Autor",
+  "p1.email": "Correu electrònic (opcional)",
+  "p1.date": "Data (opcional)",
+  "p1.license": "Llicència (opcional)",
+  "p1.keywords": "Paraules clau (opcional)",
+  "p1.presets": "Preset de format",
+  "presets.auto": "Automàtic segons el tipus",
+  "presets.filmClassic": "Cinema clàssic (Courier 12)",
+  "presets.theatreEU": "Teatre europeu",
+  "presets.podcastStd": "Podcast estàndard",
+  "p1.notes": "Notes (opcional)",
+  "p1.abstract": "Resum (opcional)",
+  "p1.tplNamePlaceholder": "Nom de la plantilla",
+  "p1.titlePlaceholder": "El meu guió",
+  "p1.loglinePlaceholder": "Una frase clara que capturi la teva història…",
+  "p1.authorPlaceholder": "Nom de l'autor",
+  "p1.emailPlaceholder": "autor@exemple.com",
+  "p1.licensePlaceholder": "p. ex. CC BY 4.0",
+  "p1.keywordsPlaceholder": "paraula1; paraula2; paraula3",
+  "p1.notesPlaceholder": "Observacions / dedicatòries / etc.",
+  "p1.abstractPlaceholder": "Un resum concís del guió…",
+  "p2.characters": "Personatges / Veus",
+  "p2.structure": "Estructura (Actes/Seccions/Episodis)",
+  "p2.charNamePlaceholder": "Nom del personatge / veu",
+  "p2.sceneTitlePlaceholder": "Acte 1, Escena 1 — o Segment 1…",
+  "p3.selectScene": "Escena / Secció",
+  "p3.elemType": "Element",
+  "p3.elemChar": "Personatge/Veu",
+  "p3.elemText": "Text",
+  "p3.elemTextPlaceholder": "Escriu aquí…",
+  "p3.spacing": "Interlineat",
+  "p3.mute": "Silenciar",
+  "p3.silenceTail": "Silenci final (ms)",
+  "elem.SLUGLINE": "Capçalera d'escena (SLUGLINE)",
+  "elem.ACTION": "Acció/Descripció",
+  "elem.CHARACTER": "Diàleg",
+  "elem.PARENTHETICAL": "Apart (parèntesis)",
+  "elem.DIALOGUE": "Diàleg",
+  "elem.TRANSITION": "Transició",
+  "elem.SFX": "SFX / Acotació",
+  "elem.MUSIC": "Música",
+  "elem.NOTE": "Nota",
+  "elem.TIME": "Timecode",
+  "p4.live": "Dictat en viu (Web Speech)",
+  "p4.lang": "Idioma de dictat",
+  "p4.start": "Començar dictat",
+  "p4.stop": "Aturar",
+  "p4.note": "Funciona 100% al client. Alguns navegadors poden utilitzar motors locals o de xarxa.",
+  "p4.targetChar": "Inserir com a personatge/veu",
+  "p4.buffer": "Búfer de transcripció",
+  "p4.commit": "Inserir a l'editor",
+  "p4.offline": "Transcripció 100% offline (model local)",
+  "p4.offlineInfo": "Carrega un model WASM/ggml local (Whisper/Vosk) i un àudio per transcriure sense internet.",
+  "p4.model": "Model local",
+  "p4.audio": "Fitxer d'àudio",
+  "p4.run": "Transcriure offline",
+  "p5.size": "Mida",
+  "p5.margins": "Marges (mm)",
+  "p5.top": "Superior",
+  "p5.bottom": "Inferior",
+  "p5.left": "Esquerre",
+  "p5.right": "Dret",
+  "p5.headerFooter": "Capçalera / Peu",
+  "p5.hf.none": "Sense capçalera ni peu",
+  "p5.hf.pn": "Només núm. de pàgina",
+  "p5.hf.full": "Capçalera + peu + núm. de pàgina",
+  "p5.cols": "Disseny",
+  "p5.filename": "Nom del fitxer",
+  "p5.hf.rule": "Línia separadora capçalera/peu",
+  "p5.blockNewPage": "Començar bloc en una pàgina nova",
+  "actions.format": "Format",
+  "actions.apply": "Aplicar",
+  "actions.add": "Afegir",
+  "actions.insert": "Inserir",
+  "actions.clear": "Netejar",
+  "actions.save": "Desar (JSON)",
+  "actions.load": "Carregar",
+  "actions.saveMargin": "Desar marge",
+  "actions.purge": "Netejar-ho tot",
+  "actions.saveStyle": "Desar plantilla",
+  "actions.loadStyle": "Carregar plantilla",
+  "actions.export": "Exportar PDF",
+  "actions.exportAudio": "Exportar àudio",
+  "demo_podcast_btn": "Carregar demo Podcast",
+  "demo_podcast": {
+    "meta": {
+      "title": "Demo Podcast — OptimeFlow",
+      "logline": "Un guió d'exemple per provar ràpidament l'exportació i els formats (6 personatges, 3 escenes).",
+      "author": "Equip OptimeFlow",
+      "email": "demo@optimeflow.local",
+      "license": "MIT — Demo / proves de format",
+      "keywords": "podcast, demo, exportació, format, diàleg, sfx, música, notes",
+      "notes": "Aquest contingut és de prova. Fes-lo servir per validar marges, capçaleres/peus, línies separadores i salts de bloc.",
+      "abstract": "Episodi fictici amb introducció, entrevista i tancament. Inclou escenes, diàlegs, acotacions, música, SFX, notes i marques de temps."
+    },
+    "script": {
+      "type": "podcast",
+      "characters": [
+        {
+          "id": "c1",
+          "name": "Lucía (Presentadora)"
+        },
+        {
+          "id": "c2",
+          "name": "Mateo (Copresentador)"
+        },
+        {
+          "id": "c3",
+          "name": "Inés (Productora)"
+        },
+        {
+          "id": "c4",
+          "name": "Dra. Vega (Convidada)"
+        },
+        {
+          "id": "c5",
+          "name": "Samir (So)"
+        },
+        {
+          "id": "c6",
+          "name": "Oient 1"
+        }
+      ],
+      "scenes": [
+        {
+          "id": "s1",
+          "title": "Cold Open · Benvinguda i to de l'episodi",
+          "showHeading": true,
+          "elements": [
+            {
+              "type": "TIME",
+              "text": "00:00"
+            },
+            {
+              "type": "MUSIC",
+              "text": "Sintonia d'entrada — polsos suaus + atmosfera"
+            },
+            {
+              "type": "SFX",
+              "text": "AMBIENT D'ESTUDI / APLAUDIMENTS SUAUS"
+            },
+            {
+              "type": "ACTION",
+              "text": "La taula és a punt. Microfonia neta. Se sent l'estudi respirant, com si l'audiència estigués a punt d'entrar."
+            },
+            {
+              "type": "CHARACTER",
+              "charId": "c1"
+            },
+            {
+              "type": "DIALOGUE",
+              "charId": "c1",
+              "text": "Hola! Benvingudes i benvinguts a OptimeFlow Podcast. Avui provarem un format que barreja ritme, claredat i un toc de màgia sonora.",
+              "gapAfterMm": 2
+            },
+            {
+              "type": "CHARACTER",
+              "charId": "c2"
+            },
+            {
+              "type": "PARENTHETICAL",
+              "text": "rient"
+            },
+            {
+              "type": "DIALOGUE",
+              "charId": "c2",
+              "text": "I el millor: aquest guió està pensat per posar a prova l'exportació. Marges, capçaleres, línies… tot a prova!",
+              "gapAfterMm": 2
+            },
+            {
+              "type": "CHARACTER",
+              "charId": "c3"
+            },
+            {
+              "type": "DIALOGUE",
+              "charId": "c3",
+              "text": "Recordatori ràpid: si actives que cada bloc comenci en una pàgina nova, fixa't en els salts i en que els parells personatge-diàleg no quedin tallats de manera estranya.",
+              "gapAfterMm": 2
+            },
+            {
+              "type": "NOTE",
+              "text": "Nota: aquí hi ha una barreja de MUSIC/SFX/ACTION/DIALOGUE per validar estils."
+            },
+            {
+              "type": "TRANSITION",
+              "text": "TALL A CORTINETA"
+            },
+            {
+              "type": "MUSIC",
+              "text": "Cortineta breu (0,8 s) — fade out"
+            }
+          ]
+        },
+        {
+          "id": "s2",
+          "title": "Bloc 1 · Entrevista principal",
+          "showHeading": true,
+          "elements": [
+            {
+              "type": "TIME",
+              "text": "05:12"
+            },
+            {
+              "type": "SLUGLINE",
+              "text": "BLOC 1 — EL TEMA"
+            },
+            {
+              "type": "ACTION",
+              "text": "La Lucía presenta la convidada. La música baixa i queda una base molt suau."
+            },
+            {
+              "type": "MUSIC",
+              "text": "Base musical tènue (molt baixa)"
+            },
+            {
+              "type": "CHARACTER",
+              "charId": "c1"
+            },
+            {
+              "type": "DIALOGUE",
+              "charId": "c1",
+              "text": "Dra. Vega, gràcies per venir. Avui volem parlar del focus real: no del que està de moda, sinó del que es manté quan tot al teu voltant competeix per la teva atenció.",
+              "gapAfterMm": 1.5
+            },
+            {
+              "type": "CHARACTER",
+              "charId": "c4"
+            },
+            {
+              "type": "DIALOGUE",
+              "charId": "c4",
+              "text": "Encantada. Si ho hagués de resumir en una frase: el focus no es troba, es dissenya. I es dissenya amb energia, entorn i hàbits mesurables.",
+              "gapAfterMm": 1.5
+            },
+            {
+              "type": "CHARACTER",
+              "charId": "c2"
+            },
+            {
+              "type": "DIALOGUE",
+              "charId": "c2",
+              "text": "Et llençaré una de ràpida: quin error comet gairebé tothom quan intenta concentrar-se?"
+            },
+            {
+              "type": "CHARACTER",
+              "charId": "c4"
+            },
+            {
+              "type": "PARENTHETICAL",
+              "text": "pausa breu"
+            },
+            {
+              "type": "DIALOGUE",
+              "charId": "c4",
+              "text": "Intentar fer-ho només amb força de voluntat, sense canviar el sistema. La voluntat s'esgota. El sistema et sosté.",
+              "gapAfterMm": 2
+            },
+            {
+              "type": "SFX",
+              "text": "COP SUAU A LA TAULA / RIALLES CONTINGUDES"
+            },
+            {
+              "type": "ACTION",
+              "text": "En Samir ajusta nivells i se sent un clic suau quan entra el compressor."
+            },
+            {
+              "type": "CHARACTER",
+              "charId": "c5"
+            },
+            {
+              "type": "DIALOGUE",
+              "charId": "c5",
+              "text": "Des del so ho puc confirmar: quan el sistema és bo, fins i tot l'àudio sembla més fàcil. Si el micro està ben col·locat, la veu surt sola.",
+              "gapAfterMm": 2
+            },
+            {
+              "type": "NOTE",
+              "text": "Suggeriment de prova: activa/desactiva hfRule, canvia marges i comprova que l'SLUGLINE quedi bé."
+            },
+            {
+              "type": "TRANSITION",
+              "text": "FI DEL BLOC / RESPIRACIÓ"
+            }
+          ]
+        },
+        {
+          "id": "s3",
+          "title": "Bloc 2 · Preguntes ràpides i comiat",
+          "showHeading": true,
+          "elements": [
+            {
+              "type": "TIME",
+              "text": "18:40"
+            },
+            {
+              "type": "SLUGLINE",
+              "text": "BLOC 2 — PREGUNTES RÀPIDES"
+            },
+            {
+              "type": "ACTION",
+              "text": "Entra una trucada. La Inés fa el senyal d'«ok»."
+            },
+            {
+              "type": "SFX",
+              "text": "TO DE TRUCADA / CLIC / LÍNIA OBERTA"
+            },
+            {
+              "type": "CHARACTER",
+              "charId": "c6"
+            },
+            {
+              "type": "DIALOGUE",
+              "charId": "c6",
+              "text": "Hola, equip. Pregunta: com puc crear un ritual d'inici que em posi en «mode focus» en menys d'un minut?",
+              "gapAfterMm": 1.5
+            },
+            {
+              "type": "CHARACTER",
+              "charId": "c1"
+            },
+            {
+              "type": "DIALOGUE",
+              "charId": "c1",
+              "text": "Molt bona. Jo faig servir un senyal físic: auriculars posats, una frase curta i una llista de tres microtasques."
+            },
+            {
+              "type": "CHARACTER",
+              "charId": "c4"
+            },
+            {
+              "type": "DIALOGUE",
+              "charId": "c4",
+              "text": "I afegeix-hi consistència: mateixa hora, mateix lloc si pot ser, i un detonant sensorial — per exemple, una beguda o una cançó molt breu.",
+              "gapAfterMm": 2
+            },
+            {
+              "type": "ACTION",
+              "text": "En Mateo tanca amb un final directe. La música de sortida comença suau."
+            },
+            {
+              "type": "MUSIC",
+              "text": "Sintonia de sortida — fade out progressiu"
+            },
+            {
+              "type": "CHARACTER",
+              "charId": "c2",
+              "text": "Si t'ha agradat aquest episodi demo, fes-lo servir per exportar, imprimir, revisar salts de bloc i validar que tot quedi preciós. Ens escoltem!"
+            },
+            {
+              "type": "DIALOGUE",
+              "charId": "c2",
+              "text": "Si t'ha agradat aquest episodi demo, fes-lo servir per exportar, imprimir, revisar salts de pàgina i validar que tot quedi preciós. Ens escoltem!",
+              "gapAfterMm": 2
+            },
+            {
+              "type": "NOTE",
+              "text": "Final: comprova que el número de pàgina i el peu/capçalera no tapin contingut."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "footer.license": "Llicència",
+  "footer.privacy": "Privadesa",
+  "licensePanelTitle": "Llicència MIT",
+  "licensePanelBody": "Copyright (c) 2025 Andrés Calvo Espinosa / OptimeFlow(s)\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n\n────────────────────────────────\nAvís sobre tecnologies del navegador i components de tercers\n────────────────────────────────\nEn els fitxers revisats d'aquesta versió de GUI‑on no es redistribueixen\nbiblioteques JavaScript de tercers ni models locals integrats.\n\nFuncions que depenen del navegador/plataforma de l'usuari:\n- Dictat / transcripció en viu: Web Speech API / SpeechRecognition.\n- Gravació d'àudio de l'editor: MediaRecorder + getUserMedia.\n- Mode PWA / ús offline: Service Worker + emmagatzematge del navegador.\n\nSegons el navegador i la plataforma, el reconeixement de veu pot utilitzar un\nservei de reconeixement de la plataforma o executar-se localment quan aquesta\ncapacitat existeixi.\n\nPer això, en aquesta versió no s'afegeix aquí cap llicència redistribuïda de\ntercers addicional.\n\nSi en el futur s'integren i es redistribueixen dins de l'app biblioteques o\nmodels com Whisper, Vosk, ONNX Runtime Web, ffmpeg.wasm o altres, s'afegiran\nen aquest panell els seus avisos de copyright i els seus textos de llicència.",
+  "actions.cancel": "Cancel·lar",
+  "dictation.status.notSupported": "Dictat no compatible amb aquest navegador",
+  "dictation.status.notSupportedShort": "No compatible",
+  "dictation.status.listening": "Captant veu",
+  "dictation.status.error": "Error de dictat",
+  "dictation.status.idle": "Inactiu",
+  "msg.micDenied": "No s'ha pogut accedir al micròfon",
+  "p4.pickModel": "Seleccionar model",
+  "p4.pickAudio": "Seleccionar àudio",
+  "p4.modelHint": "Utilitza un model Whisper compatible en format .bin / ggml.",
+  "p4.audioHint": "Accepta els formats d'àudio que el teu navegador pugui obrir localment.",
+  "p4.noFileSelected": "Cap fitxer seleccionat",
+  "p4.status.idle": "A punt per transcriure completament offline.",
+  "p4.status.needFiles": "Selecciona un model local i un fitxer d'àudio.",
+  "p4.status.preparing": "Preparant el motor local offline…",
+  "p4.status.running": "Transcrivint offline… Aquest procés pot trigar una mica.",
+  "p4.status.done": "Transcripció offline acabada i inserida a Text.",
+  "p4.status.empty": "No s'ha obtingut text de l'àudio.",
+  "p4.status.error": "No s'ha pogut completar la transcripció offline.",
+  "p4.status.errorShort": "No s'ha pogut transcriure offline.",
+  "p4.status.canceling": "Cancel·lant la transcripció offline…",
+  "p4.status.canceled": "Transcripció cancel·lada.",
+  "p4.status.reload": "Torna a carregar l'app una vegada per activar el motor local offline. Si continua igual, utilitza la PWA instal·lada o un allotjament segur amb aïllament.",
+  "p4.inserted": "Transcripció inserida a Text.",
+  "privacyPanelBody": "GUI-on funciona principalment en local, al teu navegador i en aquest dispositiu. No cal que creïs un compte ni que pugis el teu guió a un servidor propi de l’app per escriure, editar, organitzar escenes, previsualitzar o exportar.\n\nQuè es pot desar localment al teu dispositiu:\n• contingut del projecte, com ara metadades, personatges, escenes, elements del guió i ajustos d’exportació;\n• preferències d’ús, com ara el tema, la llengua i les plantilles desades;\n• recursos de memòria cau de la PWA necessaris per obrir GUI-on sense connexió.\n\nFuncions del navegador que convé conèixer:\n• el dictat en viu utilitza l’API de reconeixement de veu disponible al teu navegador o sistema; segons la plataforma, aquest servei pot funcionar localment o recolzar-se en la infraestructura del proveïdor del navegador;\n• la transcripció 100% offline amb model local processa l’àudio i el model directament al teu dispositiu;\n• els fitxers que puges manualment per transcriure, importar o exportar es processen al client dins de la sessió d’ús.\n\nControl i eliminació:\nPots eliminar el teu projecte, netejar plantilles i esborrar les dades del lloc des del navegador quan vulguis. Si desinstal·les la PWA i elimines les dades del lloc, també s’elimina la memòria cau local associada.\n\nGaletes i seguiment:\nGUI-on no incorpora galetes publicitàries ni analítica de seguiment pròpia.\n\nImportant:\nSi utilitzes funcions del navegador o del sistema operatiu amb els seus propis serveis integrats — per exemple, reconeixement de veu en certs navegadors — també s’aplicaran les polítiques de privacitat i les condicions del proveïdor corresponent."
+}

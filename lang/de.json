@@ -1,0 +1,457 @@
+{
+  "header.lang": "Sprache",
+  "header.theme": "Thema",
+  "actions.install": "App installieren",
+  "actions.close": "Schließen",
+  "install.hint": "Sobald dein Browser es erlaubt, kannst du die App hier installieren.",
+  "install.ready": "Installation bereit: Klicke auf „App installieren“.",
+  "install.unavailable": "Die Installation ist auf diesem Gerät nicht verfügbar.",
+  "install.accepted": "Installation gestartet.",
+  "install.dismissed": "Installation abgebrochen.",
+  "install.installed": "App installiert.",
+  "install.thanks": "Danke, dass du GUI‑on installiert hast!",
+  "coherence.title": "Universelle Kohärenz",
+  "coherence.p1": "Möge dieses Werk als Dank und als Verpflichtung dienen: in dieselbe Richtung zu denken, zu fühlen und zu handeln, ohne 'Verzierungen'; weiter mit Ethik, Freude und Respekt für alles zu schaffen, was uns verbindet.",
+  "coherence.p2": "Wenn du mit diesem Werkzeug schreibst, kannst du jede Welt erkunden, aber ich lade dich ein, dich daran zu erinnern: Eine Geschichte wird kraftvoll, wenn Figuren, Entscheidungen und Universum in Kohärenz schwingen.",
+  "brand.subtitle": "PRO-Drehbucheditor/-Ersteller — 100 % offline",
+  "badge.offline": "Offline bereit",
+  "steps.1": "1. Start & Metadaten",
+  "steps.2": "2. Figuren & Struktur",
+  "steps.3": "3. Editor",
+  "steps.4": "4. Exportieren",
+  "steps.5": "5. Vorschau",
+  "preview.auto": "Auto",
+  "preview.refresh": "Aktualisieren",
+  "preview.zoom": "Zoom",
+  "actions.update": "Aktualisieren",
+  "fmt.label.SLUGLINE": "Kopfzeile",
+  "fmt.label.SCENE": "Abschnitt",
+  "fmt.label.ACTION": "Aktion/Beschreibung",
+  "fmt.label.CHAR": "Figur",
+  "fmt.label.PAREN": "Beiseite",
+  "fmt.label.DIALOGUE": "Dialog",
+  "fmt.label.TRANS": "Übergang",
+  "fmt.label.SFX": "SFX / Regieanweisung",
+  "fmt.label.MUSIC": "Musik",
+  "fmt.label.NOTE": "Notiz",
+  "fmt.label.TIME": "Timecode",
+  "fmt.character": "Figur",
+  "fmt.global": "(Global)",
+  "fmt.font": "Schriftart",
+  "fmt.font.sans": "Sans",
+  "fmt.font.mono": "Mono",
+  "fmt.size": "Größe",
+  "fmt.align": "Ausrichtung",
+  "fmt.align.left": "Links",
+  "fmt.align.center": "Zentriert",
+  "fmt.align.right": "Rechts",
+  "fmt.align.justify": "Blocksatz",
+  "fmt.color": "Farbe",
+  "fmt.alpha": "Alpha",
+  "fmt.bold": "Fett",
+  "fmt.italic": "Kursiv",
+  "fmt.underline": "Unterstrichen",
+  "fmt.ok": "OK",
+  "presets.choose": "(Vorlage wählen)",
+  "presets.name.podcastStd": "Standard-Podcast",
+  "presets.name.theatreStd": "Standard-Theater",
+  "presets.name.filmStd": "Standard-Film",
+  "p1.type": "Drehbuchtyp",
+  "types.film": "Film",
+  "types.theatre": "Theater",
+  "types.podcast": "Podcast",
+  "p1.title": "Titel",
+  "p1.logline": "Logline / Prämisse",
+  "p1.author": "Autor",
+  "p1.email": "E-Mail (optional)",
+  "p1.date": "Datum (optional)",
+  "p1.license": "Lizenz (optional)",
+  "p1.keywords": "Schlüsselwörter (optional)",
+  "p1.presets": "Formatvorgabe",
+  "presets.auto": "Automatisch je nach Typ",
+  "presets.filmClassic": "Klassischer Film (Courier 12)",
+  "presets.theatreEU": "Europäisches Theater",
+  "presets.podcastStd": "Standard-Podcast",
+  "p1.notes": "Notizen (optional)",
+  "p1.abstract": "Zusammenfassung (optional)",
+  "p1.tplNamePlaceholder": "Name der Vorlage",
+  "p1.titlePlaceholder": "Mein Drehbuch",
+  "p1.loglinePlaceholder": "Ein klarer Satz, der deine Geschichte einfängt…",
+  "p1.authorPlaceholder": "Name des Autors",
+  "p1.emailPlaceholder": "autor@beispiel.com",
+  "p1.licensePlaceholder": "z. B. CC BY 4.0",
+  "p1.keywordsPlaceholder": "wort1; wort2; wort3",
+  "p1.notesPlaceholder": "Anmerkungen / Widmungen / usw.",
+  "p1.abstractPlaceholder": "Eine knappe Zusammenfassung des Drehbuchs…",
+  "p2.characters": "Figuren / Stimmen",
+  "p2.structure": "Struktur (Akte/Abschnitte/Episoden)",
+  "p2.charNamePlaceholder": "Name der Figur / Stimme",
+  "p2.sceneTitlePlaceholder": "Akt 1, Szene 1 — oder Segment 1…",
+  "p3.selectScene": "Szene / Abschnitt",
+  "p3.elemType": "Element",
+  "p3.elemChar": "Figur/Stimme",
+  "p3.elemText": "Text",
+  "p3.elemTextPlaceholder": "Hier schreiben…",
+  "p3.spacing": "Zeilenabstand",
+  "p3.mute": "Stummschalten",
+  "p3.silenceTail": "Abschließende Stille (ms)",
+  "elem.SLUGLINE": "Szenenkopf (SLUGLINE)",
+  "elem.ACTION": "Aktion/Beschreibung",
+  "elem.CHARACTER": "Dialog",
+  "elem.PARENTHETICAL": "Beiseite (Klammern)",
+  "elem.DIALOGUE": "Dialog",
+  "elem.TRANSITION": "Übergang",
+  "elem.SFX": "SFX / Regieanweisung",
+  "elem.MUSIC": "Musik",
+  "elem.NOTE": "Notiz",
+  "elem.TIME": "Timecode",
+  "p4.live": "Live-Diktat (Web Speech)",
+  "p4.lang": "Diktiersprache",
+  "p4.start": "Diktat starten",
+  "p4.stop": "Stoppen",
+  "p4.note": "Läuft zu 100 % clientseitig. Einige Browser können lokale oder netzwerkbasierte Engines verwenden.",
+  "p4.targetChar": "Als Figur/Stimme einfügen",
+  "p4.buffer": "Transkriptionspuffer",
+  "p4.commit": "In den Editor einfügen",
+  "p4.offline": "100 % Offline-Transkription (lokales Modell)",
+  "p4.offlineInfo": "Lade ein lokales WASM/ggml-Modell (Whisper/Vosk) und eine Audiodatei, um ohne Internet zu transkribieren.",
+  "p4.model": "Lokales Modell",
+  "p4.audio": "Audiodatei",
+  "p4.run": "Offline transkribieren",
+  "p5.size": "Größe",
+  "p5.margins": "Ränder (mm)",
+  "p5.top": "Oben",
+  "p5.bottom": "Unten",
+  "p5.left": "Links",
+  "p5.right": "Rechts",
+  "p5.headerFooter": "Kopfzeile / Fußzeile",
+  "p5.hf.none": "Ohne Kopf- oder Fußzeile",
+  "p5.hf.pn": "Nur Seitenzahl",
+  "p5.hf.full": "Kopfzeile + Fußzeile + Seitenzahl",
+  "p5.cols": "Layout",
+  "p5.filename": "Dateiname",
+  "p5.hf.rule": "Trennlinie für Kopf-/Fußzeile",
+  "p5.blockNewPage": "Block auf neuer Seite beginnen",
+  "actions.format": "Format",
+  "actions.apply": "Anwenden",
+  "actions.add": "Hinzufügen",
+  "actions.insert": "Einfügen",
+  "actions.clear": "Leeren",
+  "actions.save": "Speichern (JSON)",
+  "actions.load": "Laden",
+  "actions.saveMargin": "Rand speichern",
+  "actions.purge": "Alles leeren",
+  "actions.saveStyle": "Vorlage speichern",
+  "actions.loadStyle": "Vorlage laden",
+  "actions.export": "PDF exportieren",
+  "actions.exportAudio": "Audio exportieren",
+  "demo_podcast_btn": "Demo-Podcast laden",
+  "demo_podcast": {
+    "meta": {
+      "title": "Demo Podcast — OptimeFlow",
+      "logline": "Ein Beispieldrehbuch, um Export und Formatierung schnell zu testen (6 Figuren, 3 Szenen).",
+      "author": "OptimeFlow-Team",
+      "email": "demo@optimeflow.local",
+      "license": "MIT — Demo / Formatierungstests",
+      "keywords": "podcast, demo, export, format, dialog, sfx, musik, notizen",
+      "notes": "Dieser Inhalt dient zu Testzwecken. Nutze ihn, um Ränder, Kopf-/Fußzeilen, Regeln und Blockumbrüche zu prüfen.",
+      "abstract": "Fiktive Episode mit Einführung, Interview und Abschluss. Enthält Szenen, Dialoge, Regieanweisungen, Musik, SFX, Notizen und Zeitmarken."
+    },
+    "script": {
+      "type": "podcast",
+      "characters": [
+        {
+          "id": "c1",
+          "name": "Lucía (Moderatorin)"
+        },
+        {
+          "id": "c2",
+          "name": "Mateo (Co-Moderator)"
+        },
+        {
+          "id": "c3",
+          "name": "Inés (Produzentin)"
+        },
+        {
+          "id": "c4",
+          "name": "Dr. Vega (Gast)"
+        },
+        {
+          "id": "c5",
+          "name": "Samir (Ton)"
+        },
+        {
+          "id": "c6",
+          "name": "Hörer 1"
+        }
+      ],
+      "scenes": [
+        {
+          "id": "s1",
+          "title": "Cold Open · Begrüßung und Ton der Episode",
+          "showHeading": true,
+          "elements": [
+            {
+              "type": "TIME",
+              "text": "00:00"
+            },
+            {
+              "type": "MUSIC",
+              "text": "Einstiegsmusik — sanfte Pulse + Atmosphäre"
+            },
+            {
+              "type": "SFX",
+              "text": "STUDIO-ATMOSPHÄRE / SANFTER APPLAUS"
+            },
+            {
+              "type": "ACTION",
+              "text": "Der Tisch ist vorbereitet. Die Mikrofone sind sauber. Man hört das Studio atmen, als ob das Publikum jeden Moment hereinkommen würde."
+            },
+            {
+              "type": "CHARACTER",
+              "charId": "c1"
+            },
+            {
+              "type": "DIALOGUE",
+              "charId": "c1",
+              "text": "Hallo! Willkommen beim OptimeFlow Podcast. Heute testen wir ein Format, das Rhythmus, Klarheit und einen Hauch klanglicher Magie vereint.",
+              "gapAfterMm": 2
+            },
+            {
+              "type": "CHARACTER",
+              "charId": "c2"
+            },
+            {
+              "type": "PARENTHETICAL",
+              "text": "lacht"
+            },
+            {
+              "type": "DIALOGUE",
+              "charId": "c2",
+              "text": "Und das Beste: Dieses Drehbuch ist darauf ausgelegt, den Export zu stressen. Ränder, Kopfzeilen, Regeln… alles auf die Probe gestellt!",
+              "gapAfterMm": 2
+            },
+            {
+              "type": "CHARACTER",
+              "charId": "c3"
+            },
+            {
+              "type": "DIALOGUE",
+              "charId": "c3",
+              "text": "Kurze Erinnerung: Wenn du aktivierst, dass jeder Block auf einer neuen Seite beginnt, achte auf die Umbrüche und darauf, dass Figur-Dialog-Paare nicht seltsam getrennt werden.",
+              "gapAfterMm": 2
+            },
+            {
+              "type": "NOTE",
+              "text": "Hinweis: Hier gibt es eine Mischung aus MUSIC/SFX/ACTION/DIALOGUE, um die Stile zu prüfen."
+            },
+            {
+              "type": "TRANSITION",
+              "text": "SCHNITT ZUM JINGLE"
+            },
+            {
+              "type": "MUSIC",
+              "text": "Kurzer Jingle (0,8 s) — Fade-out"
+            }
+          ]
+        },
+        {
+          "id": "s2",
+          "title": "Block 1 · Hauptinterview",
+          "showHeading": true,
+          "elements": [
+            {
+              "type": "TIME",
+              "text": "05:12"
+            },
+            {
+              "type": "SLUGLINE",
+              "text": "BLOCK 1 — DAS THEMA"
+            },
+            {
+              "type": "ACTION",
+              "text": "Lucía stellt den Gast vor. Die Musik wird leiser und ein sehr sanftes Bett bleibt."
+            },
+            {
+              "type": "MUSIC",
+              "text": "Sanftes Musikbett (sehr leise)"
+            },
+            {
+              "type": "CHARACTER",
+              "charId": "c1"
+            },
+            {
+              "type": "DIALOGUE",
+              "charId": "c1",
+              "text": "Dr. Vega, danke, dass Sie gekommen sind. Heute möchten wir über echte Konzentration sprechen: nicht die modische, sondern die, die trägt, wenn alles um Sie herum um Ihre Aufmerksamkeit konkurriert.",
+              "gapAfterMm": 1.5
+            },
+            {
+              "type": "CHARACTER",
+              "charId": "c4"
+            },
+            {
+              "type": "DIALOGUE",
+              "charId": "c4",
+              "text": "Sehr gern. Wenn ich es in einem Satz zusammenfassen müsste: Konzentration findet man nicht, man gestaltet sie. Und man gestaltet sie mit Energie, Umfeld und messbaren Gewohnheiten.",
+              "gapAfterMm": 1.5
+            },
+            {
+              "type": "CHARACTER",
+              "charId": "c2"
+            },
+            {
+              "type": "DIALOGUE",
+              "charId": "c2",
+              "text": "Ich werfe Ihnen eine schnelle Frage zu: Welchen Fehler macht fast jeder, wenn er versucht, sich zu konzentrieren?"
+            },
+            {
+              "type": "CHARACTER",
+              "charId": "c4"
+            },
+            {
+              "type": "PARENTHETICAL",
+              "text": "kurze Pause"
+            },
+            {
+              "type": "DIALOGUE",
+              "charId": "c4",
+              "text": "Es nur mit Willenskraft zu versuchen, ohne das System zu ändern. Willenskraft erschöpft sich. Das System trägt dich.",
+              "gapAfterMm": 2
+            },
+            {
+              "type": "SFX",
+              "text": "LEICHTES KLOPFEN AUF DEN TISCH / GEDÄMPFTES LACHEN"
+            },
+            {
+              "type": "ACTION",
+              "text": "Samir justiert die Pegel und man hört ein sanftes Klicken, wenn der Kompressor einsetzt."
+            },
+            {
+              "type": "CHARACTER",
+              "charId": "c5"
+            },
+            {
+              "type": "DIALOGUE",
+              "charId": "c5",
+              "text": "Aus der Tonperspektive kann ich bestätigen: Wenn das System gut ist, klingt sogar das Audio leichter. Wenn das Mikrofon gut platziert ist, kommt die Stimme fast von selbst.",
+              "gapAfterMm": 2
+            },
+            {
+              "type": "NOTE",
+              "text": "Testhinweis: hfRule ein-/ausschalten, Ränder ändern und prüfen, ob die SLUGLINE gut aussieht."
+            },
+            {
+              "type": "TRANSITION",
+              "text": "ENDE DES BLOCKS / ATEM"
+            }
+          ]
+        },
+        {
+          "id": "s3",
+          "title": "Block 2 · Schnelle Fragen und Verabschiedung",
+          "showHeading": true,
+          "elements": [
+            {
+              "type": "TIME",
+              "text": "18:40"
+            },
+            {
+              "type": "SLUGLINE",
+              "text": "BLOCK 2 — SCHNELLE FRAGEN"
+            },
+            {
+              "type": "ACTION",
+              "text": "Ein Anruf kommt rein. Inés gibt das Zeichen 'ok'."
+            },
+            {
+              "type": "SFX",
+              "text": "KLINGTON / KLICK / LEITUNG OFFEN"
+            },
+            {
+              "type": "CHARACTER",
+              "charId": "c6"
+            },
+            {
+              "type": "DIALOGUE",
+              "charId": "c6",
+              "text": "Hallo, Team. Frage: Wie kann ich ein Start-Ritual schaffen, das mich in weniger als einer Minute in den 'Fokusmodus' bringt?",
+              "gapAfterMm": 1.5
+            },
+            {
+              "type": "CHARACTER",
+              "charId": "c1"
+            },
+            {
+              "type": "DIALOGUE",
+              "charId": "c1",
+              "text": "Sehr gute Frage. Ich nutze ein körperliches Signal: Kopfhörer auf, ein kurzer Satz und eine Liste mit drei Mikrotätigkeiten."
+            },
+            {
+              "type": "CHARACTER",
+              "charId": "c4"
+            },
+            {
+              "type": "DIALOGUE",
+              "charId": "c4",
+              "text": "Und füge Beständigkeit hinzu: gleiche Uhrzeit, gleicher Ort, wenn möglich, und ein sensorischer Auslöser — zum Beispiel ein Getränk oder ein sehr kurzes Lied.",
+              "gapAfterMm": 2
+            },
+            {
+              "type": "ACTION",
+              "text": "Mateo setzt einen direkten Schluss. Die Ausstiegsmusik beginnt sanft."
+            },
+            {
+              "type": "MUSIC",
+              "text": "Ausstiegsmusik — progressiver Fade-out"
+            },
+            {
+              "type": "CHARACTER",
+              "charId": "c2",
+              "text": "Wenn dir diese Demo-Episode gefallen hat, nutze sie zum Exportieren, Drucken, Prüfen von Blockumbrüchen und um sicherzustellen, dass alles großartig aussieht. Bis bald!"
+            },
+            {
+              "type": "DIALOGUE",
+              "charId": "c2",
+              "text": "Wenn dir diese Demo-Episode gefallen hat, nutze sie zum Exportieren, Drucken, Prüfen von Seitenumbrüchen und um sicherzustellen, dass alles großartig aussieht. Bis bald!",
+              "gapAfterMm": 2
+            },
+            {
+              "type": "NOTE",
+              "text": "Ende: Prüfe, dass Seitenzahl und Kopf-/Fußzeile keine Inhalte überdecken."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "footer.license": "Lizenz",
+  "footer.privacy": "Datenschutz",
+  "licensePanelTitle": "MIT-Lizenz",
+  "licensePanelBody": "Copyright (c) 2025 Andrés Calvo Espinosa / OptimeFlow(s)\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n\n────────────────────────────────\nHinweis zu Browsertechnologien und Komponenten von Drittanbietern\n────────────────────────────────\nIn den geprüften Dateien dieser Version von GUI‑on werden keine\nJavaScript-Bibliotheken von Drittanbietern und keine integrierten lokalen\nModelle weiterverteilt.\n\nFunktionen, die vom Browser/der Plattform des Nutzers abhängen:\n- Live-Diktat / Transkription: Web Speech API / SpeechRecognition.\n- Audioaufnahme im Editor: MediaRecorder + getUserMedia.\n- PWA-Modus / Offline-Nutzung: Service Worker + Browserspeicher.\n\nJe nach Browser und Plattform kann die Spracherkennung einen\nErkennungsdienst der Plattform verwenden oder lokal ausgeführt werden, wenn\ndiese Fähigkeit vorhanden ist.\n\nDaher wird in dieser Version hier keine zusätzliche weiterverteilte\nDrittanbieter-Lizenz aufgenommen.\n\nFalls künftig Bibliotheken oder Modelle wie Whisper, Vosk, ONNX Runtime Web,\nffmpeg.wasm oder andere in die App integriert und mit ihr weiterverteilt\nwerden, werden ihre Copyright-Hinweise und Lizenztexte in diesem Panel\nergänzt.",
+  "actions.cancel": "Abbrechen",
+  "dictation.status.notSupported": "Diktat wird von diesem Browser nicht unterstützt",
+  "dictation.status.notSupportedShort": "Nicht unterstützt",
+  "dictation.status.listening": "Sprache wird erfasst",
+  "dictation.status.error": "Diktatfehler",
+  "dictation.status.idle": "Inaktiv",
+  "msg.micDenied": "Zugriff auf das Mikrofon war nicht möglich",
+  "p4.pickModel": "Modell auswählen",
+  "p4.pickAudio": "Audio auswählen",
+  "p4.modelHint": "Verwende ein kompatibles Whisper-Modell im Format .bin / ggml.",
+  "p4.audioHint": "Akzeptiert Audioformate, die dein Browser lokal öffnen kann.",
+  "p4.noFileSelected": "Keine Datei ausgewählt",
+  "p4.status.idle": "Bereit für die vollständige Offline-Transkription.",
+  "p4.status.needFiles": "Wähle ein lokales Modell und eine Audiodatei aus.",
+  "p4.status.preparing": "Lokale Offline-Engine wird vorbereitet…",
+  "p4.status.running": "Offline-Transkription läuft… Dieser Vorgang kann etwas dauern.",
+  "p4.status.done": "Offline-Transkription abgeschlossen und in Text eingefügt.",
+  "p4.status.empty": "Es wurde kein Text aus der Audiodatei gewonnen.",
+  "p4.status.error": "Die Offline-Transkription konnte nicht abgeschlossen werden.",
+  "p4.status.errorShort": "Offline-Transkription war nicht möglich.",
+  "p4.status.canceling": "Offline-Transkription wird abgebrochen…",
+  "p4.status.canceled": "Transkription abgebrochen.",
+  "p4.status.reload": "Lade die App einmal neu, um die lokale Offline-Engine zu aktivieren. Wenn es weiterhin nicht funktioniert, nutze die installierte PWA oder sicheres Hosting mit Isolation.",
+  "p4.inserted": "Transkription in Text eingefügt.",
+  "privacyPanelBody": "GUI-on läuft hauptsächlich lokal, in deinem Browser und auf diesem Gerät. Du musst kein Konto erstellen und dein Drehbuch auch nicht auf einen app-eigenen Server hochladen, um zu schreiben, zu bearbeiten, Szenen zu organisieren, eine Vorschau anzuzeigen oder zu exportieren.\n\nWas lokal auf deinem Gerät gespeichert werden kann:\n• Projektinhalte wie Metadaten, Figuren, Szenen, Skriptelemente und Exporteinstellungen;\n• Nutzungseinstellungen wie Theme, Sprache und gespeicherte Vorlagen;\n• PWA-Cache-Ressourcen, die benötigt werden, um GUI-on offline zu öffnen.\n\nBrowserfunktionen, die du kennen solltest:\n• Live-Diktat verwendet die in deinem Browser oder Betriebssystem verfügbare Spracherkennungs-API; je nach Plattform kann dieser Dienst lokal laufen oder auf die Infrastruktur des Browseranbieters zurückgreifen;\n• die 100% Offline-Transkription mit lokalem Modell verarbeitet sowohl das Audio als auch das Modell direkt auf deinem Gerät;\n• Dateien, die du manuell zum Transkribieren, Importieren oder Exportieren hochlädst, werden clientseitig innerhalb der aktiven Sitzung verarbeitet.\n\nKontrolle und Löschen:\nDu kannst dein Projekt löschen, Vorlagen bereinigen und die Websitedaten jederzeit in deinem Browser entfernen. Wenn du die PWA deinstallierst und die Websitedaten löschst, wird auch der zugehörige lokale Cache entfernt.\n\nCookies und Tracking:\nGUI-on verwendet weder Werbe-Cookies noch eigene Tracking-Analysen.\n\nWichtig:\nWenn du Browser- oder Betriebssystemfunktionen mit eigenen integrierten Diensten nutzt — zum Beispiel Spracherkennung in bestimmten Browsern — gelten zusätzlich auch die Datenschutzrichtlinien und Bedingungen des jeweiligen Anbieters."
+}

@@ -1,0 +1,457 @@
+{
+  "header.lang": "भाषा",
+  "header.theme": "थीम",
+  "actions.install": "ऐप इंस्टॉल करें",
+  "actions.close": "बंद करें",
+  "install.hint": "जब आपका ब्राउज़र अनुमति देगा, आप यहाँ से ऐप इंस्टॉल कर सकेंगे।",
+  "install.ready": "इंस्टॉलेशन तैयार है: «ऐप इंस्टॉल करें» दबाएँ।",
+  "install.unavailable": "इस डिवाइस पर इंस्टॉलेशन उपलब्ध नहीं है।",
+  "install.accepted": "इंस्टॉलेशन शुरू हो गया।",
+  "install.dismissed": "इंस्टॉलेशन रद्द कर दिया गया।",
+  "install.installed": "ऐप इंस्टॉल हो गई।",
+  "install.thanks": "GUI‑on इंस्टॉल करने के लिए धन्यवाद!",
+  "coherence.title": "सार्वभौमिक सुसंगति",
+  "coherence.p1": "यह रचना आभार और प्रतिबद्धता—दोनों के रूप में काम करे: एक ही दिशा में सोचना, महसूस करना और कार्य करना, बिना किसी 'सजावट' के; नैतिकता, आनंद और उन सभी संबंधों के प्रति सम्मान के साथ सृजन करते रहना जो हमें जोड़ते हैं।",
+  "coherence.p2": "जब आप इस उपकरण के साथ लिखते हैं, तब आप किसी भी दुनिया की खोज करने के लिए स्वतंत्र हैं, लेकिन मैं आपको यह याद रखने के लिए आमंत्रित करता हूँ: कोई कहानी तब शक्तिशाली बनती है जब पात्र, निर्णय और संसार एक ही सुसंगति में कंपन करते हैं।",
+  "brand.subtitle": "PRO स्क्रिप्ट एडिटर/क्रिएटर — 100% ऑफलाइन",
+  "badge.offline": "ऑफलाइन तैयार",
+  "steps.1": "1. शुरुआत और मेटाडेटा",
+  "steps.2": "2. पात्र और संरचना",
+  "steps.3": "3. एडिटर",
+  "steps.4": "4. एक्सपोर्ट",
+  "steps.5": "5. प्रीव्यू",
+  "preview.auto": "ऑटो",
+  "preview.refresh": "रिफ्रेश",
+  "preview.zoom": "ज़ूम",
+  "actions.update": "रिफ्रेश",
+  "fmt.label.SLUGLINE": "हेडर",
+  "fmt.label.SCENE": "अनुभाग",
+  "fmt.label.ACTION": "क्रिया/विवरण",
+  "fmt.label.CHAR": "पात्र",
+  "fmt.label.PAREN": "कोष्ठक",
+  "fmt.label.DIALOGUE": "संवाद",
+  "fmt.label.TRANS": "संक्रमण",
+  "fmt.label.SFX": "SFX / निर्देश",
+  "fmt.label.MUSIC": "संगीत",
+  "fmt.label.NOTE": "नोट",
+  "fmt.label.TIME": "टाइमकोड",
+  "fmt.character": "पात्र",
+  "fmt.global": "(ग्लोबल)",
+  "fmt.font": "फ़ॉन्ट",
+  "fmt.font.sans": "Sans",
+  "fmt.font.mono": "Mono",
+  "fmt.size": "आकार",
+  "fmt.align": "संरेखण",
+  "fmt.align.left": "बायाँ",
+  "fmt.align.center": "मध्य",
+  "fmt.align.right": "दायाँ",
+  "fmt.align.justify": "जस्टिफाई",
+  "fmt.color": "रंग",
+  "fmt.alpha": "Alpha",
+  "fmt.bold": "बोल्ड",
+  "fmt.italic": "इटैलिक",
+  "fmt.underline": "अंडरलाइन",
+  "fmt.ok": "OK",
+  "presets.choose": "(टेम्पलेट चुनें)",
+  "presets.name.podcastStd": "मानक पॉडकास्ट",
+  "presets.name.theatreStd": "मानक रंगमंच",
+  "presets.name.filmStd": "मानक फ़िल्म",
+  "p1.type": "स्क्रिप्ट प्रकार",
+  "types.film": "फ़िल्म",
+  "types.theatre": "रंगमंच",
+  "types.podcast": "पॉडकास्ट",
+  "p1.title": "शीर्षक",
+  "p1.logline": "लॉगलाइन / आधार-विचार",
+  "p1.author": "लेखक",
+  "p1.email": "ईमेल (वैकल्पिक)",
+  "p1.date": "तारीख़ (वैकल्पिक)",
+  "p1.license": "लाइसेंस (वैकल्पिक)",
+  "p1.keywords": "कीवर्ड (वैकल्पिक)",
+  "p1.presets": "फ़ॉर्मैट प्रीसेट",
+  "presets.auto": "प्रकार के अनुसार स्वतः",
+  "presets.filmClassic": "क्लासिक फ़िल्म (Courier 12)",
+  "presets.theatreEU": "यूरोपीय रंगमंच",
+  "presets.podcastStd": "मानक पॉडकास्ट",
+  "p1.notes": "नोट्स (वैकल्पिक)",
+  "p1.abstract": "सारांश (वैकल्पिक)",
+  "p1.tplNamePlaceholder": "टेम्पलेट का नाम",
+  "p1.titlePlaceholder": "मेरी स्क्रिप्ट",
+  "p1.loglinePlaceholder": "एक साफ़-सुथरा वाक्य जो आपकी कहानी को पकड़ ले…",
+  "p1.authorPlaceholder": "लेखक का नाम",
+  "p1.emailPlaceholder": "author@example.com",
+  "p1.licensePlaceholder": "जैसे: CC BY 4.0",
+  "p1.keywordsPlaceholder": "keyword1; keyword2; keyword3",
+  "p1.notesPlaceholder": "टिप्पणियाँ / समर्पण / आदि",
+  "p1.abstractPlaceholder": "स्क्रिप्ट का संक्षिप्त सार…",
+  "p2.characters": "पात्र / आवाज़ें",
+  "p2.structure": "संरचना (अंक/अनुभाग/एपिसोड)",
+  "p2.charNamePlaceholder": "पात्र / आवाज़ का नाम",
+  "p2.sceneTitlePlaceholder": "अंक 1, दृश्य 1 — या सेगमेंट 1…",
+  "p3.selectScene": "दृश्य / अनुभाग",
+  "p3.elemType": "तत्व",
+  "p3.elemChar": "पात्र/आवाज़",
+  "p3.elemText": "टेक्स्ट",
+  "p3.elemTextPlaceholder": "यहाँ लिखें…",
+  "p3.spacing": "पंक्ति अंतराल",
+  "p3.mute": "म्यूट",
+  "p3.silenceTail": "अंतिम मौन (ms)",
+  "elem.SLUGLINE": "दृश्य शीर्षक (SLUGLINE)",
+  "elem.ACTION": "क्रिया/विवरण",
+  "elem.CHARACTER": "संवाद",
+  "elem.PARENTHETICAL": "कोष्ठकीय टिप्पणी",
+  "elem.DIALOGUE": "संवाद",
+  "elem.TRANSITION": "संक्रमण",
+  "elem.SFX": "SFX / निर्देश",
+  "elem.MUSIC": "संगीत",
+  "elem.NOTE": "नोट",
+  "elem.TIME": "टाइमकोड",
+  "p4.live": "लाइव डिक्टेशन (Web Speech)",
+  "p4.lang": "डिक्टेशन की भाषा",
+  "p4.start": "डिक्टेशन शुरू करें",
+  "p4.stop": "रोकें",
+  "p4.note": "यह 100% क्लाइंट-साइड पर काम करता है। कुछ ब्राउज़र लोकल या नेटवर्क इंजन इस्तेमाल कर सकते हैं।",
+  "p4.targetChar": "पात्र/आवाज़ के रूप में जोड़ें",
+  "p4.buffer": "ट्रांसक्रिप्शन बफ़र",
+  "p4.commit": "एडिटर में डालें",
+  "p4.offline": "100% ऑफलाइन ट्रांसक्रिप्शन (लोकल मॉडल)",
+  "p4.offlineInfo": "इंटरनेट के बिना ट्रांसक्रिप्शन के लिए लोकल WASM/ggml मॉडल (Whisper/Vosk) और ऑडियो फ़ाइल लोड करें।",
+  "p4.model": "लोकल मॉडल",
+  "p4.audio": "ऑडियो फ़ाइल",
+  "p4.run": "ऑफलाइन ट्रांसक्राइब करें",
+  "p5.size": "आकार",
+  "p5.margins": "मार्जिन (mm)",
+  "p5.top": "ऊपरी",
+  "p5.bottom": "निचला",
+  "p5.left": "बायाँ",
+  "p5.right": "दायाँ",
+  "p5.headerFooter": "हेडर / फ़ुटर",
+  "p5.hf.none": "हेडर/फ़ुटर नहीं",
+  "p5.hf.pn": "सिर्फ़ पेज नंबर",
+  "p5.hf.full": "हेडर + फ़ुटर + पेज नंबर",
+  "p5.cols": "लेआउट",
+  "p5.filename": "फ़ाइल नाम",
+  "p5.hf.rule": "हेडर/फ़ुटर विभाजक रेखा",
+  "p5.blockNewPage": "ब्लॉक नई पेज से शुरू करें",
+  "actions.format": "फ़ॉर्मैट",
+  "actions.apply": "लागू करें",
+  "actions.add": "जोड़ें",
+  "actions.insert": "डालें",
+  "actions.clear": "साफ़ करें",
+  "actions.save": "सहेजें (JSON)",
+  "actions.load": "लोड करें",
+  "actions.saveMargin": "मार्जिन सहेजें",
+  "actions.purge": "सब साफ़ करें",
+  "actions.saveStyle": "टेम्पलेट सहेजें",
+  "actions.loadStyle": "टेम्पलेट लोड करें",
+  "actions.export": "PDF एक्सपोर्ट करें",
+  "actions.exportAudio": "ऑडियो एक्सपोर्ट करें",
+  "demo_podcast_btn": "डेमो पॉडकास्ट लोड करें",
+  "demo_podcast": {
+    "meta": {
+      "title": "Demo Podcast — OptimeFlow",
+      "logline": "एक उदाहरण स्क्रिप्ट, जिससे आप एक्सपोर्ट और फ़ॉर्मैट जल्दी जाँच सकें (6 पात्र, 3 दृश्य)।",
+      "author": "OptimeFlow टीम",
+      "email": "demo@optimeflow.local",
+      "license": "MIT — डेमो / फ़ॉर्मैट परीक्षण",
+      "keywords": "podcast, demo, export, format, dialogue, sfx, music, notes",
+      "notes": "यह परीक्षण सामग्री है। इसे मार्जिन, हेडर/फ़ुटर, विभाजक रेखाएँ और ब्लॉक ब्रेक जाँचने के लिए उपयोग करें।",
+      "abstract": "एक काल्पनिक एपिसोड जिसमें परिचय, इंटरव्यू और समापन है। इसमें दृश्य, संवाद, निर्देश, संगीत, SFX, नोट्स और टाइम मार्कर शामिल हैं।"
+    },
+    "script": {
+      "type": "podcast",
+      "characters": [
+        {
+          "id": "c1",
+          "name": "Lucía (होस्ट)"
+        },
+        {
+          "id": "c2",
+          "name": "Mateo (को-होस्ट)"
+        },
+        {
+          "id": "c3",
+          "name": "Inés (निर्माता)"
+        },
+        {
+          "id": "c4",
+          "name": "Dr. Vega (अतिथि)"
+        },
+        {
+          "id": "c5",
+          "name": "Samir (साउंड)"
+        },
+        {
+          "id": "c6",
+          "name": "श्रोता 1"
+        }
+      ],
+      "scenes": [
+        {
+          "id": "s1",
+          "title": "Cold Open · एपिसोड की शुरुआत और माहौल",
+          "showHeading": true,
+          "elements": [
+            {
+              "type": "TIME",
+              "text": "00:00"
+            },
+            {
+              "type": "MUSIC",
+              "text": "ओपनिंग थीम — मुलायम धड़कनें + माहौल"
+            },
+            {
+              "type": "SFX",
+              "text": "स्टूडियो एम्बियंस / हल्की तालियाँ"
+            },
+            {
+              "type": "ACTION",
+              "text": "मेज तैयार है। माइक्रोफोन साफ़-सुथरे सेट हैं। ऐसा लगता है मानो दर्शक अभी अंदर आने ही वाले हों और स्टूडियो साँस ले रहा हो।"
+            },
+            {
+              "type": "CHARACTER",
+              "charId": "c1"
+            },
+            {
+              "type": "DIALOGUE",
+              "charId": "c1",
+              "text": "नमस्ते! OptimeFlow Podcast में आपका स्वागत है। आज हम एक ऐसे फ़ॉर्मैट को आज़माने वाले हैं जिसमें लय, स्पष्टता और थोड़ी-सी ध्वनि- जादू की छुअन है।",
+              "gapAfterMm": 2
+            },
+            {
+              "type": "CHARACTER",
+              "charId": "c2"
+            },
+            {
+              "type": "PARENTHETICAL",
+              "text": "हँसते हुए"
+            },
+            {
+              "type": "DIALOGUE",
+              "charId": "c2",
+              "text": "और सबसे बढ़िया बात: यह स्क्रिप्ट एक्सपोर्ट को पूरी तरह कसकर जाँचने के लिए बनाई गई है। मार्जिन, हेडर, रूल… सबकी परीक्षा होगी!",
+              "gapAfterMm": 2
+            },
+            {
+              "type": "CHARACTER",
+              "charId": "c3"
+            },
+            {
+              "type": "DIALOGUE",
+              "charId": "c3",
+              "text": "एक छोटा-सा रिमाइंडर: अगर आप हर ब्लॉक को नई पेज से शुरू करने वाला विकल्प चालू करते हैं, तो पेज ब्रेक पर ध्यान दें और देखें कि पात्र-और-संवाद की जोड़ियाँ अटपटी तरह से न टूटें।",
+              "gapAfterMm": 2
+            },
+            {
+              "type": "NOTE",
+              "text": "नोट: यहाँ MUSIC/SFX/ACTION/DIALOGUE का मिश्रण है ताकि स्टाइल जाँची जा सके।"
+            },
+            {
+              "type": "TRANSITION",
+              "text": "जिंगल पर कट"
+            },
+            {
+              "type": "MUSIC",
+              "text": "छोटी जिंगल (0.8 सेकंड) — fade out"
+            }
+          ]
+        },
+        {
+          "id": "s2",
+          "title": "ब्लॉक 1 · मुख्य इंटरव्यू",
+          "showHeading": true,
+          "elements": [
+            {
+              "type": "TIME",
+              "text": "05:12"
+            },
+            {
+              "type": "SLUGLINE",
+              "text": "ब्लॉक 1 — विषय"
+            },
+            {
+              "type": "ACTION",
+              "text": "Lucía अतिथि का परिचय कराती है। संगीत नीचे आता है और बहुत हल्का बेड रह जाता है।"
+            },
+            {
+              "type": "MUSIC",
+              "text": "हल्का संगीत बेड (बहुत कम)"
+            },
+            {
+              "type": "CHARACTER",
+              "charId": "c1"
+            },
+            {
+              "type": "DIALOGUE",
+              "charId": "c1",
+              "text": "डॉ. Vega, आने के लिए धन्यवाद। आज हम असली फोकस की बात करना चाहते हैं: वह नहीं जो ट्रेंड में है, बल्कि वह जो तब भी बना रहता है जब आपके आसपास की हर चीज़ आपका ध्यान खींच रही हो।",
+              "gapAfterMm": 1.5
+            },
+            {
+              "type": "CHARACTER",
+              "charId": "c4"
+            },
+            {
+              "type": "DIALOGUE",
+              "charId": "c4",
+              "text": "मुझे खुशी है। अगर इसे एक वाक्य में कहूँ: फोकस मिलता नहीं, डिज़ाइन किया जाता है। और यह ऊर्जा, वातावरण और मापे जा सकने वाले आदतों से डिज़ाइन होता है।",
+              "gapAfterMm": 1.5
+            },
+            {
+              "type": "CHARACTER",
+              "charId": "c2"
+            },
+            {
+              "type": "DIALOGUE",
+              "charId": "c2",
+              "text": "एक झटपट सवाल: ध्यान लगाने की कोशिश करते समय लगभग हर कोई कौन-सी गलती करता है?"
+            },
+            {
+              "type": "CHARACTER",
+              "charId": "c4"
+            },
+            {
+              "type": "PARENTHETICAL",
+              "text": "छोटा विराम"
+            },
+            {
+              "type": "DIALOGUE",
+              "charId": "c4",
+              "text": "सिस्टम बदले बिना सिर्फ़ इच्छाशक्ति के सहारे काम चलाने की कोशिश। इच्छाशक्ति खत्म हो जाती है। सिस्टम आपको संभालता है।",
+              "gapAfterMm": 2
+            },
+            {
+              "type": "SFX",
+              "text": "मेज़ पर हल्की टप / नियंत्रित हँसी"
+            },
+            {
+              "type": "ACTION",
+              "text": "Samir लेवल समायोजित करता है और कंप्रेसर के लगने की एक हल्की क्लिक सुनाई देती है।"
+            },
+            {
+              "type": "CHARACTER",
+              "charId": "c5"
+            },
+            {
+              "type": "DIALOGUE",
+              "charId": "c5",
+              "text": "साउंड की तरफ़ से मैं भी इसकी पुष्टि कर सकता हूँ: जब सिस्टम अच्छा हो, तो ऑडियो भी आसान लगने लगता है। माइक्रोफ़ोन सही जगह हो तो आवाज़ अपने आप खुल जाती है।",
+              "gapAfterMm": 2
+            },
+            {
+              "type": "NOTE",
+              "text": "टेस्ट सुझाव: hfRule को ऑन/ऑफ करें, मार्जिन बदलें और देखें कि SLUGLINE सही दिख रही है या नहीं।"
+            },
+            {
+              "type": "TRANSITION",
+              "text": "ब्लॉक समाप्त / साँस"
+            }
+          ]
+        },
+        {
+          "id": "s3",
+          "title": "ब्लॉक 2 · त्वरित सवाल और विदाई",
+          "showHeading": true,
+          "elements": [
+            {
+              "type": "TIME",
+              "text": "18:40"
+            },
+            {
+              "type": "SLUGLINE",
+              "text": "ब्लॉक 2 — त्वरित सवाल"
+            },
+            {
+              "type": "ACTION",
+              "text": "एक कॉल आती है। Inés 'ok' का इशारा करती है।"
+            },
+            {
+              "type": "SFX",
+              "text": "रिंगटोन / क्लिक / खुली लाइन"
+            },
+            {
+              "type": "CHARACTER",
+              "charId": "c6"
+            },
+            {
+              "type": "DIALOGUE",
+              "charId": "c6",
+              "text": "हैलो टीम। सवाल: मैं एक ऐसा स्टार्ट-रिचुअल कैसे बनाऊँ जो मुझे एक मिनट से भी कम समय में 'फोकस मोड' में ले आए?",
+              "gapAfterMm": 1.5
+            },
+            {
+              "type": "CHARACTER",
+              "charId": "c1"
+            },
+            {
+              "type": "DIALOGUE",
+              "charId": "c1",
+              "text": "बहुत अच्छा सवाल। मैं एक शारीरिक संकेत इस्तेमाल करती हूँ: हेडफ़ोन पहनना, एक छोटी-सी पंक्ति कहना, और तीन माइक्रो-टास्क की सूची बनाना।"
+            },
+            {
+              "type": "CHARACTER",
+              "charId": "c4"
+            },
+            {
+              "type": "DIALOGUE",
+              "charId": "c4",
+              "text": "और नियमितता भी जोड़िए: वही समय, अगर हो सके तो वही जगह, और कोई संवेदी ट्रिगर—जैसे कोई पेय या बहुत छोटा-सा गीत।",
+              "gapAfterMm": 2
+            },
+            {
+              "type": "ACTION",
+              "text": "Mateo एक सीधे समापन के साथ बात खत्म करता है। आउट्रो संगीत धीरे-धीरे शुरू होता है।"
+            },
+            {
+              "type": "MUSIC",
+              "text": "आउट्रो थीम — क्रमिक fade out"
+            },
+            {
+              "type": "CHARACTER",
+              "charId": "c2",
+              "text": "अगर आपको यह डेमो एपिसोड पसंद आया हो, तो इसे एक्सपोर्ट, प्रिंट, ब्लॉक ब्रेक की जाँच और सब कुछ सुंदर दिख रहा है या नहीं देखने के लिए इस्तेमाल करें। फिर मिलते हैं!"
+            },
+            {
+              "type": "DIALOGUE",
+              "charId": "c2",
+              "text": "अगर आपको यह डेमो एपिसोड पसंद आया हो, तो इसे एक्सपोर्ट, प्रिंट, पेज ब्रेक की जाँच और सब कुछ सुंदर दिख रहा है या नहीं देखने के लिए इस्तेमाल करें। फिर मिलते हैं!",
+              "gapAfterMm": 2
+            },
+            {
+              "type": "NOTE",
+              "text": "अंत: जाँचें कि पेज नंबर और हेडर/फ़ुटर सामग्री को ढँक न रहे हों।"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "footer.license": "लाइसेंस",
+  "footer.privacy": "गोपनीयता",
+  "licensePanelTitle": "MIT लाइसेंस",
+  "licensePanelBody": "Copyright (c) 2025 Andrés Calvo Espinosa / OptimeFlow(s)\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n\n────────────────────────────────\nब्राउज़र तकनीकों और थर्ड-पार्टी घटकों के बारे में सूचना\n────────────────────────────────\nGUI‑on के इस संस्करण की जाँची गई फ़ाइलों में किसी थर्ड-पार्टी JavaScript\nलाइब्रेरी या एकीकृत लोकल मॉडल का पुनर्वितरण नहीं किया जाता।\n\nवे सुविधाएँ जो उपयोगकर्ता के ब्राउज़र/प्लैटफ़ॉर्म पर निर्भर करती हैं:\n- लाइव डिक्टेशन / ट्रांसक्रिप्शन: Web Speech API / SpeechRecognition\n- एडिटर ऑडियो रिकॉर्डिंग: MediaRecorder + getUserMedia\n- PWA मोड / ऑफलाइन उपयोग: Service Worker + ब्राउज़र स्टोरेज\n\nब्राउज़र और प्लैटफ़ॉर्म के अनुसार, वॉइस रिकग्निशन प्लैटफ़ॉर्म की किसी सेवा का\nउपयोग कर सकती है या, यदि क्षमता उपलब्ध हो, तो लोकली चल सकती है।\n\nइसी वजह से, इस संस्करण में यहाँ किसी अतिरिक्त पुनर्वितरित थर्ड-पार्टी लाइसेंस\nको शामिल नहीं किया गया है।\n\nयदि भविष्य में Whisper, Vosk, ONNX Runtime Web, ffmpeg.wasm या अन्य\nलाइब्रेरी/मॉडल ऐप के भीतर एकीकृत और पुनर्वितरित किए जाते हैं, तो उनके\nकॉपीराइट नोटिस और लाइसेंस टेक्स्ट इस पैनल में जोड़े जाएँगे।",
+  "actions.cancel": "रद्द करें",
+  "dictation.status.notSupported": "यह ब्राउज़र डिक्टेशन को सपोर्ट नहीं करता",
+  "dictation.status.notSupportedShort": "समर्थित नहीं",
+  "dictation.status.listening": "आवाज़ सुन रहा है",
+  "dictation.status.error": "डिक्टेशन त्रुटि",
+  "dictation.status.idle": "निष्क्रिय",
+  "msg.micDenied": "माइक्रोफ़ोन तक पहुँच नहीं मिल सकी",
+  "p4.pickModel": "मॉडल चुनें",
+  "p4.pickAudio": "ऑडियो चुनें",
+  "p4.modelHint": ".bin / ggml फ़ॉर्मैट वाला संगत Whisper मॉडल इस्तेमाल करें।",
+  "p4.audioHint": "वे ऑडियो फ़ॉर्मैट स्वीकार हैं जिन्हें आपका ब्राउज़र लोकली खोल सकता है।",
+  "p4.noFileSelected": "कोई फ़ाइल चयनित नहीं है",
+  "p4.status.idle": "पूरी तरह ऑफलाइन ट्रांसक्रिप्शन के लिए तैयार।",
+  "p4.status.needFiles": "लोकल मॉडल और ऑडियो फ़ाइल चुनें।",
+  "p4.status.preparing": "लोकल ऑफलाइन इंजन तैयार किया जा रहा है…",
+  "p4.status.running": "ऑफलाइन ट्रांसक्रिप्शन चल रही है… इसमें थोड़ा समय लग सकता है।",
+  "p4.status.done": "ऑफलाइन ट्रांसक्रिप्शन पूरी हो गई और “टेक्स्ट” में डाल दी गई।",
+  "p4.status.empty": "ऑडियो से कोई टेक्स्ट नहीं मिला।",
+  "p4.status.error": "ऑफलाइन ट्रांसक्रिप्शन पूरी नहीं हो सकी।",
+  "p4.status.errorShort": "ऑफलाइन ट्रांसक्राइब नहीं किया जा सका।",
+  "p4.status.canceling": "ऑफलाइन ट्रांसक्रिप्शन रद्द की जा रही है…",
+  "p4.status.canceled": "ट्रांसक्रिप्शन रद्द कर दी गई।",
+  "p4.status.reload": "लोकल ऑफलाइन इंजन सक्रिय करने के लिए ऐप को एक बार रीलोड करें। अगर फिर भी समस्या रहे, तो इंस्टॉल की गई PWA या आइसोलेशन वाले सुरक्षित होस्टिंग का उपयोग करें।",
+  "p4.inserted": "ट्रांसक्रिप्शन “टेक्स्ट” में डाल दी गई।",
+  "privacyPanelBody": "GUI-on मुख्य रूप से लोकल रूप में, आपके ब्राउज़र और इसी डिवाइस पर काम करता है। लिखने, संपादित करने, दृश्य व्यवस्थित करने, प्रीव्यू देखने या एक्सपोर्ट करने के लिए आपको न तो खाता बनाना पड़ता है और न ही अपनी स्क्रिप्ट को ऐप के किसी निजी सर्वर पर अपलोड करना पड़ता है।\n\nआपके डिवाइस पर लोकल रूप से क्या सहेजा जा सकता है:\n• प्रोजेक्ट की सामग्री, जैसे मेटाडेटा, पात्र, दृश्य, स्क्रिप्ट के तत्व और एक्सपोर्ट सेटिंग्स;\n• उपयोग संबंधी प्राथमिकताएँ, जैसे थीम, भाषा और सहेजे गए टेम्पलेट;\n• GUI-on को ऑफलाइन खोलने के लिए आवश्यक PWA कैश संसाधन।\n\nब्राउज़र की वे सुविधाएँ जिन्हें जानना उपयोगी है:\n• लाइव डिक्टेशन आपके ब्राउज़र या सिस्टम में उपलब्ध स्पीच रिकग्निशन API का उपयोग करता है; प्लेटफ़ॉर्म के अनुसार यह सेवा लोकल रूप से चल सकती है या ब्राउज़र प्रदाता के इन्फ्रास्ट्रक्चर पर निर्भर हो सकती है;\n• लोकल मॉडल के साथ 100% ऑफलाइन ट्रांसक्रिप्शन ऑडियो और मॉडल दोनों को सीधे आपके डिवाइस पर प्रोसेस करता है;\n• जिन फ़ाइलों को आप ट्रांसक्राइब, इम्पोर्ट या एक्सपोर्ट करने के लिए मैन्युअली अपलोड करते हैं, वे उपयोग सत्र के दौरान क्लाइंट-साइड पर प्रोसेस होती हैं।\n\nनियंत्रण और मिटाना:\nआप जब चाहें अपना प्रोजेक्ट हटा सकते हैं, टेम्पलेट साफ़ कर सकते हैं और ब्राउज़र से साइट डेटा मिटा सकते हैं। यदि आप PWA अनइंस्टॉल कर देते हैं और साइट डेटा हटा देते हैं, तो उससे जुड़ा लोकल कैश भी हट जाएगा।\n\nकुकीज़ और ट्रैकिंग:\nGUI-on में न तो विज्ञापन कुकीज़ शामिल हैं और न ही इसकी अपनी ट्रैकिंग एनालिटिक्स।\n\nमहत्वपूर्ण:\nयदि आप ब्राउज़र या ऑपरेटिंग सिस्टम की ऐसी सुविधाओं का उपयोग करते हैं जिनकी अपनी एकीकृत सेवाएँ होती हैं — उदाहरण के लिए कुछ ब्राउज़रों में स्पीच रिकग्निशन — तो संबंधित प्रदाता की गोपनीयता नीतियाँ और शर्तें भी लागू होंगी।"
+}

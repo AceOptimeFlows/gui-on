@@ -1,0 +1,457 @@
+{
+  "header.lang": "语言",
+  "header.theme": "主题",
+  "actions.install": "安装应用",
+  "actions.close": "关闭",
+  "install.hint": "当你的浏览器支持时，你可以在这里安装应用。",
+  "install.ready": "已可安装：点击“安装应用”。",
+  "install.unavailable": "此设备暂不支持安装。",
+  "install.accepted": "已开始安装。",
+  "install.dismissed": "已取消安装。",
+  "install.installed": "应用已安装。",
+  "install.thanks": "感谢安装 GUI‑on！",
+  "coherence.title": "普遍一致性",
+  "coherence.p1": "愿这部作品既是感谢，也是承诺：让思考、感受与行动朝向同一个方向，不加“装饰”；继续以伦理、喜悦与对一切连接我们的事物的尊重去创造。",
+  "coherence.p2": "当你使用这个工具写作时，你可以自由探索任何世界，但请记住：当角色、选择与宇宙本身都在一致中共振时，故事才会真正强大。",
+  "brand.subtitle": "专业剧本编辑/创作器 — 100% 离线",
+  "badge.offline": "离线就绪",
+  "steps.1": "1. 开始与元数据",
+  "steps.2": "2. 角色与结构",
+  "steps.3": "3. 编辑器",
+  "steps.4": "4. 导出",
+  "steps.5": "5. 预览",
+  "preview.auto": "自动",
+  "preview.refresh": "刷新",
+  "preview.zoom": "缩放",
+  "actions.update": "刷新",
+  "fmt.label.SLUGLINE": "标题",
+  "fmt.label.SCENE": "章节",
+  "fmt.label.ACTION": "动作/描述",
+  "fmt.label.CHAR": "角色",
+  "fmt.label.PAREN": "括注",
+  "fmt.label.DIALOGUE": "对白",
+  "fmt.label.TRANS": "转场",
+  "fmt.label.SFX": "SFX / 说明",
+  "fmt.label.MUSIC": "音乐",
+  "fmt.label.NOTE": "备注",
+  "fmt.label.TIME": "时间码",
+  "fmt.character": "角色",
+  "fmt.global": "（全局）",
+  "fmt.font": "字体",
+  "fmt.font.sans": "Sans",
+  "fmt.font.mono": "Mono",
+  "fmt.size": "大小",
+  "fmt.align": "对齐",
+  "fmt.align.left": "左对齐",
+  "fmt.align.center": "居中",
+  "fmt.align.right": "右对齐",
+  "fmt.align.justify": "两端对齐",
+  "fmt.color": "颜色",
+  "fmt.alpha": "Alpha",
+  "fmt.bold": "加粗",
+  "fmt.italic": "斜体",
+  "fmt.underline": "下划线",
+  "fmt.ok": "OK",
+  "presets.choose": "（选择模板）",
+  "presets.name.podcastStd": "标准播客",
+  "presets.name.theatreStd": "标准戏剧",
+  "presets.name.filmStd": "标准电影",
+  "p1.type": "剧本类型",
+  "types.film": "电影",
+  "types.theatre": "戏剧",
+  "types.podcast": "播客",
+  "p1.title": "标题",
+  "p1.logline": "Logline / 前提",
+  "p1.author": "作者",
+  "p1.email": "邮箱（可选）",
+  "p1.date": "日期（可选）",
+  "p1.license": "许可证（可选）",
+  "p1.keywords": "关键词（可选）",
+  "p1.presets": "格式预设",
+  "presets.auto": "按类型自动选择",
+  "presets.filmClassic": "经典电影（Courier 12）",
+  "presets.theatreEU": "欧洲戏剧",
+  "presets.podcastStd": "标准播客",
+  "p1.notes": "备注（可选）",
+  "p1.abstract": "摘要（可选）",
+  "p1.tplNamePlaceholder": "模板名称",
+  "p1.titlePlaceholder": "我的剧本",
+  "p1.loglinePlaceholder": "用一句清晰的话概括你的故事…",
+  "p1.authorPlaceholder": "作者姓名",
+  "p1.emailPlaceholder": "author@example.com",
+  "p1.licensePlaceholder": "例如：CC BY 4.0",
+  "p1.keywordsPlaceholder": "keyword1; keyword2; keyword3",
+  "p1.notesPlaceholder": "观察 / 献词 / 等",
+  "p1.abstractPlaceholder": "剧本的简明摘要…",
+  "p2.characters": "角色 / 声线",
+  "p2.structure": "结构（幕/章节/集）",
+  "p2.charNamePlaceholder": "角色 / 声线名称",
+  "p2.sceneTitlePlaceholder": "第1幕，第1场 —— 或第1段…",
+  "p3.selectScene": "场景 / 章节",
+  "p3.elemType": "元素",
+  "p3.elemChar": "角色/声线",
+  "p3.elemText": "文本",
+  "p3.elemTextPlaceholder": "在这里输入…",
+  "p3.spacing": "行距",
+  "p3.mute": "静音",
+  "p3.silenceTail": "结尾静音（毫秒）",
+  "elem.SLUGLINE": "场景标题（SLUGLINE）",
+  "elem.ACTION": "动作/描述",
+  "elem.CHARACTER": "对白",
+  "elem.PARENTHETICAL": "括注（括号）",
+  "elem.DIALOGUE": "对白",
+  "elem.TRANSITION": "转场",
+  "elem.SFX": "SFX / 说明",
+  "elem.MUSIC": "音乐",
+  "elem.NOTE": "备注",
+  "elem.TIME": "时间码",
+  "p4.live": "实时语音输入（Web Speech）",
+  "p4.lang": "语音输入语言",
+  "p4.start": "开始语音输入",
+  "p4.stop": "停止",
+  "p4.note": "完全在客户端运行。某些浏览器可能会使用本地或网络引擎。",
+  "p4.targetChar": "作为角色/声线插入",
+  "p4.buffer": "转写缓冲区",
+  "p4.commit": "插入到编辑器",
+  "p4.offline": "100% 离线转写（本地模型）",
+  "p4.offlineInfo": "加载本地 WASM/ggml 模型（Whisper/Vosk）和音频文件，无需联网即可转写。",
+  "p4.model": "本地模型",
+  "p4.audio": "音频文件",
+  "p4.run": "离线转写",
+  "p5.size": "尺寸",
+  "p5.margins": "边距（mm）",
+  "p5.top": "上",
+  "p5.bottom": "下",
+  "p5.left": "左",
+  "p5.right": "右",
+  "p5.headerFooter": "页眉 / 页脚",
+  "p5.hf.none": "无页眉页脚",
+  "p5.hf.pn": "仅页码",
+  "p5.hf.full": "页眉 + 页脚 + 页码",
+  "p5.cols": "布局",
+  "p5.filename": "文件名",
+  "p5.hf.rule": "页眉/页脚分隔线",
+  "p5.blockNewPage": "在新页开始区块",
+  "actions.format": "格式",
+  "actions.apply": "应用",
+  "actions.add": "添加",
+  "actions.insert": "插入",
+  "actions.clear": "清除",
+  "actions.save": "保存（JSON）",
+  "actions.load": "加载",
+  "actions.saveMargin": "保存边距",
+  "actions.purge": "全部清除",
+  "actions.saveStyle": "保存模板",
+  "actions.loadStyle": "加载模板",
+  "actions.export": "导出 PDF",
+  "actions.exportAudio": "导出音频",
+  "demo_podcast_btn": "加载 Demo Podcast",
+  "demo_podcast": {
+    "meta": {
+      "title": "Demo Podcast — OptimeFlow",
+      "logline": "用于快速测试导出与格式的示例剧本（6 个角色，3 个场景）。",
+      "author": "OptimeFlow 团队",
+      "email": "demo@optimeflow.local",
+      "license": "MIT — 演示 / 格式测试",
+      "keywords": "podcast, demo, export, format, dialogue, sfx, music, notes",
+      "notes": "这是测试内容。可用来验证边距、页眉/页脚、分隔线以及区块分页。",
+      "abstract": "一个包含开场、访谈和收尾的虚构节目。包括场景、对白、舞台说明、音乐、SFX、备注和时间标记。"
+    },
+    "script": {
+      "type": "podcast",
+      "characters": [
+        {
+          "id": "c1",
+          "name": "Lucía（主持人）"
+        },
+        {
+          "id": "c2",
+          "name": "Mateo（联合主持）"
+        },
+        {
+          "id": "c3",
+          "name": "Inés（制片人）"
+        },
+        {
+          "id": "c4",
+          "name": "Dr. Vega（嘉宾）"
+        },
+        {
+          "id": "c5",
+          "name": "Samir（声音）"
+        },
+        {
+          "id": "c6",
+          "name": "听众 1"
+        }
+      ],
+      "scenes": [
+        {
+          "id": "s1",
+          "title": "Cold Open · 节目的欢迎与基调",
+          "showHeading": true,
+          "elements": [
+            {
+              "type": "TIME",
+              "text": "00:00"
+            },
+            {
+              "type": "MUSIC",
+              "text": "开场主题 —— 柔和脉冲 + 氛围"
+            },
+            {
+              "type": "SFX",
+              "text": "录音室环境音 / 轻柔掌声"
+            },
+            {
+              "type": "ACTION",
+              "text": "桌面已经布置好，麦克风状态干净。能听见录音室在“呼吸”，像是观众马上就要进场。"
+            },
+            {
+              "type": "CHARACTER",
+              "charId": "c1"
+            },
+            {
+              "type": "DIALOGUE",
+              "charId": "c1",
+              "text": "大家好！欢迎来到 OptimeFlow Podcast。今天我们要测试一种把节奏、清晰度和一点声音魔法融合在一起的格式。",
+              "gapAfterMm": 2
+            },
+            {
+              "type": "CHARACTER",
+              "charId": "c2"
+            },
+            {
+              "type": "PARENTHETICAL",
+              "text": "笑着"
+            },
+            {
+              "type": "DIALOGUE",
+              "charId": "c2",
+              "text": "而且最棒的是：这份剧本就是为了把导出功能“压一压”。边距、页眉、分隔线……统统都要经受考验！",
+              "gapAfterMm": 2
+            },
+            {
+              "type": "CHARACTER",
+              "charId": "c3"
+            },
+            {
+              "type": "DIALOGUE",
+              "charId": "c3",
+              "text": "快速提醒一下：如果你开启“每个区块从新页开始”，请留意分页，并确认角色-对白成对的内容不会被尴尬地拆开。",
+              "gapAfterMm": 2
+            },
+            {
+              "type": "NOTE",
+              "text": "备注：这里混合了 MUSIC/SFX/ACTION/DIALOGUE，用于验证样式。"
+            },
+            {
+              "type": "TRANSITION",
+              "text": "切到短片头"
+            },
+            {
+              "type": "MUSIC",
+              "text": "短片头（0.8 秒）—— fade out"
+            }
+          ]
+        },
+        {
+          "id": "s2",
+          "title": "区块 1 · 主访谈",
+          "showHeading": true,
+          "elements": [
+            {
+              "type": "TIME",
+              "text": "05:12"
+            },
+            {
+              "type": "SLUGLINE",
+              "text": "区块 1 —— 主题"
+            },
+            {
+              "type": "ACTION",
+              "text": "Lucía 介绍嘉宾。音乐压低，只留下非常柔和的铺底。"
+            },
+            {
+              "type": "MUSIC",
+              "text": "轻柔音乐铺底（很低）"
+            },
+            {
+              "type": "CHARACTER",
+              "charId": "c1"
+            },
+            {
+              "type": "DIALOGUE",
+              "charId": "c1",
+              "text": "Vega 博士，感谢您来到这里。今天我们想谈谈真正的专注：不是流行意义上的专注，而是当周围的一切都在争夺你的注意力时，依然能够维持的那种专注。",
+              "gapAfterMm": 1.5
+            },
+            {
+              "type": "CHARACTER",
+              "charId": "c4"
+            },
+            {
+              "type": "DIALOGUE",
+              "charId": "c4",
+              "text": "很高兴来。要是用一句话概括：专注不是“找到”的，而是“设计”出来的。而这种设计依靠的是能量、环境和可衡量的习惯。",
+              "gapAfterMm": 1.5
+            },
+            {
+              "type": "CHARACTER",
+              "charId": "c2"
+            },
+            {
+              "type": "DIALOGUE",
+              "charId": "c2",
+              "text": "我来抛个快问：几乎所有人尝试专注时，都会犯的错误是什么？"
+            },
+            {
+              "type": "CHARACTER",
+              "charId": "c4"
+            },
+            {
+              "type": "PARENTHETICAL",
+              "text": "短暂停顿"
+            },
+            {
+              "type": "DIALOGUE",
+              "charId": "c4",
+              "text": "在不改变系统的前提下，只靠意志力去硬撑。意志力会耗尽，但系统会托住你。",
+              "gapAfterMm": 2
+            },
+            {
+              "type": "SFX",
+              "text": "轻敲桌面 / 克制的笑声"
+            },
+            {
+              "type": "ACTION",
+              "text": "Samir 调整电平，你能听到压缩器进入时那一下轻轻的咔嗒声。"
+            },
+            {
+              "type": "CHARACTER",
+              "charId": "c5"
+            },
+            {
+              "type": "DIALOGUE",
+              "charId": "c5",
+              "text": "从声音这边我也能确认：系统一旦到位，连音频都会变得更轻松。麦克风摆对了，声音自然就出来了。",
+              "gapAfterMm": 2
+            },
+            {
+              "type": "NOTE",
+              "text": "测试建议：打开/关闭 hfRule，调整边距，并检查 SLUGLINE 的显示效果。"
+            },
+            {
+              "type": "TRANSITION",
+              "text": "区块结束 / 呼吸"
+            }
+          ]
+        },
+        {
+          "id": "s3",
+          "title": "区块 2 · 快问快答与告别",
+          "showHeading": true,
+          "elements": [
+            {
+              "type": "TIME",
+              "text": "18:40"
+            },
+            {
+              "type": "SLUGLINE",
+              "text": "区块 2 —— 快问快答"
+            },
+            {
+              "type": "ACTION",
+              "text": "一通电话接进来。Inés 做了个 “ok” 的手势。"
+            },
+            {
+              "type": "SFX",
+              "text": "铃声 / 点击 / 开通线路"
+            },
+            {
+              "type": "CHARACTER",
+              "charId": "c6"
+            },
+            {
+              "type": "DIALOGUE",
+              "charId": "c6",
+              "text": "大家好，我有个问题：我怎样才能在一分钟内建立一个启动仪式，让自己进入“专注模式”？",
+              "gapAfterMm": 1.5
+            },
+            {
+              "type": "CHARACTER",
+              "charId": "c1"
+            },
+            {
+              "type": "DIALOGUE",
+              "charId": "c1",
+              "text": "这个问题很好。我会用一个身体信号：戴上耳机，说一句短句，然后列出三个微任务。"
+            },
+            {
+              "type": "CHARACTER",
+              "charId": "c4"
+            },
+            {
+              "type": "DIALOGUE",
+              "charId": "c4",
+              "text": "还要加上一致性：同一时间、如果可以的话同一地点，再配上一个感官触发器——比如一杯饮料，或者一首很短的歌。",
+              "gapAfterMm": 2
+            },
+            {
+              "type": "ACTION",
+              "text": "Mateo 用一个直接的收尾结束本段。片尾音乐轻轻开始。"
+            },
+            {
+              "type": "MUSIC",
+              "text": "片尾主题 —— 渐进式 fade out"
+            },
+            {
+              "type": "CHARACTER",
+              "charId": "c2",
+              "text": "如果你喜欢这个演示集，就拿它来导出、打印、检查区块断点，并确认一切都看起来很漂亮。下次再见！"
+            },
+            {
+              "type": "DIALOGUE",
+              "charId": "c2",
+              "text": "如果你喜欢这个演示集，就拿它来导出、打印、检查分页，并确认一切都看起来很漂亮。下次再见！",
+              "gapAfterMm": 2
+            },
+            {
+              "type": "NOTE",
+              "text": "结束：检查页码和页眉/页脚不要遮住内容。"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "footer.license": "许可证",
+  "footer.privacy": "隐私",
+  "licensePanelTitle": "MIT 许可证",
+  "licensePanelBody": "Copyright (c) 2025 Andrés Calvo Espinosa / OptimeFlow(s)\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n\n────────────────────────────────\n关于浏览器技术与第三方组件的说明\n────────────────────────────────\n在此版本 GUI‑on 已检查的文件中，不会重新分发第三方 JavaScript 库，\n也不会重新分发内置的本地模型。\n\n依赖用户浏览器/平台的功能:\n- 实时语音输入 / 转写：Web Speech API / SpeechRecognition\n- 编辑器音频录制：MediaRecorder + getUserMedia\n- PWA 模式 / 离线使用：Service Worker + 浏览器存储\n\n根据浏览器和平台的不同，语音识别可能使用平台提供的识别服务，也可能在\n具备该能力时在本地运行。\n\n因此，此版本这里不额外附带任何第三方再分发许可证。\n\n如果未来在应用中集成并重新分发 Whisper、Vosk、ONNX Runtime Web、\nffmpeg.wasm 等库或模型，我们会在此面板中补充其版权声明和许可文本。",
+  "actions.cancel": "取消",
+  "dictation.status.notSupported": "此浏览器不支持语音输入",
+  "dictation.status.notSupportedShort": "不支持",
+  "dictation.status.listening": "正在听取语音",
+  "dictation.status.error": "语音输入错误",
+  "dictation.status.idle": "空闲",
+  "msg.micDenied": "无法访问麦克风",
+  "p4.pickModel": "选择模型",
+  "p4.pickAudio": "选择音频",
+  "p4.modelHint": "请使用兼容的 Whisper 模型，格式为 .bin / ggml。",
+  "p4.audioHint": "支持浏览器可在本地打开的音频格式。",
+  "p4.noFileSelected": "未选择文件",
+  "p4.status.idle": "已准备好进行完全离线转写。",
+  "p4.status.needFiles": "请选择本地模型和音频文件。",
+  "p4.status.preparing": "正在准备本地离线引擎…",
+  "p4.status.running": "正在离线转写… 此过程可能需要一些时间。",
+  "p4.status.done": "离线转写已完成，并已插入到“文本”。",
+  "p4.status.empty": "未从音频中获得文本。",
+  "p4.status.error": "无法完成离线转写。",
+  "p4.status.errorShort": "无法进行离线转写。",
+  "p4.status.canceling": "正在取消离线转写…",
+  "p4.status.canceled": "转写已取消。",
+  "p4.status.reload": "请重新加载一次应用以启用本地离线引擎。如果仍然无效，请使用已安装的 PWA 或启用隔离的安全托管环境。",
+  "p4.inserted": "转写内容已插入到“文本”。",
+  "privacyPanelBody": "GUI-on 主要在本地运行，也就是在你的浏览器和这台设备上运行。你无需创建账户，也无需将剧本上传到应用自己的服务器，即可进行编写、编辑、整理场景、预览或导出。\n\n可能会本地保存在你设备上的内容：\n• 项目内容，例如元数据、角色、场景、剧本元素以及导出设置；\n• 使用偏好，例如主题、语言和已保存的模板；\n• 离线打开 GUI-on 所需的 PWA 缓存资源。\n\n关于浏览器功能，你需要了解：\n• 实时语音输入使用浏览器或操作系统提供的语音识别 API；根据平台不同，该服务可能在本地运行，也可能依赖浏览器提供商的基础设施；\n• 使用本地模型的 100% 离线转录会直接在你的设备上处理音频和模型；\n• 你为转录、导入或导出而手动上传的文件，会在当前会话中于客户端侧处理。\n\n控制与删除：\n你可以随时在浏览器中删除项目、清除模板并移除站点数据。如果你卸载 PWA 并删除站点数据，相关的本地缓存也会一并删除。\n\nCookie 与跟踪：\nGUI-on 不包含广告 Cookie，也不包含其自身的跟踪分析功能。\n\n重要提示：\n如果你使用带有其自有集成服务的浏览器或操作系统功能——例如某些浏览器中的语音识别——那么相应提供商的隐私政策和条款也会适用。"
+}

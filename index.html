@@ -1,0 +1,579 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#0ea5e9" />
+  <title>GUI‑on — Guiones PRO · PWA Offline</title>
+
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" sizes="192x192" href="assets/img/guion192.png">
+  <link rel="icon" sizes="512x512" href="assets/img/guion512.png">
+  <link rel="apple-touch-icon" href="assets/img/guion192.png">
+
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- ✅ i18n DEBE cargarse antes que app.js -->
+  <script defer src="i18n.js"></script>
+
+  <script defer src="export.js"></script>
+  <script defer src="preview.js"></script>
+
+  <!-- ✅ NUEVO: dictado/transcripción (anti-duplicados móvil) -->
+  <script defer src="dictado.js"></script>
+  <script defer src="offline-stt.js"></script>
+
+  <script defer src="app.js"></script>
+</head>
+
+<body class="theme-abyss">
+  <!-- ====== BRAND HEADER (logo + GUI - on con efectos) ====== -->
+  <header class="app-header brand-header" role="banner">
+    <div class="brand">
+      <!-- Logo principal -->
+      <a
+        class="brand-logo-link"
+        href="https://www.optimeflow.com"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="OptimeFlow(s)"
+        title="OptimeFlow(s)"
+      >
+        <img class="brand-logo heat" src="assets/img/logo.png" alt="Logo GUI‑on" />
+      </a>
+
+      <!-- Nombre de la marca -->
+      <span class="brand-word brand-neon">OptimeFlow(s)</span>
+
+      <!-- GUI‑on (sin icono) -->
+      <div class="tagline" aria-label="GUI‑on">
+        <span class="glyph orb-blue rotate-z">GUI</span>
+        <span class="glyph dash-plasma">‑</span>
+        <span class="glyph sun-i">on</span>
+      </div>
+
+      <!-- Botón de ajustes (engranaje) -->
+      <button
+        class="settings-btn"
+        id="settingsToggle"
+        type="button"
+        aria-label="Ajustes"
+        aria-controls="settingsPanel"
+        aria-expanded="false"
+      >
+        <span class="settings-gear" aria-hidden="true">⚙️</span>
+      </button>
+    </div>
+
+    <!-- Panel de ajustes: idioma, tema e instalación -->
+    <div class="settings-panel" id="settingsPanel" hidden>
+      <div class="settings-row">
+        <label for="langSelect" data-i18n="header.lang">Idioma</label>
+        <select id="langSelect" aria-label="Idioma">
+          <option value="es" selected>Español</option>
+          <option value="ca">Català</option>
+          <option value="en">English</option>
+          <option value="pt-BR">Português (BR)</option>
+          <option value="fr">Français</option>
+          <option value="de">Deutsch</option>
+          <option value="it">Italiano</option>
+          <option value="hi">हिन्दी</option>
+          <option value="zh-CN">简体中文</option>
+          <option value="ko">한국어</option>
+          <option value="ja-JP">日本語</option>
+          <option value="ru-RU">Русский</option>
+        </select>
+      </div>
+
+      <div class="settings-row">
+        <label for="themeSelect" data-i18n="header.theme">Tema</label>
+        <select id="themeSelect" aria-label="Tema">
+          <option value="abyss">Abyss Neon</option>
+          <option value="dawn">Solar Dawn</option>
+          <option value="matrix">Emerald Matrix</option>
+          <option value="rose">Rose Noir</option>
+          <option value="paper">Mono Paper</option>
+          <option value="grape">Cyber Grape</option>
+          <option value="copper">Copper Sand</option>
+          <option value="ocean">Ocean Breeze</option>
+        </select>
+      </div>
+
+      <div class="settings-row settings-install">
+        <button id="installBtn" class="primary" type="button" data-i18n="actions.install">
+          Instalar app
+        </button>
+        <span id="installStatus" class="settings-status small"></span>
+      </div>
+    </div>
+  </header>
+
+  <!-- ====== NAV PASOS ====== -->
+  <nav class="steps">
+    <button class="step-btn active" data-target="#panel1" data-i18n="steps.1">1. Inicio & Metadatos</button>
+    <button class="step-btn" data-target="#panel2" data-i18n="steps.2">2. Personajes & Estructura</button>
+    <button class="step-btn" data-target="#panel3" data-i18n="steps.3">3. Editor</button>
+    <button class="step-btn" data-target="#panel5" data-i18n="steps.4">4. Exportar</button>
+    <button class="step-btn" data-target="#panelPreview" data-i18n="steps.5">5. Previsualización</button>
+  </nav>
+
+  <!-- ====== PANELS ====== -->
+  <main class="panels">
+    <!-- Panel 1: Inicio & Metadatos -->
+    <section id="panel1" class="panel active" aria-label="Inicio y metadatos">
+      <div class="panel-inner">
+        <div class="twocol">
+          <div class="col">
+            <div class="field">
+              <label for="scriptType" data-i18n="p1.type">Tipo de guion</label>
+
+              <!-- Línea unificada: 1/3 select + botones + (nombre + exportar) -->
+              <div class="row-type-line">
+                <select id="scriptType">
+                  <option value="film" data-i18n="types.film">Cine</option>
+                  <option value="theatre" data-i18n="types.theatre">Teatro</option>
+                  <option value="podcast" data-i18n="types.podcast">Podcast</option>
+                  <option value="custom-new">Nueva plantilla</option>
+                  <!-- Las plantillas guardadas se inyectan por JS como <optgroup> -->
+                </select>
+
+                <div class="tpl-actions-main">
+                  <button id="tplLoad" class="ghost" type="button" data-i18n="actions.loadStyle">Cargar plantilla</button>
+                  <button id="tplSave" class="ghost" type="button" data-i18n="actions.saveStyle">Guardar plantilla</button>
+                </div>
+
+                <!-- Aparece SOLO cuando el select = "Nueva plantilla" -->
+                <div class="tpl-new hidden">
+                  <input id="tplName" type="text" placeholder="Nombre de la plantilla" data-i18n-placeholder="p1.tplNamePlaceholder" />
+                  <button id="tplExport" class="ghost" type="button">Exportar</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="title" data-i18n="p1.title">Título</label>
+              <input id="title" type="text" placeholder="Mi guion" data-i18n-placeholder="p1.titlePlaceholder|p1.title" />
+            </div>
+
+            <div class="field">
+              <label for="logline" data-i18n="p1.logline">Logline / Premisa</label>
+              <textarea id="logline" rows="3" placeholder="Una frase clara que capture tu historia…" data-i18n-placeholder="p1.loglinePlaceholder|p1.logline"></textarea>
+            </div>
+
+            <div class="field">
+              <label for="author" data-i18n="p1.author">Autor</label>
+              <input id="author" type="text" placeholder="Nombre del autor" data-i18n-placeholder="p1.authorPlaceholder|p1.author" />
+            </div>
+
+            <div class="field">
+              <label for="email" data-i18n="p1.email">Email (opcional)</label>
+              <input id="email" type="email" placeholder="autor@ejemplo.com" data-i18n-placeholder="p1.emailPlaceholder|p1.email" />
+            </div>
+
+            <div class="field">
+              <label for="pubDate" data-i18n="p1.date">Fecha (opcional)</label>
+              <input id="pubDate" type="date" />
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="field">
+              <label for="license" data-i18n="p1.license">Licencia (opcional)</label>
+              <input id="license" type="text" placeholder="p. ej. CC BY 4.0" data-i18n-placeholder="p1.licensePlaceholder|p1.license" />
+            </div>
+
+            <div class="field">
+              <label for="keywords" data-i18n="p1.keywords">Palabras clave (opcional)</label>
+              <input id="keywords" type="text" placeholder="palabra1; palabra2; palabra3" data-i18n-placeholder="p1.keywordsPlaceholder|p1.keywords" />
+            </div>
+
+            <!-- Nota + Resumen con dictado (en vivo) -->
+            <div class="field">
+              <div class="field-head">
+                <label for="notes" data-i18n="p1.notes">Notas (opcional)</label>
+                <div class="voice-controls" data-for="notes">
+                  <button type="button" class="btn-icon mic" title="Dictar" data-i18n-title="p4.start" data-action="start">🎙️</button>
+                  <button type="button" class="btn-icon stop" title="Parar" data-i18n-title="p4.stop" data-action="stop" disabled>⏹️</button>
+                  <span class="voice-indicator" data-state="idle"></span>
+                </div>
+              </div>
+              <textarea id="notes" rows="4" placeholder="Observaciones / dedicatorias / etc." data-i18n-placeholder="p1.notesPlaceholder|p1.notes"></textarea>
+            </div>
+
+            <div class="field">
+              <div class="field-head">
+                <label for="abstract" data-i18n="p1.abstract">Resumen (opcional)</label>
+                <div class="voice-controls" data-for="abstract">
+                  <button type="button" class="btn-icon mic" title="Dictar" data-i18n-title="p4.start" data-action="start">🎙️</button>
+                  <button type="button" class="btn-icon stop" title="Parar" data-i18n-title="p4.stop" data-action="stop" disabled>⏹️</button>
+                  <span class="voice-indicator" data-state="idle"></span>
+                </div>
+              </div>
+              <textarea id="abstract" rows="6" placeholder="Un resumen conciso del guion…" data-i18n-placeholder="p1.abstractPlaceholder|p1.abstract"></textarea>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Panel 2: Personajes & Estructura -->
+    <section id="panel2" class="panel" aria-label="Personajes y estructura">
+      <div class="panel-inner">
+        <div class="split">
+          <div class="half">
+            <h3 data-i18n="p2.characters">Personajes / Voces</h3>
+            <div class="row-split">
+              <input id="charName" type="text" placeholder="Nombre del personaje / voz" data-i18n-placeholder="p2.charNamePlaceholder|p2.characters" />
+              <button id="addChar" class="primary" data-i18n="actions.add">Añadir</button>
+            </div>
+            <ul id="charList" class="list"></ul>
+          </div>
+
+          <div class="half">
+            <h3 data-i18n="p2.structure">Estructura (Actos/Secciones/Episodios)</h3>
+            <div class="row-split">
+              <input id="sceneTitle" type="text" placeholder="Acto 1, Escena 1 — o Segmento 1…" data-i18n-placeholder="p2.sceneTitlePlaceholder|p2.structure" />
+              <button id="addScene" class="primary" data-i18n="actions.add">Añadir</button>
+            </div>
+            <ul id="sceneList" class="list"></ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Panel 3: Editor -->
+    <section id="panel3" class="panel" aria-label="Editor">
+      <div class="panel-inner">
+        <div class="content-controls">
+          <div class="field">
+            <label for="selScene" data-i18n="p3.selectScene">Escena / Sección</label>
+            <select id="selScene"></select>
+          </div>
+
+          <!-- NUEVO: Visible al inicio -->
+          <div class="field">
+            <label class="option"><input type="checkbox" id="sceneVisible" checked> Visible al inicio</label>
+          </div>
+
+          <div class="field">
+            <label for="elemType" data-i18n="p3.elemType">Elemento</label>
+            <select id="elemType">
+              <option value="SLUGLINE" data-i18n="elem.SLUGLINE">Cabecera escena (SLUGLINE)</option>
+              <option value="ACTION" data-i18n="elem.ACTION">Acción/Descripción</option>
+              <option value="CHARACTER" data-i18n="elem.CHARACTER">Diálogo</option>
+              <option value="PARENTHETICAL" data-i18n="elem.PARENTHETICAL">Aparte (paréntesis)</option>
+              <option value="TRANSITION" data-i18n="elem.TRANSITION">Transición</option>
+              <option value="SFX" data-i18n="elem.SFX">SFX / Acotación</option>
+              <option value="MUSIC" data-i18n="elem.MUSIC">Música</option>
+              <option value="NOTE" data-i18n="elem.NOTE">Nota</option>
+              <option value="TIME" data-i18n="elem.TIME">Timecode</option>
+            </select>
+          </div>
+
+          <div class="field" id="charField">
+            <label for="elemChar" data-i18n="p3.elemChar">Personaje/Voz</label>
+            <select id="elemChar"></select>
+          </div>
+
+          <div class="field wide">
+            <label for="elemText" data-i18n="p3.elemText">Texto</label>
+            <div class="dictation-inline">
+              <select id="sttLang" aria-label="Idioma de dictado">
+                <option value="es-ES">es-ES</option>
+                <option value="ca-ES">ca-ES</option>
+                <option value="en-US">en-US</option>
+                <option value="pt-BR">pt-BR</option>
+                <option value="fr-FR">fr-FR</option>
+                <option value="de-DE">de-DE</option>
+                <option value="it-IT">it-IT</option>
+                <option value="hi-IN">hi-IN</option>
+                <option value="zh-CN">zh-CN</option>
+                <option value="ko-KR">ko-KR</option>
+                <option value="ja-JP">ja-JP</option>
+                <option value="ru-RU">ru-RU</option>
+              </select>
+
+              <button id="sttStart" class="primary" data-i18n="p4.start">Empezar dictado</button>
+              <button id="sttStop" class="danger" data-i18n="p4.stop" disabled>Parar</button>
+            </div>
+            <textarea id="elemText" rows="5" placeholder="Escribe aquí…" data-i18n-placeholder="p3.elemTextPlaceholder|p3.elemText"></textarea>
+          </div>
+
+          <div class="actions">
+            <button id="addElem" class="primary" data-i18n="actions.insert">Insertar</button>
+            <button id="clearElem" class="ghost" data-i18n="actions.clear">Limpiar</button>
+            <button id="sttOfflineOpen" class="ghost" data-i18n="p4.offline">Transcripción 100% offline (modelo local)</button>
+            <button id="fmtToggle" class="ghost" data-i18n="actions.format">Formato</button>
+          </div>
+
+          <!-- Mini panel Offline -->
+          <div id="offlineMini" class="mini-panel hidden" role="dialog" aria-modal="true" aria-labelledby="offlineMiniTitle">
+            <div class="mini-panel-head">
+              <div class="mini-panel-copy">
+                <h3 id="offlineMiniTitle" class="mini-panel-title" data-i18n="p4.offline">Transcripción 100% offline (modelo local)</h3>
+                <p class="mini-panel-note" data-i18n="p4.offlineInfo">Carga un modelo WASM/ggml local (Whisper/Vosk) y un audio para transcribir sin internet.</p>
+              </div>
+              <button id="sttOfflineCloseMini" class="ghost" type="button" data-i18n="actions.close">Cerrar</button>
+            </div>
+
+            <input id="sttModelFileMini" class="offline-file-input" type="file" accept=".bin,.ggml" />
+            <input id="sttAudioFileMini" class="offline-file-input" type="file" accept="audio/*" />
+
+            <div class="offline-grid">
+              <div class="offline-field">
+                <label data-i18n="p4.model">Modelo local</label>
+                <div class="offline-picker">
+                  <button id="sttModelPickMini" class="ghost" type="button" data-i18n="p4.pickModel">Seleccionar modelo</button>
+                  <span id="sttModelFileNameMini" class="offline-file-name" data-i18n="p4.noFileSelected">Ningún archivo seleccionado</span>
+                </div>
+                <div class="offline-hint" data-i18n="p4.modelHint">Usa un modelo Whisper compatible en formato .bin / ggml.</div>
+              </div>
+
+              <div class="offline-field">
+                <label data-i18n="p4.audio">Archivo de audio</label>
+                <div class="offline-picker">
+                  <button id="sttAudioPickMini" class="ghost" type="button" data-i18n="p4.pickAudio">Seleccionar audio</button>
+                  <span id="sttAudioFileNameMini" class="offline-file-name" data-i18n="p4.noFileSelected">Ningún archivo seleccionado</span>
+                </div>
+                <div class="offline-hint" data-i18n="p4.audioHint">Acepta los formatos de audio que tu navegador pueda abrir localmente.</div>
+              </div>
+            </div>
+
+            <div id="sttOfflineStatusMini" class="offline-status" data-state="idle" data-i18n="p4.status.idle">Listo para transcribir completamente offline.</div>
+
+            <div class="offline-actions">
+              <button id="sttOfflineRunMini" class="primary" type="button" data-i18n="p4.run">Transcribir offline</button>
+              <button id="sttOfflineCancelMini" class="danger hidden" type="button" data-i18n="actions.cancel">Cancelar</button>
+            </div>
+          </div>
+        </div>
+
+        <div id="elementsList" class="elements"></div>
+      </div>
+    </section>
+
+    <!-- Panel 5: Exportar -->
+    <section id="panel5" class="panel" aria-label="Exportar">
+      <div class="panel-inner">
+        <div class="export-grid">
+          <div class="field">
+            <div class="field">
+              <label for="pageSize" data-i18n="p5.size">Tamaño</label>
+              <select id="pageSize">
+                <option value="A4">A4 (210 × 297 mm)</option>
+                <option value="Letter">Letter (8.5 × 11")</option>
+                <option value="A5">A5 (148 × 210 mm)</option>
+                <option value="KDP6x9">KDP 6”×9”</option>
+              </select>
+
+              <div class="actions">
+                <button id="saveJSON" class="ghost" data-i18n="actions.save">Guardar (JSON)</button>
+                <button id="loadJSON" class="ghost" data-i18n="actions.load">Cargar</button>
+                <button id="clearAll" class="danger" data-i18n="actions.purge">Limpiar todo</button>
+
+                <button id="exportPDF" class="primary" data-i18n="actions.export">Exportar PDF</button>
+                <button id="exportAudio" class="ghost" data-i18n="actions.exportAudio">Exportar audio</button>
+              </div>
+            </div>
+
+            <div class="field margin-editor">
+              <div class="row-line row-line--2">
+                <div class="marg-wrap">
+                  <label data-i18n="p5.margins">Márgenes (mm)</label>
+                  <div class="inner">
+                    <select id="marginSide" aria-label="Margen">
+                      <option value="top" data-i18n="p5.top">Superior</option>
+                      <option value="bottom" data-i18n="p5.bottom">Inferior</option>
+                      <option value="left" data-i18n="p5.left">Izquierdo</option>
+                      <option value="right" data-i18n="p5.right">Derecho</option>
+                    </select>
+                    <div class="value-wrap">
+                      <input type="number" id="marginValue" min="5" max="60" step="1" title="Valor (mm)">
+                    </div>
+                  </div>
+                </div>
+
+                <div class="hf-wrap">
+                  <label for="headerFooter" data-i18n="p5.headerFooter">Cabecero / Pie</label>
+                  <select id="headerFooter">
+                    <option value="none" data-i18n="p5.hf.none">Sin cabecero ni pie</option>
+                    <option value="pageNum" data-i18n="p5.hf.pn">Solo nº página</option>
+                    <option value="full" data-i18n="p5.hf.full">Cabecero + pie + nº página</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="blockNewPage" data-i18n="p5.cols">Diseño</label>
+              <label class="option"><input id="blockNewPage" type="checkbox"> <span data-i18n="p5.blockNewPage">Empezar Bloque en nueva página</span></label>
+              <label class="option"><input id="hfRule" type="checkbox"> <span data-i18n="p5.hf.rule">Línea separadora cabecero/pie</span></label>
+            </div>
+
+            <div class="field">
+              <label for="pdfName" data-i18n="p5.filename">Nombre del archivo</label>
+              <input id="pdfName" type="text" value="guion.pdf">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Panel 6: Previsualización -->
+    <section id="panelPreview" class="panel" aria-label="Previsualización">
+      <div class="panel-inner">
+        <div class="preview-toolbar">
+          <label class="option"><input type="checkbox" id="previewAuto" checked> <span data-i18n="preview.auto">Auto</span></label>
+
+          <button id="previewRefresh" class="ghost" data-i18n="preview.refresh">Actualizar</button>
+
+          <select id="previewPageSize" title="Tamaño de previsualización">
+            <option value="A4">A4</option>
+            <option value="Letter">Letter</option>
+            <option value="A5">A5</option>
+            <option value="KDP6x9">KDP 6×9</option>
+          </select>
+
+          <label class="option">
+            <span data-i18n="preview.zoom">Zoom</span>
+            <input type="range" id="previewZoom" min="50" max="160" step="10" value="90">
+            <span id="previewZoomVal">90%</span>
+          </label>
+        </div>
+        <div id="previewHost" class="preview-host">
+          <div id="previewPages" class="preview-pages"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ====== FOOTER (header inferior estilo marca) ====== -->
+  <footer class="brand-footer" role="contentinfo">
+    <!-- ✅ Ahora en 2 filas y texto más pequeño, como ensaYOnesa -->
+    <div class="footer-left">
+      <div class="f-left-row1">
+        <strong>OptimeFlow(s)®</strong>
+        <span class="sep">•</span>
+        <span>GUI‑on</span>
+      </div>
+      <div class="f-left-row2">
+        <span>2025</span>
+        <span class="sep">•</span>
+        <a
+          class="footer-author-link"
+          href="https://orcid.org/0009-0005-4079-7418"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="ORCID de Andrés Calvo Espinosa"
+          title="ORCID de Andrés Calvo Espinosa"
+        >Andrés Calvo Espinosa</a>
+      </div>
+    </div>
+
+    <div class="footer-center">
+      <a class="app-icon-link" href="#coherence" aria-label="Coherencia Universal">
+        <img class="app-icon-footer" src="assets/img/guion192.png" alt="Coherencia Universal" />
+      </a>
+    </div>
+
+    <div class="footer-right">
+      <!-- ✅ Botón de licencia + ✅ id único para evitar choque con <input id="license"> -->
+      <a class="btn ghost" href="#license-mit" data-i18n="footer.license">Licencia</a>
+      <a class="btn ghost" href="#privacy" data-i18n="footer.privacy">Privacidad</a>
+    </div>
+  </footer>
+
+  <!-- ====== Overlays Licencia (MIT) / Privacidad ====== -->
+  <div id="license-mit" class="overlay">
+    <div class="box">
+      <h2 data-i18n="licensePanelTitle">Licencia MIT</h2>
+      <pre class="small" style="white-space:pre-wrap;line-height:1.45" data-i18n="licensePanelBody"></pre>
+      <div class="overlay-actions">
+        <a class="btn" href="#" data-i18n="actions.close">Cerrar</a>
+      </div>
+    </div>
+  </div>
+
+    <div id="privacy" class="overlay">
+    <div class="box">
+      <h2 data-i18n="footer.privacy">Privacidad</h2>
+      <div class="small" style="line-height:1.55;white-space:pre-line" data-i18n="privacyPanelBody">GUI‑on funciona principalmente en local, en tu navegador y en este dispositivo. No necesitas crear una cuenta ni subir tu guion a un servidor propio de la app para escribir, editar, organizar escenas, previsualizar o exportar.
+
+Qué puede guardarse localmente en tu dispositivo:
+• contenido del proyecto, como metadatos, personajes, escenas, elementos del guion y ajustes de exportación;
+• preferencias de uso, como tema, idioma y plantillas guardadas;
+• recursos de caché de la PWA necesarios para abrir GUI‑on sin conexión.
+
+Funciones del navegador que conviene conocer:
+• el dictado en vivo utiliza la API de reconocimiento de voz disponible en tu navegador o sistema; según la plataforma, ese servicio puede funcionar localmente o apoyarse en infraestructura del proveedor del navegador;
+• la transcripción 100% offline con modelo local procesa el audio y el modelo directamente en tu dispositivo;
+• los archivos que cargas manualmente para transcribir, importar o exportar se procesan en cliente dentro de la sesión de uso.
+
+Control y borrado:
+Puedes eliminar tu proyecto, limpiar plantillas y borrar los datos del sitio desde tu navegador cuando quieras. Si desinstalas la PWA y eliminas los datos del sitio, también se elimina la caché local asociada.
+
+Cookies y seguimiento:
+GUI‑on no incorpora cookies publicitarias ni analítica de seguimiento propia.
+
+Importante:
+Si utilizas funciones del navegador o del sistema operativo con sus propios servicios integrados —por ejemplo, reconocimiento de voz en ciertos navegadores—, también se aplicarán las políticas de privacidad y condiciones del proveedor correspondiente.</div>
+      <div class="overlay-actions">
+        <a class="btn" href="#panel1" data-i18n="actions.close">Cerrar</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- NUEVO: Overlay Coherencia Universal -->
+  <div id="coherence" class="overlay">
+    <div class="box">
+      <h2 data-i18n="coherence.title">Coherencia Universal</h2>
+      <div class="small" style="line-height:1.55">
+        <p data-i18n="coherence.p1">
+          Coherencia Universal es nuestra brújula interna: diseñamos GUI‑on para que cada decisión,
+          desde la interfaz hasta la privacidad, respete una idea simple — que todo tenga sentido en conjunto.
+        </p>
+        <p data-i18n="coherence.p2">
+          Cuando escribes con esta herramienta eres libre de explorar cualquier mundo, pero te invitamos
+          a recordar esto: una historia se vuelve poderosa cuando personajes, decisiones y universo
+          vibran en coherencia.
+        </p>
+      </div>
+      <div class="overlay-actions">
+        <a class="btn" href="#panel1" data-i18n="actions.close">Cerrar</a>
+      </div>
+    </div>
+  </div>
+
+  <div id="toastHost" class="toast-host" aria-live="polite"></div>
+
+  <!-- Filtro “olas de calor” para .brand-logo.heat -->
+  <svg class="visually-hidden" aria-hidden="true" focusable="false">
+    <filter id="heat-waves">
+      <feTurbulence type="fractalNoise" baseFrequency="0.012 0.02" numOctaves="1" seed="3">
+        <animate attributeName="baseFrequency"
+                 dur="7.5s"
+                 values="0.012 0.02; 0.02 0.04; 0.012 0.02; 0.012 0.02"
+                 keyTimes="0;0.3;0.6;1"
+                 calcMode="spline"
+                 keySplines="0.4 0 0.2 1; 0.4 0 0.2 1; 0 0 1 1"
+                 repeatCount="indefinite"/>
+      </feTurbulence>
+      <feDisplacementMap in="SourceGraphic" scale="0">
+        <animate attributeName="scale"
+                 dur="7.5s"
+                 values="0;28;0;0"
+                 keyTimes="0;0.3;0.6;1"
+                 calcMode="spline"
+                 keySplines="0.4 0 0.2 1; 0.4 0 0.2 1; 0 0 1 1"
+                 repeatCount="indefinite"/>
+      </feDisplacementMap>
+    </filter>
+  </svg>
+</body>
+</html>

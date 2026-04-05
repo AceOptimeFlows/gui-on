@@ -1,0 +1,457 @@
+{
+  "header.lang": "言語",
+  "header.theme": "テーマ",
+  "actions.install": "アプリをインストール",
+  "actions.close": "閉じる",
+  "install.hint": "ブラウザーが対応していれば、ここからアプリをインストールできます。",
+  "install.ready": "インストールの準備ができました。「アプリをインストール」を押してください。",
+  "install.unavailable": "このデバイスではインストールできません。",
+  "install.accepted": "インストールを開始しました。",
+  "install.dismissed": "インストールをキャンセルしました。",
+  "install.installed": "アプリをインストールしました。",
+  "install.thanks": "GUI‑on をインストールしていただき、ありがとうございます！",
+  "coherence.title": "普遍的な一貫性",
+  "coherence.p1": "この作品が感謝と誓いのしるしとなりますように。『飾り』に頼らず、考えること・感じること・行動することを同じ方向にそろえ、倫理と喜び、そして私たちを結ぶすべてへの敬意をもって創り続けていけますように。",
+  "coherence.p2": "このツールで書くとき、どんな世界でも自由に探検できます。でも、どうかこれを思い出してください。物語が力を持つのは、登場人物と選択と世界そのものが一貫して響き合うときです。",
+  "brand.subtitle": "PRO脚本エディター／クリエイター — 100%オフライン",
+  "badge.offline": "オフライン対応",
+  "steps.1": "1. 開始 & メタデータ",
+  "steps.2": "2. キャラクター & 構成",
+  "steps.3": "3. エディター",
+  "steps.4": "4. エクスポート",
+  "steps.5": "5. プレビュー",
+  "preview.auto": "自動",
+  "preview.refresh": "更新",
+  "preview.zoom": "ズーム",
+  "actions.update": "更新",
+  "fmt.label.SLUGLINE": "見出し",
+  "fmt.label.SCENE": "セクション",
+  "fmt.label.ACTION": "アクション／説明",
+  "fmt.label.CHAR": "キャラクター",
+  "fmt.label.PAREN": "括弧書き",
+  "fmt.label.DIALOGUE": "台詞",
+  "fmt.label.TRANS": "トランジション",
+  "fmt.label.SFX": "SFX / 指示",
+  "fmt.label.MUSIC": "音楽",
+  "fmt.label.NOTE": "メモ",
+  "fmt.label.TIME": "タイムコード",
+  "fmt.character": "キャラクター",
+  "fmt.global": "（全体）",
+  "fmt.font": "フォント",
+  "fmt.font.sans": "Sans",
+  "fmt.font.mono": "Mono",
+  "fmt.size": "サイズ",
+  "fmt.align": "配置",
+  "fmt.align.left": "左寄せ",
+  "fmt.align.center": "中央揃え",
+  "fmt.align.right": "右寄せ",
+  "fmt.align.justify": "両端揃え",
+  "fmt.color": "色",
+  "fmt.alpha": "Alpha",
+  "fmt.bold": "太字",
+  "fmt.italic": "斜体",
+  "fmt.underline": "下線",
+  "fmt.ok": "OK",
+  "presets.choose": "（テンプレートを選択）",
+  "presets.name.podcastStd": "標準ポッドキャスト",
+  "presets.name.theatreStd": "標準演劇",
+  "presets.name.filmStd": "標準映画",
+  "p1.type": "脚本タイプ",
+  "types.film": "映画",
+  "types.theatre": "演劇",
+  "types.podcast": "ポッドキャスト",
+  "p1.title": "タイトル",
+  "p1.logline": "ログライン／プレミス",
+  "p1.author": "作者",
+  "p1.email": "メール（任意）",
+  "p1.date": "日付（任意）",
+  "p1.license": "ライセンス（任意）",
+  "p1.keywords": "キーワード（任意）",
+  "p1.presets": "フォーマットプリセット",
+  "presets.auto": "タイプに応じて自動",
+  "presets.filmClassic": "クラシック映画（Courier 12）",
+  "presets.theatreEU": "ヨーロッパ演劇",
+  "presets.podcastStd": "標準ポッドキャスト",
+  "p1.notes": "メモ（任意）",
+  "p1.abstract": "概要（任意）",
+  "p1.tplNamePlaceholder": "テンプレート名",
+  "p1.titlePlaceholder": "私の脚本",
+  "p1.loglinePlaceholder": "物語を端的に捉える一文…",
+  "p1.authorPlaceholder": "作者名",
+  "p1.emailPlaceholder": "author@example.com",
+  "p1.licensePlaceholder": "例: CC BY 4.0",
+  "p1.keywordsPlaceholder": "keyword1; keyword2; keyword3",
+  "p1.notesPlaceholder": "備考 / 献辞 / など",
+  "p1.abstractPlaceholder": "脚本の簡潔な要約…",
+  "p2.characters": "キャラクター / 声",
+  "p2.structure": "構成（幕／セクション／エピソード）",
+  "p2.charNamePlaceholder": "キャラクター / 声の名前",
+  "p2.sceneTitlePlaceholder": "第1幕・第1場 — またはセグメント1…",
+  "p3.selectScene": "シーン / セクション",
+  "p3.elemType": "要素",
+  "p3.elemChar": "キャラクター／声",
+  "p3.elemText": "テキスト",
+  "p3.elemTextPlaceholder": "ここに入力…",
+  "p3.spacing": "行間",
+  "p3.mute": "ミュート",
+  "p3.silenceTail": "末尾の無音（ms）",
+  "elem.SLUGLINE": "シーン見出し（SLUGLINE）",
+  "elem.ACTION": "アクション／説明",
+  "elem.CHARACTER": "台詞",
+  "elem.PARENTHETICAL": "括弧書き（ト書き）",
+  "elem.DIALOGUE": "台詞",
+  "elem.TRANSITION": "トランジション",
+  "elem.SFX": "SFX / 指示",
+  "elem.MUSIC": "音楽",
+  "elem.NOTE": "メモ",
+  "elem.TIME": "タイムコード",
+  "p4.live": "ライブ音声入力（Web Speech）",
+  "p4.lang": "音声入力の言語",
+  "p4.start": "音声入力を開始",
+  "p4.stop": "停止",
+  "p4.note": "100%クライアント側で動作します。ブラウザーによってはローカルまたはネットワークのエンジンを使用する場合があります。",
+  "p4.targetChar": "キャラクター／声として挿入",
+  "p4.buffer": "文字起こしバッファ",
+  "p4.commit": "エディターに挿入",
+  "p4.offline": "100%オフライン文字起こし（ローカルモデル）",
+  "p4.offlineInfo": "ローカルの WASM/ggml モデル（Whisper/Vosk）と音声ファイルを読み込み、インターネットなしで文字起こしします。",
+  "p4.model": "ローカルモデル",
+  "p4.audio": "音声ファイル",
+  "p4.run": "オフラインで文字起こし",
+  "p5.size": "サイズ",
+  "p5.margins": "余白（mm）",
+  "p5.top": "上",
+  "p5.bottom": "下",
+  "p5.left": "左",
+  "p5.right": "右",
+  "p5.headerFooter": "ヘッダー／フッター",
+  "p5.hf.none": "ヘッダー・フッターなし",
+  "p5.hf.pn": "ページ番号のみ",
+  "p5.hf.full": "ヘッダー + フッター + ページ番号",
+  "p5.cols": "レイアウト",
+  "p5.filename": "ファイル名",
+  "p5.hf.rule": "ヘッダー／フッター区切り線",
+  "p5.blockNewPage": "ブロックを新しいページから開始",
+  "actions.format": "書式",
+  "actions.apply": "適用",
+  "actions.add": "追加",
+  "actions.insert": "挿入",
+  "actions.clear": "クリア",
+  "actions.save": "保存（JSON）",
+  "actions.load": "読み込む",
+  "actions.saveMargin": "余白を保存",
+  "actions.purge": "すべてクリア",
+  "actions.saveStyle": "テンプレートを保存",
+  "actions.loadStyle": "テンプレートを読み込む",
+  "actions.export": "PDFを書き出す",
+  "actions.exportAudio": "音声を書き出す",
+  "demo_podcast_btn": "デモポッドキャストを読み込む",
+  "demo_podcast": {
+    "meta": {
+      "title": "Demo Podcast — OptimeFlow",
+      "logline": "エクスポートと書式をすばやく試すためのサンプル脚本です（6人のキャラクター、3つのシーン）。",
+      "author": "OptimeFlow チーム",
+      "email": "demo@optimeflow.local",
+      "license": "MIT — デモ / 書式テスト",
+      "keywords": "podcast, demo, export, format, dialogue, sfx, music, notes",
+      "notes": "これはテスト用コンテンツです。余白、ヘッダー/フッター、区切り線、ブロックの改ページを確認するのに使ってください。",
+      "abstract": "導入、インタビュー、締めで構成された架空のエピソード。シーン、台詞、ト書き、音楽、SFX、メモ、タイムマーカーを含みます。"
+    },
+    "script": {
+      "type": "podcast",
+      "characters": [
+        {
+          "id": "c1",
+          "name": "Lucía（ホスト）"
+        },
+        {
+          "id": "c2",
+          "name": "Mateo（共同ホスト）"
+        },
+        {
+          "id": "c3",
+          "name": "Inés（プロデューサー）"
+        },
+        {
+          "id": "c4",
+          "name": "Dr. Vega（ゲスト）"
+        },
+        {
+          "id": "c5",
+          "name": "Samir（サウンド）"
+        },
+        {
+          "id": "c6",
+          "name": "リスナー 1"
+        }
+      ],
+      "scenes": [
+        {
+          "id": "s1",
+          "title": "Cold Open · エピソードの導入と雰囲気",
+          "showHeading": true,
+          "elements": [
+            {
+              "type": "TIME",
+              "text": "00:00"
+            },
+            {
+              "type": "MUSIC",
+              "text": "オープニングテーマ — やわらかなパルス + アトモスフィア"
+            },
+            {
+              "type": "SFX",
+              "text": "スタジオの環境音 / やわらかな拍手"
+            },
+            {
+              "type": "ACTION",
+              "text": "テーブルの準備は整っている。マイクはきれいにセットされている。まるで観客が今にも入ってきそうな、スタジオの呼吸が聞こえる。"
+            },
+            {
+              "type": "CHARACTER",
+              "charId": "c1"
+            },
+            {
+              "type": "DIALOGUE",
+              "charId": "c1",
+              "text": "こんにちは！ OptimeFlow Podcast へようこそ。今日は、リズムと明快さ、そして少しの音の魔法をあわせ持つフォーマットを試してみましょう。",
+              "gapAfterMm": 2
+            },
+            {
+              "type": "CHARACTER",
+              "charId": "c2"
+            },
+            {
+              "type": "PARENTHETICAL",
+              "text": "笑いながら"
+            },
+            {
+              "type": "DIALOGUE",
+              "charId": "c2",
+              "text": "しかも最高なのは、この脚本がエクスポートをしっかり試すために作られていること。余白、ヘッダー、区切り線……全部まとめてテストできます！",
+              "gapAfterMm": 2
+            },
+            {
+              "type": "CHARACTER",
+              "charId": "c3"
+            },
+            {
+              "type": "DIALOGUE",
+              "charId": "c3",
+              "text": "ひとつだけ。各ブロックを新しいページから始める設定をオンにしたら、改ページと、キャラクターと台詞のペアが不自然に分断されないかを確認してください。",
+              "gapAfterMm": 2
+            },
+            {
+              "type": "NOTE",
+              "text": "メモ: ここでは MUSIC/SFX/ACTION/DIALOGUE を混在させて、スタイルを確認できます。"
+            },
+            {
+              "type": "TRANSITION",
+              "text": "ジングルへカット"
+            },
+            {
+              "type": "MUSIC",
+              "text": "短いジングル（0.8秒）— fade out"
+            }
+          ]
+        },
+        {
+          "id": "s2",
+          "title": "ブロック 1 · メインインタビュー",
+          "showHeading": true,
+          "elements": [
+            {
+              "type": "TIME",
+              "text": "05:12"
+            },
+            {
+              "type": "SLUGLINE",
+              "text": "ブロック 1 — テーマ"
+            },
+            {
+              "type": "ACTION",
+              "text": "Lucía がゲストを紹介する。音楽は下がり、やわらかなベッドだけが残る。"
+            },
+            {
+              "type": "MUSIC",
+              "text": "やわらかな音楽ベッド（かなり小さめ）"
+            },
+            {
+              "type": "CHARACTER",
+              "charId": "c1"
+            },
+            {
+              "type": "DIALOGUE",
+              "charId": "c1",
+              "text": "Vega 先生、来てくださってありがとうございます。今日は本当の集中について話したいんです。流行りの集中ではなく、周りのすべてが注意を奪おうとしても持ちこたえる集中について。",
+              "gapAfterMm": 1.5
+            },
+            {
+              "type": "CHARACTER",
+              "charId": "c4"
+            },
+            {
+              "type": "DIALOGUE",
+              "charId": "c4",
+              "text": "こちらこそ。ひと言で言うなら、集中は見つけるものではなく設計するものです。そして、その設計にはエネルギー、環境、そして測定できる習慣が必要です。",
+              "gapAfterMm": 1.5
+            },
+            {
+              "type": "CHARACTER",
+              "charId": "c2"
+            },
+            {
+              "type": "DIALOGUE",
+              "charId": "c2",
+              "text": "では短くひとつ。集中しようとして、ほとんどの人がやってしまう間違いは何でしょう？"
+            },
+            {
+              "type": "CHARACTER",
+              "charId": "c4"
+            },
+            {
+              "type": "PARENTHETICAL",
+              "text": "短い間"
+            },
+            {
+              "type": "DIALOGUE",
+              "charId": "c4",
+              "text": "システムを変えずに、意志の力だけで何とかしようとすることです。意志力は尽きます。でもシステムは支えてくれます。",
+              "gapAfterMm": 2
+            },
+            {
+              "type": "SFX",
+              "text": "机を軽くトン / 控えめな笑い"
+            },
+            {
+              "type": "ACTION",
+              "text": "Samir がレベルを調整し、コンプレッサーが入る軽いクリック音が聞こえる。"
+            },
+            {
+              "type": "CHARACTER",
+              "charId": "c5"
+            },
+            {
+              "type": "DIALOGUE",
+              "charId": "c5",
+              "text": "音の立場から言うと、システムが良いと音声まで扱いやすく感じます。マイクが正しく置かれていれば、声は自然に前に出ます。",
+              "gapAfterMm": 2
+            },
+            {
+              "type": "NOTE",
+              "text": "テストのヒント: hfRule をオン/オフし、余白を変えて、SLUGLINE がきれいに見えるか確認してください。"
+            },
+            {
+              "type": "TRANSITION",
+              "text": "ブロック終了 / 一呼吸"
+            }
+          ]
+        },
+        {
+          "id": "s3",
+          "title": "ブロック 2 · クイック質問と締め",
+          "showHeading": true,
+          "elements": [
+            {
+              "type": "TIME",
+              "text": "18:40"
+            },
+            {
+              "type": "SLUGLINE",
+              "text": "ブロック 2 — クイック質問"
+            },
+            {
+              "type": "ACTION",
+              "text": "着信が入る。Inés が「ok」の合図を出す。"
+            },
+            {
+              "type": "SFX",
+              "text": "着信音 / クリック / 回線オープン"
+            },
+            {
+              "type": "CHARACTER",
+              "charId": "c6"
+            },
+            {
+              "type": "DIALOGUE",
+              "charId": "c6",
+              "text": "こんにちは、みなさん。質問です。1分以内で「集中モード」に入れるスタートの儀式は、どう作ればいいですか？",
+              "gapAfterMm": 1.5
+            },
+            {
+              "type": "CHARACTER",
+              "charId": "c1"
+            },
+            {
+              "type": "DIALOGUE",
+              "charId": "c1",
+              "text": "いい質問ですね。私は身体的な合図を使います。ヘッドホンをつけて、短いフレーズを言って、3つのマイクロタスクを書き出します。"
+            },
+            {
+              "type": "CHARACTER",
+              "charId": "c4"
+            },
+            {
+              "type": "DIALOGUE",
+              "charId": "c4",
+              "text": "それに一貫性も加えてください。同じ時間、できれば同じ場所、そして感覚を引き金にするもの。たとえば飲み物や、とても短い曲などです。",
+              "gapAfterMm": 2
+            },
+            {
+              "type": "ACTION",
+              "text": "Mateo がストレートに締めくくる。エンディングの音楽がやわらかく入り始める。"
+            },
+            {
+              "type": "MUSIC",
+              "text": "エンディングテーマ — 徐々に fade out"
+            },
+            {
+              "type": "CHARACTER",
+              "charId": "c2",
+              "text": "このデモエピソードが気に入ったら、エクスポート、印刷、ブロックの切れ目の確認に使って、すべてが美しく見えるか確かめてください。またお会いしましょう！"
+            },
+            {
+              "type": "DIALOGUE",
+              "charId": "c2",
+              "text": "このデモエピソードが気に入ったら、エクスポート、印刷、ページ区切りの確認に使って、すべてが美しく見えるか確かめてください。またお会いしましょう！",
+              "gapAfterMm": 2
+            },
+            {
+              "type": "NOTE",
+              "text": "終わり: ページ番号やヘッダー/フッターが内容にかぶらないことを確認してください。"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "footer.license": "ライセンス",
+  "footer.privacy": "プライバシー",
+  "licensePanelTitle": "MITライセンス",
+  "licensePanelBody": "Copyright (c) 2025 Andrés Calvo Espinosa / OptimeFlow(s)\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n\n────────────────────────────────\nブラウザー技術およびサードパーティコンポーネントに関する注意\n────────────────────────────────\nこのバージョンの GUI‑on で確認したファイルには、サードパーティの\nJavaScript ライブラリや組み込みのローカルモデルは再配布されていません。\n\nユーザーのブラウザー／プラットフォームに依存する機能:\n- ライブ音声入力／文字起こし: Web Speech API / SpeechRecognition\n- エディターの音声録音: MediaRecorder + getUserMedia\n- PWA モード／オフライン利用: Service Worker + ブラウザー保存領域\n\nブラウザーやプラットフォームによっては、音声認識がプラットフォームの\n認識サービスを利用する場合や、その機能があればローカルで実行される\n場合があります。\n\nそのため、このバージョンでは追加の再配布サードパーティライセンスは\nここには記載していません。\n\n今後、Whisper、Vosk、ONNX Runtime Web、ffmpeg.wasm などの\nライブラリやモデルをアプリに統合して再配布する場合は、このパネルに\n著作権表示とライセンス文書を追加します。",
+  "actions.cancel": "キャンセル",
+  "dictation.status.notSupported": "このブラウザーでは音声入力がサポートされていません",
+  "dictation.status.notSupportedShort": "未対応",
+  "dictation.status.listening": "音声入力中",
+  "dictation.status.error": "音声入力エラー",
+  "dictation.status.idle": "待機中",
+  "msg.micDenied": "マイクにアクセスできませんでした",
+  "p4.pickModel": "モデルを選択",
+  "p4.pickAudio": "音声を選択",
+  "p4.modelHint": ".bin / ggml 形式の互換 Whisper モデルを使用してください。",
+  "p4.audioHint": "ブラウザーがローカルで開ける音声形式に対応しています。",
+  "p4.noFileSelected": "ファイルが選択されていません",
+  "p4.status.idle": "完全オフラインで文字起こしする準備ができました。",
+  "p4.status.needFiles": "ローカルモデルと音声ファイルを選択してください。",
+  "p4.status.preparing": "ローカルのオフラインエンジンを準備しています…",
+  "p4.status.running": "オフラインで文字起こし中… この処理には少し時間がかかる場合があります。",
+  "p4.status.done": "オフライン文字起こしが完了し、「テキスト」に挿入されました。",
+  "p4.status.empty": "音声からテキストを取得できませんでした。",
+  "p4.status.error": "オフライン文字起こしを完了できませんでした。",
+  "p4.status.errorShort": "オフラインで文字起こしできませんでした。",
+  "p4.status.canceling": "オフライン文字起こしをキャンセルしています…",
+  "p4.status.canceled": "文字起こしをキャンセルしました。",
+  "p4.status.reload": "ローカルのオフラインエンジンを有効にするため、アプリを一度再読み込みしてください。改善しない場合は、インストール済み PWA か分離された安全なホスティングを使用してください。",
+  "p4.inserted": "文字起こしが「テキスト」に挿入されました。",
+  "privacyPanelBody": "GUI-on は主に、このブラウザ内およびこの端末上でローカルに動作します。執筆、編集、シーン整理、プレビュー、書き出しのために、アカウントを作成したり、脚本をアプリ専用サーバーへアップロードしたりする必要はありません。\n\n端末にローカル保存される可能性があるもの：\n• メタデータ、登場人物、シーン、脚本要素、書き出し設定などのプロジェクト内容；\n• テーマ、言語、保存済みテンプレートなどの利用設定；\n• GUI-on をオフラインで開くために必要な PWA キャッシュリソース。\n\n知っておくとよいブラウザ機能：\n• ライブ音声入力は、ブラウザまたはOSで利用可能な音声認識APIを使用します。プラットフォームによっては、このサービスはローカルで動作する場合もあれば、ブラウザ提供元のインフラに依存する場合もあります；\n• ローカルモデルによる100%オフライン文字起こしは、音声とモデルの両方を端末上で直接処理します；\n• 文字起こし、インポート、またはエクスポートのために手動でアップロードしたファイルは、利用中のセッション内でクライアント側処理されます。\n\n管理と削除：\nプロジェクトの削除、テンプレートの消去、サイトデータの削除は、いつでもブラウザから行えます。PWA をアンインストールし、サイトデータを削除すると、関連するローカルキャッシュも削除されます。\n\nCookie とトラッキング：\nGUI-on には、広告用Cookieや独自のトラッキング分析機能は含まれていません。\n\n重要：\nブラウザやOSの機能のうち、独自の統合サービスを伴うもの — たとえば一部ブラウザの音声認識 — を利用する場合は、該当プロバイダーのプライバシーポリシーおよび利用条件も適用されます。"
+}

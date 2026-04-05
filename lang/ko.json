@@ -1,0 +1,457 @@
+{
+  "header.lang": "언어",
+  "header.theme": "테마",
+  "actions.install": "앱 설치",
+  "actions.close": "닫기",
+  "install.hint": "브라우저가 지원하면 여기에서 앱을 설치할 수 있습니다.",
+  "install.ready": "설치할 준비가 되었습니다. 「앱 설치」를 누르세요.",
+  "install.unavailable": "이 기기에서는 설치를 사용할 수 없습니다.",
+  "install.accepted": "설치를 시작했습니다.",
+  "install.dismissed": "설치를 취소했습니다.",
+  "install.installed": "앱이 설치되었습니다.",
+  "install.thanks": "GUI‑on을 설치해 주셔서 감사합니다!",
+  "coherence.title": "보편적 일관성",
+  "coherence.p1": "이 작품이 감사이자 약속이 되기를 바랍니다. '꾸밈' 없이 생각하고, 느끼고, 행동하는 방향을 하나로 맞추고, 우리를 연결하는 모든 것에 대한 존중과 함께 윤리적으로, 기쁘게 계속 창작해 나가기를 바랍니다.",
+  "coherence.p2": "이 도구로 글을 쓸 때 어떤 세계든 자유롭게 탐험할 수 있습니다. 하지만 이것을 기억해 주세요. 이야기의 힘은 인물과 선택, 그리고 세계가 서로 일관되게 울릴 때 더욱 커집니다.",
+  "brand.subtitle": "프로 각본 편집기/제작기 — 100% 오프라인",
+  "badge.offline": "오프라인 준비 완료",
+  "steps.1": "1. 시작 & 메타데이터",
+  "steps.2": "2. 등장인물 & 구조",
+  "steps.3": "3. 편집기",
+  "steps.4": "4. 내보내기",
+  "steps.5": "5. 미리보기",
+  "preview.auto": "자동",
+  "preview.refresh": "새로고침",
+  "preview.zoom": "줌",
+  "actions.update": "새로고침",
+  "fmt.label.SLUGLINE": "헤더",
+  "fmt.label.SCENE": "섹션",
+  "fmt.label.ACTION": "액션/설명",
+  "fmt.label.CHAR": "등장인물",
+  "fmt.label.PAREN": "지문",
+  "fmt.label.DIALOGUE": "대사",
+  "fmt.label.TRANS": "전환",
+  "fmt.label.SFX": "SFX / 지시",
+  "fmt.label.MUSIC": "음악",
+  "fmt.label.NOTE": "메모",
+  "fmt.label.TIME": "타임코드",
+  "fmt.character": "등장인물",
+  "fmt.global": "(전체)",
+  "fmt.font": "글꼴",
+  "fmt.font.sans": "Sans",
+  "fmt.font.mono": "Mono",
+  "fmt.size": "크기",
+  "fmt.align": "정렬",
+  "fmt.align.left": "왼쪽",
+  "fmt.align.center": "가운데",
+  "fmt.align.right": "오른쪽",
+  "fmt.align.justify": "양쪽 맞춤",
+  "fmt.color": "색상",
+  "fmt.alpha": "Alpha",
+  "fmt.bold": "굵게",
+  "fmt.italic": "기울임",
+  "fmt.underline": "밑줄",
+  "fmt.ok": "OK",
+  "presets.choose": "(템플릿 선택)",
+  "presets.name.podcastStd": "표준 팟캐스트",
+  "presets.name.theatreStd": "표준 연극",
+  "presets.name.filmStd": "표준 영화",
+  "p1.type": "대본 유형",
+  "types.film": "영화",
+  "types.theatre": "연극",
+  "types.podcast": "팟캐스트",
+  "p1.title": "제목",
+  "p1.logline": "로그라인 / 전제",
+  "p1.author": "저자",
+  "p1.email": "이메일 (선택)",
+  "p1.date": "날짜 (선택)",
+  "p1.license": "라이선스 (선택)",
+  "p1.keywords": "키워드 (선택)",
+  "p1.presets": "형식 프리셋",
+  "presets.auto": "유형에 따라 자동",
+  "presets.filmClassic": "클래식 영화 (Courier 12)",
+  "presets.theatreEU": "유럽 연극",
+  "presets.podcastStd": "표준 팟캐스트",
+  "p1.notes": "메모 (선택)",
+  "p1.abstract": "요약 (선택)",
+  "p1.tplNamePlaceholder": "템플릿 이름",
+  "p1.titlePlaceholder": "내 대본",
+  "p1.loglinePlaceholder": "이야기를 선명하게 담아내는 한 문장…",
+  "p1.authorPlaceholder": "저자 이름",
+  "p1.emailPlaceholder": "author@example.com",
+  "p1.licensePlaceholder": "예: CC BY 4.0",
+  "p1.keywordsPlaceholder": "keyword1; keyword2; keyword3",
+  "p1.notesPlaceholder": "관찰 / 헌정 / 기타",
+  "p1.abstractPlaceholder": "대본의 간결한 요약…",
+  "p2.characters": "등장인물 / 목소리",
+  "p2.structure": "구조 (막/섹션/에피소드)",
+  "p2.charNamePlaceholder": "등장인물 / 목소리 이름",
+  "p2.sceneTitlePlaceholder": "1막 1장 — 또는 세그먼트 1…",
+  "p3.selectScene": "장면 / 섹션",
+  "p3.elemType": "요소",
+  "p3.elemChar": "등장인물/목소리",
+  "p3.elemText": "텍스트",
+  "p3.elemTextPlaceholder": "여기에 입력…",
+  "p3.spacing": "줄간격",
+  "p3.mute": "음소거",
+  "p3.silenceTail": "끝부분 무음 (ms)",
+  "elem.SLUGLINE": "장면 헤더 (SLUGLINE)",
+  "elem.ACTION": "액션/설명",
+  "elem.CHARACTER": "대사",
+  "elem.PARENTHETICAL": "지문 (괄호)",
+  "elem.DIALOGUE": "대사",
+  "elem.TRANSITION": "전환",
+  "elem.SFX": "SFX / 지시",
+  "elem.MUSIC": "음악",
+  "elem.NOTE": "메모",
+  "elem.TIME": "타임코드",
+  "p4.live": "실시간 받아쓰기 (Web Speech)",
+  "p4.lang": "받아쓰기 언어",
+  "p4.start": "받아쓰기 시작",
+  "p4.stop": "중지",
+  "p4.note": "100% 클라이언트 측에서 동작합니다. 일부 브라우저는 로컬 또는 네트워크 엔진을 사용할 수 있습니다.",
+  "p4.targetChar": "등장인물/목소리로 삽입",
+  "p4.buffer": "전사 버퍼",
+  "p4.commit": "편집기에 삽입",
+  "p4.offline": "100% 오프라인 전사 (로컬 모델)",
+  "p4.offlineInfo": "로컬 WASM/ggml 모델(Whisper/Vosk)과 오디오 파일을 불러와 인터넷 없이 전사합니다.",
+  "p4.model": "로컬 모델",
+  "p4.audio": "오디오 파일",
+  "p4.run": "오프라인 전사",
+  "p5.size": "크기",
+  "p5.margins": "여백 (mm)",
+  "p5.top": "위",
+  "p5.bottom": "아래",
+  "p5.left": "왼쪽",
+  "p5.right": "오른쪽",
+  "p5.headerFooter": "헤더 / 푸터",
+  "p5.hf.none": "헤더/푸터 없음",
+  "p5.hf.pn": "페이지 번호만",
+  "p5.hf.full": "헤더 + 푸터 + 페이지 번호",
+  "p5.cols": "레이아웃",
+  "p5.filename": "파일 이름",
+  "p5.hf.rule": "헤더/푸터 구분선",
+  "p5.blockNewPage": "블록을 새 페이지에서 시작",
+  "actions.format": "서식",
+  "actions.apply": "적용",
+  "actions.add": "추가",
+  "actions.insert": "삽입",
+  "actions.clear": "지우기",
+  "actions.save": "저장 (JSON)",
+  "actions.load": "불러오기",
+  "actions.saveMargin": "여백 저장",
+  "actions.purge": "모두 지우기",
+  "actions.saveStyle": "템플릿 저장",
+  "actions.loadStyle": "템플릿 불러오기",
+  "actions.export": "PDF 내보내기",
+  "actions.exportAudio": "오디오 내보내기",
+  "demo_podcast_btn": "데모 팟캐스트 불러오기",
+  "demo_podcast": {
+    "meta": {
+      "title": "Demo Podcast — OptimeFlow",
+      "logline": "내보내기와 서식을 빠르게 시험해 볼 수 있는 예시 대본입니다 (등장인물 6명, 장면 3개).",
+      "author": "OptimeFlow 팀",
+      "email": "demo@optimeflow.local",
+      "license": "MIT — 데모 / 서식 테스트",
+      "keywords": "podcast, demo, export, format, dialogue, sfx, music, notes",
+      "notes": "테스트용 콘텐츠입니다. 여백, 헤더/푸터, 구분선, 블록 나눔을 확인하는 데 사용하세요.",
+      "abstract": "도입, 인터뷰, 마무리로 구성된 가상의 에피소드입니다. 장면, 대사, 지문, 음악, SFX, 메모, 타임마커를 포함합니다."
+    },
+    "script": {
+      "type": "podcast",
+      "characters": [
+        {
+          "id": "c1",
+          "name": "Lucía (호스트)"
+        },
+        {
+          "id": "c2",
+          "name": "Mateo (공동 진행자)"
+        },
+        {
+          "id": "c3",
+          "name": "Inés (프로듀서)"
+        },
+        {
+          "id": "c4",
+          "name": "Dr. Vega (게스트)"
+        },
+        {
+          "id": "c5",
+          "name": "Samir (사운드)"
+        },
+        {
+          "id": "c6",
+          "name": "청취자 1"
+        }
+      ],
+      "scenes": [
+        {
+          "id": "s1",
+          "title": "Cold Open · 에피소드의 인사와 톤",
+          "showHeading": true,
+          "elements": [
+            {
+              "type": "TIME",
+              "text": "00:00"
+            },
+            {
+              "type": "MUSIC",
+              "text": "오프닝 테마 — 부드러운 펄스 + 분위기"
+            },
+            {
+              "type": "SFX",
+              "text": "스튜디오 앰비언스 / 잔잔한 박수"
+            },
+            {
+              "type": "ACTION",
+              "text": "테이블은 준비되어 있다. 마이크 세팅은 깔끔하다. 마치 청중이 곧 들어올 것처럼, 스튜디오가 숨 쉬는 소리가 들린다."
+            },
+            {
+              "type": "CHARACTER",
+              "charId": "c1"
+            },
+            {
+              "type": "DIALOGUE",
+              "charId": "c1",
+              "text": "안녕하세요! OptimeFlow Podcast에 오신 것을 환영합니다. 오늘은 리듬과 명확함, 그리고 약간의 사운드 마법이 섞인 포맷을 시험해 보겠습니다.",
+              "gapAfterMm": 2
+            },
+            {
+              "type": "CHARACTER",
+              "charId": "c2"
+            },
+            {
+              "type": "PARENTHETICAL",
+              "text": "웃으며"
+            },
+            {
+              "type": "DIALOGUE",
+              "charId": "c2",
+              "text": "그리고 가장 좋은 점은 이 대본이 내보내기를 제대로 시험하도록 만들어졌다는 거예요. 여백, 헤더, 구분선… 전부 한꺼번에 점검할 수 있죠!",
+              "gapAfterMm": 2
+            },
+            {
+              "type": "CHARACTER",
+              "charId": "c3"
+            },
+            {
+              "type": "DIALOGUE",
+              "charId": "c3",
+              "text": "짧게 안내할게요. 각 블록을 새 페이지에서 시작하도록 켜면, 페이지 나눔과 등장인물-대사 쌍이 어색하게 갈라지지 않는지 꼭 확인하세요.",
+              "gapAfterMm": 2
+            },
+            {
+              "type": "NOTE",
+              "text": "메모: 여기에는 MUSIC/SFX/ACTION/DIALOGUE가 섞여 있어 스타일을 확인할 수 있습니다."
+            },
+            {
+              "type": "TRANSITION",
+              "text": "징글로 컷"
+            },
+            {
+              "type": "MUSIC",
+              "text": "짧은 징글 (0.8초) — fade out"
+            }
+          ]
+        },
+        {
+          "id": "s2",
+          "title": "블록 1 · 메인 인터뷰",
+          "showHeading": true,
+          "elements": [
+            {
+              "type": "TIME",
+              "text": "05:12"
+            },
+            {
+              "type": "SLUGLINE",
+              "text": "블록 1 — 주제"
+            },
+            {
+              "type": "ACTION",
+              "text": "Lucía가 게스트를 소개한다. 음악은 낮아지고 아주 부드러운 베드만 남는다."
+            },
+            {
+              "type": "MUSIC",
+              "text": "부드러운 음악 베드 (매우 낮게)"
+            },
+            {
+              "type": "CHARACTER",
+              "charId": "c1"
+            },
+            {
+              "type": "DIALOGUE",
+              "charId": "c1",
+              "text": "Vega 박사님, 와주셔서 감사합니다. 오늘은 진짜 집중에 대해 이야기해 보고 싶어요. 유행하는 집중이 아니라, 주변의 모든 것이 주의를 빼앗으려 해도 버텨내는 그런 집중 말이죠.",
+              "gapAfterMm": 1.5
+            },
+            {
+              "type": "CHARACTER",
+              "charId": "c4"
+            },
+            {
+              "type": "DIALOGUE",
+              "charId": "c4",
+              "text": "초대해 주셔서 기쁩니다. 한 문장으로 요약하면 이래요. 집중은 발견하는 것이 아니라 설계하는 것입니다. 그리고 그 설계는 에너지, 환경, 그리고 측정 가능한 습관으로 이뤄집니다.",
+              "gapAfterMm": 1.5
+            },
+            {
+              "type": "CHARACTER",
+              "charId": "c2"
+            },
+            {
+              "type": "DIALOGUE",
+              "charId": "c2",
+              "text": "짧게 하나 던져볼게요. 사람들이 집중하려 할 때 거의 모두가 저지르는 실수는 뭘까요?"
+            },
+            {
+              "type": "CHARACTER",
+              "charId": "c4"
+            },
+            {
+              "type": "PARENTHETICAL",
+              "text": "짧은 침묵"
+            },
+            {
+              "type": "DIALOGUE",
+              "charId": "c4",
+              "text": "시스템을 바꾸지 않은 채 의지력만으로 해내려는 겁니다. 의지력은 소진돼요. 하지만 시스템은 당신을 지탱해 줍니다.",
+              "gapAfterMm": 2
+            },
+            {
+              "type": "SFX",
+              "text": "테이블을 가볍게 톡 / 절제된 웃음"
+            },
+            {
+              "type": "ACTION",
+              "text": "Samir가 레벨을 조정하고, 컴프레서가 들어오는 부드러운 클릭 소리가 들린다."
+            },
+            {
+              "type": "CHARACTER",
+              "charId": "c5"
+            },
+            {
+              "type": "DIALOGUE",
+              "charId": "c5",
+              "text": "사운드 쪽에서도 확인할 수 있어요. 시스템이 좋으면 오디오도 더 쉽게 느껴집니다. 마이크가 제대로 놓여 있으면 목소리는 자연스럽게 살아나요.",
+              "gapAfterMm": 2
+            },
+            {
+              "type": "NOTE",
+              "text": "테스트 제안: hfRule을 켜고 끄고, 여백을 바꾸고, SLUGLINE이 잘 보이는지 확인해 보세요."
+            },
+            {
+              "type": "TRANSITION",
+              "text": "블록 종료 / 숨 고르기"
+            }
+          ]
+        },
+        {
+          "id": "s3",
+          "title": "블록 2 · 빠른 질문과 작별",
+          "showHeading": true,
+          "elements": [
+            {
+              "type": "TIME",
+              "text": "18:40"
+            },
+            {
+              "type": "SLUGLINE",
+              "text": "블록 2 — 빠른 질문"
+            },
+            {
+              "type": "ACTION",
+              "text": "전화가 들어온다. Inés가 'ok' 신호를 보낸다."
+            },
+            {
+              "type": "SFX",
+              "text": "벨소리 / 클릭 / 열린 회선"
+            },
+            {
+              "type": "CHARACTER",
+              "charId": "c6"
+            },
+            {
+              "type": "DIALOGUE",
+              "charId": "c6",
+              "text": "안녕하세요, 팀. 질문이 있어요. 1분도 안 돼서 저를 '집중 모드'로 넣어 주는 시작 루틴은 어떻게 만들 수 있을까요?",
+              "gapAfterMm": 1.5
+            },
+            {
+              "type": "CHARACTER",
+              "charId": "c1"
+            },
+            {
+              "type": "DIALOGUE",
+              "charId": "c1",
+              "text": "좋은 질문이에요. 저는 물리적인 신호를 써요. 헤드폰을 쓰고, 짧은 문장을 말하고, 세 가지 마이크로 작업 목록을 적습니다."
+            },
+            {
+              "type": "CHARACTER",
+              "charId": "c4"
+            },
+            {
+              "type": "DIALOGUE",
+              "charId": "c4",
+              "text": "그리고 일관성도 더하세요. 같은 시간, 가능하면 같은 장소, 그리고 감각적인 트리거요. 예를 들면 음료나 아주 짧은 노래 같은 것 말이죠.",
+              "gapAfterMm": 2
+            },
+            {
+              "type": "ACTION",
+              "text": "Mateo가 직선적인 마무리로 끝낸다. 엔딩 음악이 부드럽게 시작된다."
+            },
+            {
+              "type": "MUSIC",
+              "text": "엔딩 테마 — 점진적 fade out"
+            },
+            {
+              "type": "CHARACTER",
+              "charId": "c2",
+              "text": "이 데모 에피소드가 마음에 들었다면, 내보내기와 인쇄, 블록 끊김 점검에 활용해서 모든 것이 아름답게 보이는지 확인해 보세요. 다음에 또 만나요!"
+            },
+            {
+              "type": "DIALOGUE",
+              "charId": "c2",
+              "text": "이 데모 에피소드가 마음에 들었다면, 내보내기와 인쇄, 페이지 나눔 점검에 활용해서 모든 것이 아름답게 보이는지 확인해 보세요. 다음에 또 만나요!",
+              "gapAfterMm": 2
+            },
+            {
+              "type": "NOTE",
+              "text": "끝: 페이지 번호와 헤더/푸터가 내용을 가리지 않는지 확인하세요."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "footer.license": "라이선스",
+  "footer.privacy": "개인정보",
+  "licensePanelTitle": "MIT 라이선스",
+  "licensePanelBody": "Copyright (c) 2025 Andrés Calvo Espinosa / OptimeFlow(s)\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n\n────────────────────────────────\n브라우저 기술 및 서드파티 구성요소에 대한 안내\n────────────────────────────────\n이 버전의 GUI‑on에서 검토한 파일에는 서드파티 JavaScript 라이브러리나\n내장된 로컬 모델이 재배포되지 않습니다.\n\n사용자의 브라우저/플랫폼에 따라 달라지는 기능:\n- 실시간 받아쓰기 / 전사: Web Speech API / SpeechRecognition\n- 편집기 오디오 녹음: MediaRecorder + getUserMedia\n- PWA 모드 / 오프라인 사용: Service Worker + 브라우저 저장소\n\n브라우저와 플랫폼에 따라 음성 인식은 플랫폼의 인식 서비스를 사용할 수도\n있고, 해당 기능이 있으면 로컬에서 실행될 수도 있습니다.\n\n따라서 이 버전에는 추가로 재배포되는 서드파티 라이선스를 여기 포함하지\n않습니다.\n\n앞으로 Whisper, Vosk, ONNX Runtime Web, ffmpeg.wasm 등의 라이브러리나\n모델을 앱에 통합하여 재배포하게 되면, 이 패널에 저작권 고지와 라이선스\n전문을 추가하겠습니다.",
+  "actions.cancel": "취소",
+  "dictation.status.notSupported": "이 브라우저에서는 받아쓰기를 지원하지 않습니다",
+  "dictation.status.notSupportedShort": "지원되지 않음",
+  "dictation.status.listening": "음성 입력 중",
+  "dictation.status.error": "받아쓰기 오류",
+  "dictation.status.idle": "대기 중",
+  "msg.micDenied": "마이크에 접근할 수 없습니다",
+  "p4.pickModel": "모델 선택",
+  "p4.pickAudio": "오디오 선택",
+  "p4.modelHint": ".bin / ggml 형식의 호환 Whisper 모델을 사용하세요.",
+  "p4.audioHint": "브라우저가 로컬에서 열 수 있는 오디오 형식을 지원합니다.",
+  "p4.noFileSelected": "선택된 파일 없음",
+  "p4.status.idle": "완전한 오프라인 전사를 시작할 준비가 되었습니다.",
+  "p4.status.needFiles": "로컬 모델과 오디오 파일을 선택하세요.",
+  "p4.status.preparing": "로컬 오프라인 엔진을 준비하는 중…",
+  "p4.status.running": "오프라인으로 전사 중… 이 과정은 다소 시간이 걸릴 수 있습니다.",
+  "p4.status.done": "오프라인 전사가 완료되어 「텍스트」에 삽입되었습니다.",
+  "p4.status.empty": "오디오에서 텍스트를 얻지 못했습니다.",
+  "p4.status.error": "오프라인 전사를 완료하지 못했습니다.",
+  "p4.status.errorShort": "오프라인으로 전사할 수 없습니다.",
+  "p4.status.canceling": "오프라인 전사를 취소하는 중…",
+  "p4.status.canceled": "전사가 취소되었습니다.",
+  "p4.status.reload": "로컬 오프라인 엔진을 활성화하려면 앱을 한 번 새로고침하세요. 계속 같은 경우 설치된 PWA 또는 격리된 안전한 호스팅을 사용하세요.",
+  "p4.inserted": "전사가 「텍스트」에 삽입되었습니다.",
+  "privacyPanelBody": "GUI-on은 주로 이 브라우저와 이 기기에서 로컬로 실행됩니다. 작성, 편집, 장면 정리, 미리보기 또는 내보내기를 위해 계정을 만들거나 대본을 앱 전용 서버에 업로드할 필요가 없습니다.\n\n기기에 로컬로 저장될 수 있는 항목:\n• 메타데이터, 등장인물, 장면, 대본 요소, 내보내기 설정 등의 프로젝트 콘텐츠;\n• 테마, 언어, 저장된 템플릿 등의 사용 환경 설정;\n• GUI-on을 오프라인으로 열기 위해 필요한 PWA 캐시 리소스.\n\n알아두면 좋은 브라우저 기능:\n• 실시간 음성 입력은 브라우저 또는 운영체제에서 제공하는 음성 인식 API를 사용합니다. 플랫폼에 따라 이 서비스는 로컬에서 동작할 수도 있고 브라우저 제공업체의 인프라를 사용할 수도 있습니다;\n• 로컬 모델을 사용하는 100% 오프라인 전사는 오디오와 모델을 모두 기기에서 직접 처리합니다;\n• 전사, 가져오기 또는 내보내기를 위해 직접 업로드한 파일은 사용 세션 내에서 클라이언트 측에서 처리됩니다.\n\n제어 및 삭제:\n원할 때 언제든지 프로젝트를 삭제하고, 템플릿을 정리하고, 브라우저에서 사이트 데이터를 삭제할 수 있습니다. PWA를 제거하고 사이트 데이터를 삭제하면 관련 로컬 캐시도 함께 삭제됩니다.\n\n쿠키 및 추적:\nGUI-on에는 광고 쿠키나 자체 추적 분석 기능이 포함되어 있지 않습니다.\n\n중요:\n브라우저나 운영체제의 자체 통합 서비스를 사용하는 기능 — 예를 들어 일부 브라우저의 음성 인식 — 을 사용할 경우, 해당 제공업체의 개인정보 처리방침과 이용 약관도 함께 적용됩니다."
+}

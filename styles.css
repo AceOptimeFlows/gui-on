@@ -1,0 +1,1602 @@
+/* ===========================
+   GUI‑on · Estilos base + 8 temas + 3D glossy
+   =========================== */
+:root{
+  --bg: #0b0d12;
+  --panel: #0f1321cc;
+  --ink: #e5f2ff;
+  --muted: #9fb4ca;
+  --primary: #0ea5e9;
+  --accent: #22d3ee;
+  --danger: #ef4444;
+  --ghost: #1f2942a6;
+  --field: #121935cc;
+  --border: #24304f;
+  --radius: 16px;
+  --space: 14px;
+  --input-h: 44px;
+
+  /* Layout “shell” (centrado, estrecho y premium) */
+  --shell-w: 980px;           /* ancho máximo del contenido (steps + panels) */
+  --shell-side: 94%;          /* ancho relativo en móvil */
+
+  /* ✅ Reserva para que el footer fijo no tape contenido (ajustado al footer tipo NoEstásSolo) */
+  --footer-space: 72px;
+
+  /* Glass más profundo para todo lo que use backdrop-filter */
+  --glass: blur(16px) saturate(1.22);
+  /* Glow 3D común */
+  --glow:
+    0 14px 35px rgba(0,0,0,.6),
+    0 0 0 1px rgba(255,255,255,.03),
+    inset 0 1px 0 rgba(255,255,255,.14);
+  /* Fondo base glassy para paneles (depende de cada tema) */
+  --panel-glass:
+    linear-gradient(135deg,
+      color-mix(in oklab, var(--panel) 88%, #ffffff 12%),
+      color-mix(in oklab, var(--panel) 70%, #000000 30%)
+    );
+}
+
+
+/* Temas (8) – override de variables (más contraste) */
+body.theme-abyss{
+  --bg:#020617;
+  --panel:#020617f2;
+  --ink:#e5f2ff;
+  --muted:#94a3b8;
+  --primary:#0ea5e9;
+  --accent:#22d3ee;
+  --ghost:#020617e6;
+  --border:#1e293b;
+  --field:#020617f2;
+}
+body.theme-dawn{
+  --bg:#1b0a02;
+  --panel:#2b0b05f0;
+  --ink:#ffedd5;
+  --muted:#fed7aa;
+  --primary:#fb923c;
+  --accent:#fed7aa;
+  --ghost:#2b0b05e6;
+  --border:#7c2d12;
+  --field:#2b0b05f0;
+}
+body.theme-matrix{
+  --bg:#02130a;
+  --panel:#032517f0;
+  --ink:#d1fae5;
+  --muted:#6ee7b7;
+  --primary:#22c55e;
+  --accent:#4ade80;
+  --ghost:#022c22e6;
+  --border:#14532d;
+  --field:#032517f0;
+}
+body.theme-rose{
+  --bg:#130114;
+  --panel:#26021ff0;
+  --ink:#ffe4f7;
+  --muted:#f9a8d4;
+  --primary:#ec4899;
+  --accent:#f973b3;
+  --ghost:#2b0633e6;
+  --border:#9d174d;
+  --field:#26021ff0;
+}
+body.theme-paper{
+  --bg:#f9fafb;
+  --panel:#ffffffee;
+  --ink:#111827;
+  --muted:#4b5563;
+  --primary:#111827;
+  --accent:#374151;
+  --ghost:#e5e7eb;
+  --border:#d1d5db;
+  --field:#ffffff;
+}
+body.theme-grape{
+  --bg:#050114;
+  --panel:#1a1032f0;
+  --ink:#ede9fe;
+  --muted:#c4b5fd;
+  --primary:#7c3aed;
+  --accent:#a855f7;
+  --ghost:#1e1037e6;
+  --border:#4c1d95;
+  --field:#1a1032f0;
+}
+body.theme-copper{
+  --bg:#120806;
+  --panel:#2f1510f0;
+  --ink:#ffedd5;
+  --muted:#fed7aa;
+  --primary:#f97316;
+  --accent:#f59e0b;
+  --ghost:#2f1510e6;
+  --border:#92400e;
+  --field:#2f1510f0;
+}
+body.theme-ocean{
+  --bg:#020617;
+  --panel:#011627f0;
+  --ink:#e0f2fe;
+  --muted:#7dd3fc;
+  --primary:#06b6d4;
+  --accent:#22d3ee;
+  --ghost:#01111fe6;
+  --border:#0e7490;
+  --field:#011627f0;
+}
+
+
+/* Reset básico */
+*{box-sizing:border-box}
+html,body{
+  margin:0;
+  padding:0;
+  overflow-x:hidden;
+  background:var(--bg);
+  color:var(--ink);
+  font:16px/1.45 system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Arial,"Noto Sans","Helvetica Neue",sans-serif
+}
+
+
+/* ===== BRAND HEADER ===== */
+.brand-header{
+  position: sticky;
+  top: 0;
+  z-index: 40;
+
+  /* mismo tamaño compacto (y safe-area iOS) */
+  padding: 6px 14px;
+  padding-top: calc(6px + env(safe-area-inset-top));
+
+  background:
+    radial-gradient(circle at 0 0, color-mix(in oklab, var(--accent) 18%, transparent), transparent 60%),
+    linear-gradient(180deg, color-mix(in oklab, var(--primary) 32%, rgba(0,0,0,.85)), rgba(0,0,0,0)),
+    var(--bg);
+  backdrop-filter: var(--glass);
+  border-bottom: 1px solid color-mix(in oklab, var(--primary) 40%, var(--border));
+}
+
+/* Bloque de marca ajustado */
+.brand{
+  display:flex;
+  align-items:center;
+  gap:8px;
+  position:relative;
+  min-height:40px;
+  font-weight:700;
+  letter-spacing:.2px;
+}
+
+.brand-logo-link{
+  display:inline-grid;
+  place-items:center;
+  flex-shrink:0;
+  line-height:0;
+  border-radius:12px;
+  text-decoration:none;
+}
+
+.brand-logo-link:focus-visible{
+  outline:2px solid color-mix(in oklab, var(--primary) 72%, white);
+  outline-offset:3px;
+}
+
+/* Tamaño del logo */
+.brand-logo{
+  display:block;
+  height:clamp(32px, 5vw, 48px);
+  width:clamp(32px, 5vw, 48px);
+  object-fit: contain;
+  transition:transform .18s ease, filter .18s ease;
+}
+
+.brand-logo-link:hover .brand-logo,
+.brand-logo-link:focus-visible .brand-logo{
+  transform:scale(1.03);
+}
+.brand-logo.heat{
+  filter:
+    url(#heat-waves)
+    drop-shadow(0 0 6px rgba(255,255,255,.35))
+    drop-shadow(0 0 16px rgba(34,211,238,.35));
+}
+
+/* Palabra OptimeFlow(s) */
+.brand-word{
+  font-weight:800;
+  font-size:clamp(1.1rem, 2.3vw, 1.6rem);
+  letter-spacing:.2px;
+}
+
+.brand-neon{
+  font-size:2.1rem;
+  color:#000;
+  animation:hue 12s linear infinite, glow 3.2s ease-in-out infinite;
+}
+@keyframes hue{from{filter:hue-rotate(0)}to{filter:hue-rotate(360deg)}}
+@keyframes glow{
+  0%,100%{text-shadow:0 0 6px rgba(255,255,255,.25),0 0 14px rgba(34,211,238,.55)}
+  50%{text-shadow:0 0 10px rgba(255,255,255,.5),0 0 24px rgba(167,139,250,.7)}
+}
+
+/* Tagline centrado (desktop) */
+.tagline{
+  position:absolute;
+  left:50%;
+  top:50%;
+  transform:translate(-50%,-50%);
+  display:flex;
+  align-items:center;
+  gap:4px;
+  white-space:nowrap;
+  pointer-events:none;
+}
+
+/* Glifos GUI‑on */
+.glyph{ display:inline-block; line-height:1; transform-origin:center bottom; }
+
+.orb-blue{
+  font-weight:900;
+  font-size:1.4rem;
+  color:#bfe5ff;
+  text-shadow: 0 0 8px rgba(180,215,255,.9), 0 0 22px rgba(80,160,255,.85), 0 0 40px rgba(40,120,255,.7);
+}
+.sun-i{
+  font-weight:900;
+  font-size:1.6rem;
+  color:#ffffff;
+  text-shadow:0 0 8px rgba(255,255,255,0.7),0 0 22px rgba(255,255,255,0.55),0 0 40px rgba(207,229,248,0.5);
+}
+.dash-plasma{
+  font-weight:900;
+  font-size:1.5rem;
+  color:#ffc36b;
+  text-shadow: 0 0 8px rgba(255,190,120,.95), 0 0 24px rgba(255,100,0,.8), 0 0 40px rgba(255,80,0,.6);
+  animation: tiltZ 6s ease-in-out infinite alternate;
+}
+.rotate-z{ animation:tiltZ 5s ease-in-out infinite alternate; }
+@keyframes tiltZ{from{transform:rotate(-6deg)}to{transform:rotate(6deg)}}
+.brand-subtitle{ margin: 6px 0 0; color: var(--muted); }
+
+/* Botón ajustes compacto */
+.settings-btn{
+  margin-left:auto;
+  height:32px;
+  width:32px;
+  padding:0;
+  border-radius:999px;
+  border:1px solid var(--border);
+  background:var(--ghost);
+  display:grid;
+  place-items:center;
+  cursor:pointer;
+  box-shadow:var(--glow);
+  transition:border-color .18s ease, transform .15s ease;
+}
+
+.settings-btn:hover{
+  border-color:var(--primary);
+  transform:translateY(-1px);
+}
+
+.settings-gear{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  width:100%;
+  height:100%;
+  margin:0;
+  font-size:1.1rem;
+  line-height:1;
+  transform:none;
+  font-family:"Apple Color Emoji","Segoe UI Emoji","Noto Color Emoji",sans-serif;
+  filter:
+    drop-shadow(0 0 4px rgba(255,255,255,.4))
+    drop-shadow(0 0 10px rgba(34,211,238,.4));
+}
+
+
+/* Panel de ajustes desplegable */
+.settings-panel{
+  position:absolute;
+  right:16px;
+  top:100%;
+  margin-top:8px;
+  width:min(320px, 94vw);
+  padding:12px;
+  border-radius:12px;
+  border:1px solid var(--border);
+  background:var(--panel);
+  box-shadow:var(--glow);
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+  opacity:0;
+  transform:translateY(6px);
+  pointer-events:none;
+  transition:opacity .18s ease, transform .18s ease;
+  z-index:45;
+}
+
+.settings-panel.open{
+  opacity:1;
+  transform:translateY(0);
+  pointer-events:auto;
+}
+
+.settings-row{
+  display:flex;
+  flex-direction:column;
+  gap:6px;
+}
+
+.settings-row label{
+  font-weight:700;
+  color:var(--muted);
+  font-size:.85rem;
+}
+
+.settings-panel select{
+  height:36px;
+  border-radius:10px;
+  border:1px solid var(--border);
+  background:var(--field);
+  color:var(--ink);
+  padding:0 10px;
+  font-weight:700;
+}
+
+.settings-install{
+  border-top:1px solid var(--border);
+  padding-top:8px;
+  align-items:flex-start;
+  gap:8px;
+}
+
+.settings-status{
+  font-size:.8rem;
+  color:var(--muted);
+}
+
+
+/* ===== Steps (pestañas) — AHORA 2 COLUMNAS ===== */
+.steps{
+  width: min(var(--shell-w), var(--shell-side));
+  margin: 10px auto 0;
+  padding: 0 0 12px;
+
+  display:grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap:10px;
+}
+
+/* Si queda impar (5 pasos), el último ocupa toda la fila */
+.steps .step-btn:last-child:nth-child(odd){
+  grid-column: 1 / -1;
+}
+
+.step-btn{
+  width:100%;
+  height:auto;             /* clave: permite 2 líneas */
+  min-height:44px;         /* mantiene tamaño táctil */
+  padding:10px 12px;
+
+  border:1px solid color-mix(in oklab, var(--primary) 40%, var(--border));
+  border-radius:12px;
+
+  /* ✅ mismo vibe cromático del header (ya no negro) */
+  background:
+    radial-gradient(circle at 0 0,
+      color-mix(in oklab, var(--accent) 18%, transparent),
+      transparent 62%),
+    linear-gradient(180deg,
+      color-mix(in oklab, var(--primary) 30%, var(--bg)),
+      color-mix(in oklab, var(--primary) 12%, var(--bg)));
+
+  color:var(--ink);
+  cursor:pointer;
+  transition:filter .2s ease, border-color .2s ease, box-shadow .2s ease;
+  font-weight:800;
+
+  box-shadow: var(--glow);
+
+  white-space:normal;
+  text-align:center;
+  line-height:1.25;
+  min-width:0;
+  overflow-wrap:break-word;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.step-btn:hover{
+  border-color:var(--primary);
+  filter:brightness(1.06);
+}
+.step-btn.active{
+  border-color:var(--primary);
+  background:
+    radial-gradient(circle at 0 0,
+      color-mix(in oklab, var(--accent) 22%, transparent),
+      transparent 62%),
+    linear-gradient(180deg,
+      color-mix(in oklab, var(--primary) 42%, var(--bg)),
+      color-mix(in oklab, var(--primary) 18%, var(--bg)));
+  box-shadow:
+    0 0 0 2px color-mix(in oklab, var(--primary) 30%, transparent),
+    var(--glow);
+}
+
+
+/* ===== Panels — más estrechos y centrados ===== */
+.panels{
+  width: min(var(--shell-w), var(--shell-side));
+  margin: 0 auto;
+
+  /* Reserva para footer fijo + safe-area */
+  padding: 0 0 calc(var(--footer-space) + env(safe-area-inset-bottom));
+}
+
+/* Tarjetas glassy 3D para TODOS los paneles */
+.panel{
+  display:none;
+  position:relative;
+  border-radius:22px;
+  overflow:hidden;
+
+  width: 100%;
+  margin: 0 auto 14px;
+
+  background:
+    radial-gradient(circle at 0 0, rgba(255,255,255,.06), transparent 55%),
+    radial-gradient(circle at 100% 100%, rgba(0,0,0,.45), transparent 55%),
+    color-mix(in oklab, var(--panel) 82%, #000 18%);
+  border:1px solid color-mix(in oklab, var(--border) 80%, #fff 20%);
+  box-shadow:
+    0 26px 60px rgba(0,0,0,.75),
+    0 0 0 1px rgba(255,255,255,.04),
+    inset 0 1px 0 rgba(255,255,255,.06),
+    inset 0 -1px 0 rgba(0,0,0,.5);
+  backdrop-filter: var(--glass);
+  -webkit-backdrop-filter: var(--glass);
+  transition:
+    box-shadow .22s ease,
+    border-color .22s ease,
+    background .22s ease;
+}
+
+/* ✅ ACTIVO SIN “LEVITAR” */
+.panel.active{
+  display:block;
+  transform:none;
+  box-shadow:
+    0 32px 80px rgba(0,0,0,.85),
+    0 0 0 1px color-mix(in oklab, var(--accent) 40%, rgba(255,255,255,.04)),
+    inset 0 1px 0 rgba(255,255,255,.10),
+    inset 0 -1px 0 rgba(0,0,0,.7);
+}
+
+/* ✅ Sin efecto hover “flotante” (no cambia transform ni sombra) */
+@media (hover:hover){
+  .panel.active:hover{
+    transform:none;
+    box-shadow:
+      0 32px 80px rgba(0,0,0,.85),
+      0 0 0 1px color-mix(in oklab, var(--accent) 40%, rgba(255,255,255,.04)),
+      inset 0 1px 0 rgba(255,255,255,.10),
+      inset 0 -1px 0 rgba(0,0,0,.7);
+  }
+}
+
+.panel-inner{
+  padding:20px 18px 22px;
+  position:relative;
+  z-index:1;
+}
+
+.twocol{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.col{display:flex;flex-direction:column;gap:12px}
+.field{display:flex;flex-direction:column;gap:8px}
+.field.inline{flex-direction:row;align-items:center;gap:10px}
+.field label{color:var(--muted);font-weight:700}
+.field input[type="text"],
+.field input[type="email"],
+.field input[type="number"],
+.field input[type="date"],
+.field input[type="file"],
+.field select{
+  width:100%; height:var(--input-h); background:var(--field); border:1px solid var(--border); color:var(--ink); border-radius:12px; padding:0 12px; outline:none;
+}
+.field textarea{
+  width:100%; background:var(--field); border:1px solid var(--border); color:var(--ink); border-radius:12px; padding:12px; resize:vertical; min-height:110px;
+}
+.row-split{display:grid;grid-template-columns:1fr auto;gap:8px}
+
+/* ✅ NUEVO: split/half para Panel 2 (desktop 2 columnas, móvil 1) */
+.split{ display:grid; grid-template-columns: 1fr 1fr; gap:16px; }
+.half{ display:flex; flex-direction:column; gap:12px; }
+
+/* Panel 1 — Tipo de guion + plantillas unificadas */
+.row-type-line{
+  display:grid;
+  grid-template-columns:minmax(0, 1fr);
+  gap:8px;
+  align-items:stretch;
+}
+.row-type-line > *{ min-width:0; }
+.tpl-actions-main{
+  display:grid;
+  grid-template-columns:repeat(2, minmax(0, 1fr));
+  gap:8px;
+  align-items:stretch;
+}
+.tpl-actions-main button,
+.tpl-new button{
+  width:100%;
+  height:var(--input-h);
+}
+.tpl-new{
+  display:grid;
+  grid-template-columns:minmax(0, 1fr) auto;
+  gap:8px;
+  align-items:stretch;
+  min-width:0;
+}
+#tplName{
+  height:var(--input-h);
+  border:1px solid var(--border); border-radius:12px;
+  background:var(--field); color:var(--ink); padding:0 12px; width:100%; min-width:0;
+}
+
+/* Voice controls */
+.field-head{ display:flex; align-items:center; justify-content:space-between; gap:10px; }
+.voice-controls{ display:flex; align-items:center; gap:8px; }
+.btn-icon{
+  width:36px; height:36px; display:grid; place-items:center;
+  border-radius:999px; border:1px solid var(--border); background:var(--ghost); color:var(--ink);
+  font-size:18px; line-height:1; padding:0;
+}
+
+.btn-icon:disabled{ opacity:.55; cursor:not-allowed; }
+.voice-indicator{
+  width:12px; height:12px; border-radius:999px;
+  background: var(--muted);
+  border: 2px solid rgba(0,0,0,.25);
+  box-shadow: 0 0 0 0 rgba(34,197,94,0);
+}
+.voice-indicator[data-state="listening"]{
+  background:#22c55e;
+  box-shadow:0 0 0 0 rgba(34,197,94,.6);
+  animation: pulse-voice 1.2s ease-out infinite;
+}
+@keyframes pulse-voice{
+  0%{ box-shadow:0 0 0 0 rgba(34,197,94,.6);}
+  70%{ box-shadow:0 0 0 8px rgba(34,197,94,0);}
+  100%{ box-shadow:0 0 0 0 rgba(34,197,94,0);}
+}
+
+/* Panel 2 lists */
+.list{ list-style:none; margin:8px 0 0; padding:0; display:flex; flex-direction:column; gap:8px; }
+.list li{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:10px;
+  background:
+    linear-gradient(145deg,
+      color-mix(in oklab, var(--panel) 82%, #000 18%),
+      color-mix(in oklab, var(--panel) 65%, #000 35%));
+  border-radius:14px;
+  border:1px solid color-mix(in oklab, var(--border) 80%, #fff 20%);
+  padding:8px 12px;
+  box-shadow:
+    0 14px 32px rgba(0,0,0,.6),
+    inset 0 1px 0 rgba(255,255,255,.07),
+    inset 0 -1px 0 rgba(0,0,0,.4);
+  backdrop-filter: var(--glass);
+  -webkit-backdrop-filter: var(--glass);
+}
+
+.list .tag{ opacity:.85; font-weight:800; color:var(--muted) }
+
+/* Panel 3 editor */
+.dictation-inline{ display:grid; grid-template-columns:1fr auto auto; gap:8px; align-items:center }
+.mini-panel{
+  margin-top:10px;
+  padding:12px;
+  border-radius:16px;
+  background:
+    radial-gradient(circle at 0 0, rgba(255,255,255,.06), transparent 55%),
+    color-mix(in oklab, var(--panel) 85%, #000 15%);
+  border:1px solid color-mix(in oklab, var(--border) 80%, #fff 20%);
+  box-shadow:
+    0 18px 40px rgba(0,0,0,.7),
+    inset 0 1px 0 rgba(255,255,255,.08),
+    inset 0 -1px 0 rgba(0,0,0,.5);
+  backdrop-filter: var(--glass);
+  -webkit-backdrop-filter: var(--glass);
+}
+
+#offlineMini{
+  grid-column:1 / -1;
+  width:100%;
+  min-width:0;
+}
+
+.mini-panel-head{
+  display:flex;
+  align-items:flex-start;
+  justify-content:space-between;
+  gap:12px;
+  margin-bottom:12px;
+}
+
+.mini-panel-copy{
+  min-width:0;
+  display:flex;
+  flex-direction:column;
+  gap:6px;
+}
+
+.mini-panel-title{
+  margin:0;
+  font-size:1rem;
+}
+
+.mini-panel-note{
+  margin:0;
+  color:var(--muted);
+  line-height:1.4;
+}
+
+.offline-grid{
+  display:grid;
+  grid-template-columns:repeat(2, minmax(0, 1fr));
+  gap:12px;
+}
+
+.offline-field{
+  display:flex;
+  flex-direction:column;
+  gap:8px;
+  min-width:0;
+}
+
+.offline-picker{
+  display:grid;
+  grid-template-columns:auto minmax(0, 1fr);
+  gap:8px;
+  align-items:center;
+  min-width:0;
+}
+
+.offline-file-input{
+  position:absolute;
+  width:1px;
+  height:1px;
+  padding:0;
+  margin:-1px;
+  overflow:hidden;
+  clip:rect(0, 0, 0, 0);
+  white-space:nowrap;
+  border:0;
+}
+
+.offline-file-name{
+  min-height:var(--input-h);
+  display:flex;
+  align-items:center;
+  padding:0 12px;
+  border-radius:12px;
+  border:1px solid var(--border);
+  background:var(--field);
+  color:var(--ink);
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap;
+}
+
+.offline-file-name[data-empty="1"]{
+  color:var(--muted);
+}
+
+.offline-hint{
+  color:var(--muted);
+  font-size:.88rem;
+  line-height:1.35;
+}
+
+.offline-status{
+  margin-top:12px;
+  padding:10px 12px;
+  border-radius:12px;
+  border:1px solid var(--border);
+  background:color-mix(in oklab, var(--field) 90%, #000 10%);
+  line-height:1.4;
+}
+
+.offline-status[data-state="success"]{
+  border-color:color-mix(in oklab, #22c55e 60%, var(--border));
+}
+
+.offline-status[data-state="warning"]{
+  border-color:color-mix(in oklab, #f59e0b 60%, var(--border));
+}
+
+.offline-status[data-state="danger"]{
+  border-color:color-mix(in oklab, #ef4444 60%, var(--border));
+}
+
+.offline-actions{
+  display:flex;
+  gap:10px;
+  flex-wrap:wrap;
+  margin-top:12px;
+}
+
+.offline-actions button{
+  min-width:180px;
+}
+
+.content-controls{ display:grid; grid-template-columns:repeat(3,1fr); gap:16px; align-items:end }
+
+.field.wide{grid-column:1 / -1}
+.actions{display:grid;grid-template-columns:repeat(4,minmax(160px,1fr));gap:10px;margin-top:10px;align-items:stretch}
+.actions select{height:44px;border-radius:12px;border:1px solid var(--border);background:var(--field);color:var(--ink);padding:0 10px;font-weight:800}
+.actions button{
+  min-width:0;
+  min-height:44px;
+  height:auto;
+  padding:10px 14px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  line-height:1.25;
+  overflow-wrap:anywhere;
+}
+#presetSelect{grid-column:auto;min-width:0}
+
+
+button{height:44px;border-radius:12px;border:1px solid var(--border);background:var(--ghost);color:var(--ink);cursor:pointer;padding:0 14px;font-weight:800;box-shadow: var(--glow)}
+button{
+  white-space: normal;
+  word-break: break-word;
+}
+
+button.primary{background:linear-gradient(180deg, color-mix(in oklab, var(--primary) 85%, #000 15%), color-mix(in oklab, var(--primary) 60%, #000 40%));border-color:color-mix(in oklab, var(--primary) 80%, #000 20%)}
+button.danger{background:linear-gradient(180deg,#ef4444,#b91c1c);border-color:#b91c1c}
+button.ghost{background:var(--ghost)}
+button:disabled{opacity:.6;cursor:not-allowed}
+
+/* ✅ Enlaces tipo botón: sin subrayado */
+a.btn{
+  text-decoration:none;
+  color:inherit;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+}
+a.btn:hover,
+a.btn:focus-visible{
+  text-decoration:none;
+}
+
+.elements{ margin-top:16px; display:flex; flex-direction:column; gap:10px; }
+.elem-card{
+  border-radius:16px;
+  padding:10px 12px;
+  background:
+    linear-gradient(145deg,
+      color-mix(in oklab, var(--panel) 82%, #000 18%),
+      color-mix(in oklab, var(--panel) 60%, #000 40%));
+  border:1px solid color-mix(in oklab, var(--border) 80%, #fff 20%);
+  box-shadow:
+    0 18px 40px rgba(0,0,0,.75),
+    inset 0 1px 0 rgba(255,255,255,.08),
+    inset 0 -1px 0 rgba(0,0,0,.55);
+  backdrop-filter: var(--glass);
+  -webkit-backdrop-filter: var(--glass);
+  display:grid;
+  grid-template-columns: 140px 1fr auto;
+  gap:10px;
+  align-items:start;
+}
+
+.elem-card .type{ font-weight:800; color:var(--muted) }
+.elem-card .text{ white-space:pre-wrap }
+.elem-card .tools{ display:flex; gap:6px }
+.elem-card .tools button{ height:36px }
+/* Element-card · campo Interlineado + panel Formato */
+.elem-card .gap{display:flex;align-items:center;gap:6px;margin-right:8px}
+.elem-card .gap label{font-weight:800;color:var(--muted);font-size:.9rem}
+.elem-card .gap input{
+  width:72px;height:36px;background:var(--field);border:1px solid var(--border);
+  color:var(--ink);border-radius:8px;padding:0 8px
+}
+/* Audio UI en tarjetas */
+.audio-ind{
+  width:12px; height:12px; border-radius:3px;
+  border:1px solid var(--border); background:#000;
+  box-shadow: inset 0 0 2px rgba(0,0,0,.6);
+}
+.audio-ind.on{
+  background:#3b82f6;
+  box-shadow:0 0 8px rgba(59,130,246,.6), inset 0 0 2px rgba(0,0,0,.6);
+}
+.tools .btn-mic{ width:36px; height:36px; display:grid; place-items:center; border-radius:8px; }
+.tools .mute-wrap{ display:flex; align-items:center; gap:6px; padding:0 2px; }
+.audio-box audio{ width:100%; margin:10px 0; }
+
+.format-panel{margin-top:12px;padding:12px;border:1px solid var(--border);border-radius:12px;background:var(--panel);box-shadow:var(--glow)}
+#fmtPanel{ margin-top:12px; }
+@media (max-width: 720px){
+  #fmtPanel{ overflow:auto; max-height: 60vh; }
+}
+
+.format-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}
+.format-card{
+  border-radius:14px;
+  padding:10px 12px;
+  background:
+    linear-gradient(145deg,
+      color-mix(in oklab, var(--panel) 80%, #000 20%),
+      color-mix(in oklab, var(--panel) 62%, #000 38%));
+  border:1px solid color-mix(in oklab, var(--border) 78%, #fff 22%);
+  box-shadow:
+    0 14px 32px rgba(0,0,0,.6),
+    inset 0 1px 0 rgba(255,255,255,.06),
+    inset 0 -1px 0 rgba(0,0,0,.45);
+  backdrop-filter: var(--glass);
+  -webkit-backdrop-filter: var(--glass);
+}
+
+.format-card h4{margin:0 0 8px 0;color:var(--muted)}
+.format-card .row{display:grid;grid-template-columns:1fr 1fr;gap:8px;align-items:center}
+.format-card input[type="number"], .format-card select, .format-card input[type="color"]{
+  height:36px;border:1px solid var(--border);background:var(--field);color:var(--ink);border-radius:8px;padding:0 8px
+}
+.format-card .toggles{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.format-toggle{height:32px;border-radius:8px;border:1px solid var(--border);background:var(--ghost);padding:0 8px;font-weight:800}
+
+/* Export */
+.export-grid{display:grid;grid-template-columns:1fr 1.5fr 1fr 1fr;gap:16px;align-items:end}
+/* Export · opciones apiladas (PC) */
+.field .option{ display:flex; align-items:center; gap:8px; }
+/* Export · panel 5 centrado y ajustado al contenido en desktop */
+#panel5 .panel-inner{ max-width: 720px; margin: 0 auto; }
+/* Fuerza 1 columna en Exportar (solo panel 5, PC) */
+#panel5 .export-grid{ grid-template-columns: 1fr; }
+
+/* Export · editor de márgenes compacto */
+.margin-editor .row-line{
+  display:grid; grid-template-columns: 1fr 1fr 1fr; gap:10px; align-items:end;
+}
+.margin-editor .value-wrap{ display:flex; flex-direction:column; gap:8px; }
+.margin-editor .hf-wrap{ display:flex; flex-direction:column; gap:8px; }
+/* Colocamos los dos títulos en la misma fila */
+.margin-editor .row-line.row-line--2{ grid-template-columns: 1fr 1fr; align-items:start; }
+.margin-editor .marg-wrap{ display:flex; flex-direction:column; gap:8px; }
+.margin-editor .marg-wrap .inner{ display:grid; grid-template-columns: 1fr 1fr; gap:10px; align-items:end; }
+
+
+/* =========================================================
+   ✅ FOOTER — Layout y tamaños como “NoEstásSolo”
+   - Desktop/Tablet: flex + centro absoluto
+   - Móvil portrait: grid 1fr auto 1fr + botones en columna
+   - Icono: clamp(20..28) en desktop / clamp(40..56) en móvil portrait
+   ========================================================= */
+.brand-footer{
+  background:
+    radial-gradient(circle at 0% 100%, color-mix(in oklab, var(--muted) 22%, transparent), transparent 55%),
+    radial-gradient(circle at 100% 100%, color-mix(in oklab, var(--accent) 18%, transparent), transparent 55%),
+    linear-gradient(0deg,
+      color-mix(in oklab, var(--panel) 92%, var(--bg) 8%),
+      color-mix(in oklab, var(--panel) 72%, var(--bg) 28%));
+  border-top: 1px solid var(--border);
+
+  padding: 6px 16px;
+  padding-bottom: calc(6px + env(safe-area-inset-bottom));
+
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:8px;
+
+  color:var(--muted);
+  box-shadow:0 -18px 40px rgba(0,0,0,.8);
+
+  position:fixed;
+  left:0;
+  right:0;
+  bottom:0;
+  z-index:40;
+
+  backdrop-filter:var(--glass);
+  -webkit-backdrop-filter:var(--glass);
+}
+
+.brand-footer strong{
+  color:var(--ink);
+}
+
+.brand-footer .sep{
+  opacity:.6;
+}
+
+/* ✅ Quitar subrayado a enlaces del footer (COF/Privacidad/Icono) */
+.brand-footer a{
+  text-decoration:none;
+}
+
+/* Bloque izquierdo: 2 líneas */
+.footer-left{
+  display:flex;
+  flex-direction:column;
+  gap:2px;
+  font-size:0.8rem;
+  line-height:1.18;
+  min-width:0;
+}
+
+.footer-author-link{
+  color:#c79a2b;
+  font-weight:800;
+  text-decoration:none;
+  transition:color .14s ease, text-shadow .14s ease, filter .14s ease;
+}
+
+.footer-author-link:hover,
+.footer-author-link:focus-visible{
+  color:#e0b547;
+  text-shadow:0 0 10px rgba(199,154,43,.35);
+  filter:brightness(1.05);
+  outline:none;
+}
+
+body.theme-paper .footer-author-link{
+  color:#8a5b00;
+}
+
+body.theme-paper .footer-author-link:hover,
+body.theme-paper .footer-author-link:focus-visible{
+  color:#aa6f00;
+  text-shadow:none;
+}
+
+/* Centro absoluto (desktop/tablet) */
+.footer-center{
+  position:absolute;
+  left:50%;
+  top:50%;
+  transform:translate(-50%,-50%);
+}
+
+/* Derecha: botones inline */
+.footer-right{
+  display:flex;
+  align-items:center;
+  gap: clamp(10px, 2.5vw, 24px);
+}
+
+/* Botones del footer: compactos como NoEstásSolo */
+.brand-footer .btn.ghost{
+  background: var(--ghost);
+  border:1px solid var(--border);
+  color:var(--ink);
+
+  height:28px;
+  border-radius:7px;
+  padding:0 10px;
+  font-weight:800;
+
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+
+  box-shadow: var(--glow);
+}
+
+/* Botón/Link del icono central: look tipo “footer-logo-btn” */
+.app-icon-link{
+  display:inline-grid;
+  place-items:center;
+
+  padding:0;
+  border-radius:14px;
+  border:1px solid color-mix(in oklab, var(--primary) 22%, transparent);
+
+  background:
+    radial-gradient(circle at 20% 0%, rgba(255,255,255,0.16), transparent 55%),
+    linear-gradient(145deg,
+      color-mix(in oklab, var(--panel) 96%, #000 4%),
+      color-mix(in oklab, var(--panel) 82%, #000 18%));
+
+  cursor:pointer;
+
+  transition:
+    box-shadow .14s ease,
+    transform .08s ease,
+    filter .14s ease,
+    border-color .12s ease,
+    background-color .12s ease;
+
+  /* 🔥 (CAMBIO) halo suave ya en reposo, usando el color del tema */
+  box-shadow:
+    0 10px 30px rgba(0,0,0,0.85),
+    0 0 22px color-mix(in oklab, var(--primary) 26%, transparent),
+    inset 0 1px 0 rgba(255,255,255,0.08);
+
+  /* 🔥 (CAMBIO) pseudo-elemento para “aura” (no depende de hover) */
+  position:relative;
+  isolation:isolate;
+}
+
+.app-icon-link::before{
+  content:"";
+  position:absolute;
+  inset:-16px;
+  border-radius:18px;
+  pointer-events:none;
+  z-index:-1;
+
+  background:
+    radial-gradient(circle at 50% 60%,
+      color-mix(in oklab, var(--primary) 68%, transparent),
+      transparent 70%),
+    radial-gradient(circle at 20% 25%,
+      color-mix(in oklab, var(--accent) 52%, transparent),
+      transparent 72%);
+
+  filter: blur(14px);
+  opacity:.55;
+  transform:scale(.92);
+  transition: opacity .14s ease, transform .14s ease;
+}
+
+.app-icon-link:hover,
+.app-icon-link:focus-visible{
+  transform:translateY(-1px);
+  background: var(--panel);
+  border-color: color-mix(in oklab, var(--primary) 65%, var(--accent));
+
+  box-shadow:
+    0 8px 24px rgba(0,0,0,.25),
+    0 0 0 1px color-mix(in oklab, var(--primary) 55%, transparent) inset,
+    0 0 22px color-mix(in oklab, var(--primary) 55%, transparent),
+    0 0 30px color-mix(in oklab, var(--accent) 42%, transparent);
+
+  filter:brightness(1.03);
+  outline:none;
+}
+
+.app-icon-link:hover::before,
+.app-icon-link:focus-visible::before{
+  opacity:.95;
+  transform:scale(1);
+}
+
+/* ✅ Icono: MISMO tamaño que NoEstásSolo en desktop */
+.app-icon-footer{
+  height: clamp(20px, 5vw, 28px);
+  width:  clamp(20px, 5vw, 28px);
+  object-fit:contain;
+  border-radius:10px;
+
+  /* 🔥 (CAMBIO) brillo del propio icono según tema */
+  filter:
+    drop-shadow(0 0 10px color-mix(in oklab, var(--primary) 48%, transparent))
+    drop-shadow(0 0 18px color-mix(in oklab, var(--accent) 34%, transparent));
+}
+
+/* 🔧 Layout footer móvil (portrait) como NoEstásSolo */
+@media (max-width: 600px) and (orientation: portrait){
+  .brand-footer{
+    display:grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items:center;
+    padding-inline:12px;
+    column-gap:8px;
+  }
+
+  .footer-left{
+    justify-self:flex-start;
+    text-align:left;
+  }
+
+  .footer-center{
+    position:static;
+    transform:none;
+    justify-self:center;
+  }
+
+  .footer-right{
+    justify-self:flex-end;
+    display:flex;
+    flex-direction:column;
+    align-items:flex-end;
+    gap:4px;
+  }
+
+  .footer-right .btn.ghost{
+    width:auto;
+    min-width:0;
+  }
+
+  /* ✅ Icono: MISMO tamaño que NoEstásSolo en móvil portrait */
+  .app-icon-footer{
+    height: clamp(40px, 12vw, 56px);
+    width:  clamp(40px, 12vw, 56px);
+  }
+}
+
+/* Overlays */
+.overlay{
+  position:fixed; inset:0; background:rgba(0,0,0,0.65);
+  display:none; align-items:center; justify-content:center; z-index:99;
+}
+.overlay:target{ display:flex; }
+.overlay .box{
+  background:var(--panel); border:1px solid var(--border); border-radius:12px;
+  padding:16px; width:min(980px,94vw); max-height:92vh; overflow:auto; box-shadow:0 16px 48px rgba(0,0,0,.38);
+}
+.overlay-actions{ display:flex; justify-content:flex-end; gap:8px; margin-top:10px; }
+.overlay .btn{
+  background: linear-gradient(180deg, var(--primary), color-mix(in oklab, var(--primary) 70%, #000 30%));
+  border:1px solid color-mix(in oklab, var(--primary) 80%, #000 20%);
+  color:#fff;
+  text-decoration:none;
+}
+.overlay .btn:hover{ filter: brightness(1.05); }
+
+
+/* Responsive */
+@media (max-width: 1080px){
+  .content-controls{ grid-template-columns:1fr 1fr 1fr }
+  .export-grid{ grid-template-columns:1fr }
+  .twocol{ grid-template-columns:1fr }
+  .split{ grid-template-columns:1fr; }
+}
+
+/* =========================================================
+   ✅ Header móvil/tablet portrait tipo ensaYOnesa
+   - 1 fila: logo + título app (tagline) + ajustes
+   - Oculta OptimeFlow(s) (brand-word)
+   - Ajustes: panel a ancho completo bajo el header
+   ========================================================= */
+@media (max-width: 1024px) and (orientation: portrait){
+  .brand{
+    display:flex;
+    align-items:center;
+    gap:8px;
+    min-height:40px;
+    flex-wrap:nowrap;
+  }
+
+  .brand-logo{
+    flex-shrink:0;
+    height:clamp(32px, 10vw, 48px);
+    width:clamp(32px, 10vw, 48px);
+  }
+
+  .brand-word{
+    display:none;
+  }
+
+  .tagline{
+    position:static;
+    transform:none;
+    white-space:nowrap;
+
+    flex:1;
+    min-width:0;
+    overflow:hidden;
+
+    display:flex;
+    align-items:center;
+    justify-content:flex-start;
+
+    pointer-events:none;
+  }
+
+  /* En desktop usábamos margin-left:auto.
+     En portrait, el “push” lo hace flex:1 de .tagline. */
+  .settings-btn{
+    margin-left:0;
+    flex-shrink:0;
+  }
+
+  /* Panel de ajustes a ancho completo bajo el header en portrait */
+  .settings-panel{
+    position:static;
+    width:100%;
+    margin-top:6px;
+    transform:none;
+    opacity:1;
+    pointer-events:auto;
+    display:none;
+  }
+  .settings-panel.open{
+    display:flex;
+  }
+}
+
+@media (max-width: 720px){
+  /* Shell un pelín más estrecho visualmente en móvil */
+  :root{
+    --shell-side: 94%;
+
+    /* ✅ móvil: un pelín más de reserva por botón en columna + icono grande */
+    --footer-space: 96px;
+  }
+
+  .panel-inner{
+    padding:16px 14px 18px;
+  }
+
+  /* Steps un pelín más compactos */
+  .step-btn{ font-size:.95rem; padding:8px 10px }
+
+  .content-controls{ grid-template-columns:1fr }
+
+  /* Plantillas: mantener todo encapsulado sin desbordes */
+  .tpl-actions-main{
+    grid-template-columns:1fr 1fr;
+  }
+  .tpl-new{
+    grid-template-columns:1fr;
+  }
+
+  #offlineMini{
+    grid-column:1 / -1;
+  }
+  .offline-grid{
+    grid-template-columns:1fr;
+  }
+  .offline-picker{
+    grid-template-columns:1fr;
+  }
+  .mini-panel-head{
+    flex-direction:column;
+  }
+  .offline-actions{
+    flex-direction:column;
+  }
+  .offline-actions button{
+    width:100%;
+    min-width:0;
+  }
+
+  /* Dictado inline: apilar select y poner botones en dos columnas */
+  .dictation-inline{
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: minmax(36px, auto);
+  }
+  .dictation-inline select{
+    grid-column: 1 / -1;
+    min-width: 0;
+  }
+  .dictation-inline button{
+    width: 100%;
+    min-width: 0;
+  }
+
+  /* Acciones en una sola columna */
+  .actions{
+    grid-template-columns: 1fr;
+  }
+  .actions button{
+    width: 100%;
+    min-width: 0;
+  }
+
+  /* Inputs/selects sin mínimo implícito que rompa el grid */
+  .field select,
+  .field input[type="text"],
+  .field input[type="email"],
+  .field input[type="number"],
+  .field input[type="date"],
+  .field input[type="file"]{
+    min-width: 0;
+  }
+
+  /* Editor en móvil: tarjetas respirables */
+  .elem-card{ grid-template-columns: 1fr; }
+  .elem-card .type{ order:1; }
+  .elem-card .text{ order:2; white-space:pre-wrap; word-break:break-word; overflow-wrap:anywhere; }
+  .elem-card .tools{
+    order:3; width:100%;
+    display:flex; flex-wrap:wrap; gap:8px; justify-content:flex-start;
+  }
+  .elem-card .tools button{ flex:1 1 80px; }
+  .elem-card .gap{ margin:6px 0; }
+
+  /* Preview móvil */
+  .preview-toolbar{
+    width:100%;
+    gap:8px;
+    flex-wrap:wrap;
+  }
+  .preview-host{
+    max-width:100vw;
+    overflow:auto;
+  }
+  .preview-pages{
+    width:100%;
+  }
+}
+
+@media (max-width: 720px) and (orientation: landscape){
+  /* Header móvil en horizontal */
+  .brand{
+    display:flex;
+    align-items:center;
+    justify-content:flex-start;
+    gap:8px;
+    min-height:40px;
+  }
+
+  .brand-logo{
+    height:clamp(32px,7vw,48px);
+    width:clamp(32px,7vw,48px);
+  }
+
+  .brand-word{
+    text-align:left;
+  }
+
+  .brand-word.brand-neon{
+    font-size: clamp(1.4rem, 2.3vw, 1.8rem);
+  }
+
+  .tagline{
+    position:absolute;
+    left:50%;
+    top:50%;
+    transform:translate(-50%,-50%);
+    white-space:nowrap;
+    justify-content:center;
+    pointer-events:none;
+  }
+
+  .settings-btn{
+    margin-left:auto;
+    justify-self:flex-end;
+    align-self:center;
+    width:32px;
+    height:32px;
+  }
+
+  /* Panel de ajustes vuelve a modo flotante */
+  .settings-panel{
+    position:absolute;
+    right:16px;
+    top:100%;
+    width:min(320px,94vw);
+    margin-top:8px;
+    transform:translateY(6px);
+    opacity:0;
+    pointer-events:none;
+    display:flex;
+  }
+
+  .settings-panel.open{
+    opacity:1;
+    transform:translateY(0);
+    pointer-events:auto;
+  }
+}
+
+@media (min-width: 721px) and (max-width: 1024px) and (orientation: landscape){
+  .brand-logo{
+    height:clamp(32px,7vw,48px);
+    width:clamp(32px,7vw,48px);
+  }
+
+  .brand-word.brand-neon{
+    font-size: clamp(1.6rem, 2.3vw, 2.1rem);
+  }
+}
+
+@media (max-width: 560px){
+  .tpl-actions-main{
+    grid-template-columns:1fr;
+  }
+}
+
+@media (max-width: 420px){
+  .tpl-new{
+    grid-template-columns:1fr;
+  }
+}
+
+/* Ultra-estrechos: baja un poco más para asegurar encaje */
+@media (max-width: 340px){
+  .footer-left{ font-size: 0.70rem; }
+}
+@media (max-width: 300px){
+  .footer-left{ font-size: 0.66rem; }
+}
+
+
+/* Preview (visor de páginas) */
+.preview-toolbar{
+  display:flex; gap:12px; align-items:center; flex-wrap:wrap; margin-bottom:12px;
+}
+.preview-host{
+  position:relative;
+  border-radius:18px;
+  border:1px solid color-mix(in oklab, var(--border) 65%, rgba(255,255,255,.2));
+  background:
+    repeating-linear-gradient(45deg, rgba(255,255,255,0.04) 0 10px, transparent 10px 20px),
+    var(--panel-glass);
+  padding:16px;
+  overflow:auto;
+  max-height: calc(100vh - 280px);
+  box-shadow: var(--glow);
+  backdrop-filter: var(--glass);
+}
+
+.preview-host::before{
+  content:'';
+  position:absolute;
+  inset:0;
+  border-radius:inherit;
+  background:
+    linear-gradient(180deg, rgba(255,255,255,.3), transparent 40%),
+    radial-gradient(circle at 0% 0%, rgba(255,255,255,.45), transparent 55%);
+  opacity:.16;
+  pointer-events:none;
+  mix-blend-mode:screen;
+}
+
+.preview-pages{
+  transform-origin: top center;
+  display:flex; flex-direction:column; align-items:center; gap:16px;
+}
+.preview-pages .page{
+  position:relative;
+  background:#fff; color:#111;
+  border:1px solid #e5e7eb;
+  box-shadow: 0 10px 24px rgba(0,0,0,.25);
+}
+.preview-pages .line{ position:absolute; white-space:pre-wrap; }
+.preview-pages .hr{ position:absolute; height:0; border-top:1px solid #222; }
+.preview-pages .pn{
+  position:absolute; font:12px system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Arial,"Noto Sans","Helvetica Neue",sans-serif; color:#333
+}
+
+
+/* Toast bonito */
+.toast-host{
+  position:fixed;
+  right:16px;
+  bottom: calc(var(--footer-space) + env(safe-area-inset-bottom));
+  z-index:1000;
+  display:grid;
+  gap:8px;
+}
+.toast{
+  background:var(--panel); border:1px solid var(--border); color:var(--ink);
+  padding:10px 12px; border-radius:10px; box-shadow:var(--glow);
+  animation:toast-in .25s ease-out, toast-out .3s ease-in 3.2s forwards;
+  font-weight:700;
+}
+.toast.info{    border-color: color-mix(in oklab, var(--accent) 60%, var(--border)); }
+.toast.success{ border-color: color-mix(in oklab, #22c55e 60%, var(--border)); }
+.toast.warning{ border-color: color-mix(in oklab, #f59e0b 60%, var(--border)); }
+.toast.danger{  border-color: color-mix(in oklab, #ef4444 60%, var(--border)); }
+@keyframes toast-in{ from{opacity:0; transform:translateY(8px)} to{opacity:1; transform:none} }
+@keyframes toast-out{ to{opacity:0; transform:translateY(4px)} }
+
+
+/* ===== Glassy 3D para paneles y tarjetas principales ===== */
+.panel,
+.mini-panel,
+.format-panel,
+.format-card,
+.list li,
+.elem-card,
+.overlay .box,
+.toast{
+  position:relative;
+  border-radius:18px;
+  background:
+    radial-gradient(circle at 0% 0%, rgba(255,255,255,.18), transparent 55%),
+    var(--panel-glass);
+  border:1px solid color-mix(in oklab, var(--border) 65%, rgba(255,255,255,.2));
+  box-shadow: var(--glow);
+  backdrop-filter: var(--glass);
+}
+
+/* =========================================================
+   🔥 (CAMBIO) Panel principal con tinte del tema
+   - Solo afecta a .panel (los grandes)
+   - Mantiene glass/3D pero con color real del tema
+   ========================================================= */
+.panel{
+  background:
+    radial-gradient(circle at 0% 0%,
+      color-mix(in oklab, var(--primary) 34%, transparent),
+      transparent 60%),
+    radial-gradient(circle at 100% 0%,
+      color-mix(in oklab, var(--accent) 26%, transparent),
+      transparent 62%),
+    radial-gradient(circle at 100% 100%,
+      rgba(0,0,0,.35),
+      transparent 58%),
+    var(--panel-glass);
+
+  border-color: color-mix(in oklab, var(--primary) 40%, var(--border));
+
+  box-shadow:
+    var(--glow),
+    0 0 34px color-mix(in oklab, var(--primary) 18%, transparent);
+}
+
+.panel.active{
+  border-color: color-mix(in oklab, var(--primary) 55%, var(--border));
+  box-shadow:
+    0 32px 80px rgba(0,0,0,.85),
+    0 0 0 1px color-mix(in oklab, var(--primary) 46%, rgba(255,255,255,.04)),
+    0 0 44px color-mix(in oklab, var(--primary) 22%, transparent),
+    inset 0 1px 0 rgba(255,255,255,.10),
+    inset 0 -1px 0 rgba(0,0,0,.7);
+}
+
+/* Mantener “sin levitar” también con el nuevo sombreado */
+@media (hover:hover){
+  .panel.active:hover{
+    transform:none;
+    border-color: color-mix(in oklab, var(--primary) 55%, var(--border));
+    box-shadow:
+      0 32px 80px rgba(0,0,0,.85),
+      0 0 0 1px color-mix(in oklab, var(--primary) 46%, rgba(255,255,255,.04)),
+      0 0 44px color-mix(in oklab, var(--primary) 22%, transparent),
+      inset 0 1px 0 rgba(255,255,255,.10),
+      inset 0 -1px 0 rgba(0,0,0,.7);
+  }
+}
+
+/* Ajuste de radios para tarjetas más pequeñas */
+.list li,
+.format-card,
+.elem-card{
+  border-radius:14px;
+}
+
+/* Brillo superior + halo interno para el efecto 3D */
+.panel::before,
+.mini-panel::before,
+.format-panel::before,
+.format-card::before,
+.list li::before,
+.elem-card::before,
+.overlay .box::before,
+.toast::before{
+  content:'';
+  position:absolute;
+  inset:0;
+  border-radius:inherit;
+  background:
+    linear-gradient(180deg, rgba(255,255,255,.3), transparent 40%),
+    radial-gradient(circle at 0% 0%, rgba(255,255,255,.45), transparent 55%);
+  opacity:.16;
+  pointer-events:none;
+  mix-blend-mode:screen;
+}
+
+.hidden{ display:none !important; }
+.visually-hidden{
+  position:absolute !important;
+  width:1px; height:1px;
+  margin:-1px; padding:0; border:0;
+  overflow:hidden; clip:rect(0 0 0 0); clip-path: inset(50%);
+  white-space:nowrap;
+}

@@ -1,0 +1,30 @@
+{
+  "title": "OptimeFlow(s) GUI-on",
+  "description": "<p><strong>GUI-on</strong> is a local-first progressive web application for writing, organizing, previewing, and exporting scripts for <strong>film</strong>, <strong>theatre</strong>, and <strong>podcast</strong> workflows.</p><p>The project is designed to run primarily in the browser and on the user’s device, with multilingual UI, offline PWA support, PDF export, audio export, live browser dictation, and optional local-model offline transcription.</p><p><strong>Main capabilities</strong></p><ul><li>Script authoring for film, theatre, and podcast formats</li><li>Scene and character management</li><li>Live preview and PDF export</li><li>Project import/export and reusable templates</li><li>Progressive Web App installation with offline caching</li><li>Live dictation through browser speech-recognition APIs</li><li>100% offline transcription with a local model loaded by the user</li><li>Multilingual interface with language JSON packs</li></ul><p>This metadata file intentionally stays repository-neutral: DOI, version number, and code-hosting identifiers can be added later if needed for a specific public release.</p>",
+  "upload_type": "software",
+  "access_right": "open",
+  "license": "MIT",
+  "language": "eng",
+  "creators": [
+    {
+      "name": "Calvo Espinosa, Andrés",
+      "affiliation": "OptimeFlow(s)",
+      "orcid": "0009-0005-4079-7418"
+    }
+  ],
+  "keywords": [
+    "screenwriting",
+    "script editor",
+    "progressive web app",
+    "offline-first",
+    "web speech api",
+    "local transcription",
+    "pdf export",
+    "audio export",
+    "film",
+    "theatre",
+    "podcast",
+    "multilingual"
+  ],
+  "notes": "GUI-on is a local-first web application. In the inspected version, the project does not redistribute bundled third-party JavaScript libraries or embedded local transcription models by default; browser/platform services and user-provided local model files may still be involved depending on feature usage."
+}

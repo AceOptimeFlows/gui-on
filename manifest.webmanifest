@@ -1,0 +1,28 @@
+{
+  "id": "./",
+  "name": "OptimeFlow(s) GUI‑on",
+  "short_name": "GUI‑on",
+  "description": "Editor/Creador de guiones (Cine, Teatro, Podcast) — 100% offline con exportación a PDF.",
+  "lang": "es",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "display_override": ["standalone", "minimal-ui", "browser"],
+  "background_color": "#0b0d12",
+  "theme_color": "#0ea5e9",
+  "orientation": "any",
+  "icons": [
+    {
+      "src": "./assets/img/guion192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "./assets/img/guion512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

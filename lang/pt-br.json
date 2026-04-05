@@ -1,0 +1,457 @@
+{
+  "header.lang": "Idioma",
+  "header.theme": "Tema",
+  "actions.install": "Instalar app",
+  "actions.close": "Fechar",
+  "install.hint": "Quando o seu navegador permitir, você poderá instalar o app aqui.",
+  "install.ready": "Instalação pronta: toque em “Instalar app”.",
+  "install.unavailable": "A instalação não está disponível neste dispositivo.",
+  "install.accepted": "Instalação iniciada.",
+  "install.dismissed": "Instalação cancelada.",
+  "install.installed": "App instalada.",
+  "install.thanks": "Obrigado por instalar o GUI‑on!",
+  "coherence.title": "Coerência Universal",
+  "coherence.p1": "Que esta obra sirva como agradecimento e como compromisso: pensar, sentir e agir na mesma direção, sem 'adornos'; seguir criando com ética, com alegria e com respeito por tudo o que nos conecta.",
+  "coherence.p2": "Quando você escreve com esta ferramenta, é livre para explorar qualquer mundo, mas convido você a lembrar isto: uma história se torna poderosa quando personagens, decisões e universo vibram em coerência.",
+  "brand.subtitle": "Editor/Criador de Roteiros PRO — 100% offline",
+  "badge.offline": "Offline pronto",
+  "steps.1": "1. Início & Metadados",
+  "steps.2": "2. Personagens & Estrutura",
+  "steps.3": "3. Editor",
+  "steps.4": "4. Exportar",
+  "steps.5": "5. Pré-visualização",
+  "preview.auto": "Auto",
+  "preview.refresh": "Atualizar",
+  "preview.zoom": "Zoom",
+  "actions.update": "Atualizar",
+  "fmt.label.SLUGLINE": "Cabeçalho",
+  "fmt.label.SCENE": "Seção",
+  "fmt.label.ACTION": "Ação/Descrição",
+  "fmt.label.CHAR": "Personagem",
+  "fmt.label.PAREN": "Aparte",
+  "fmt.label.DIALOGUE": "Diálogo",
+  "fmt.label.TRANS": "Transição",
+  "fmt.label.SFX": "SFX / Rubrica",
+  "fmt.label.MUSIC": "Música",
+  "fmt.label.NOTE": "Nota",
+  "fmt.label.TIME": "Timecode",
+  "fmt.character": "Personagem",
+  "fmt.global": "(Global)",
+  "fmt.font": "Fonte",
+  "fmt.font.sans": "Sans",
+  "fmt.font.mono": "Mono",
+  "fmt.size": "Tamanho",
+  "fmt.align": "Alinhamento",
+  "fmt.align.left": "Esquerda",
+  "fmt.align.center": "Centralizado",
+  "fmt.align.right": "Direita",
+  "fmt.align.justify": "Justificado",
+  "fmt.color": "Cor",
+  "fmt.alpha": "Alpha",
+  "fmt.bold": "Negrito",
+  "fmt.italic": "Itálico",
+  "fmt.underline": "Sublinhado",
+  "fmt.ok": "OK",
+  "presets.choose": "(escolha um modelo)",
+  "presets.name.podcastStd": "Podcast padrão",
+  "presets.name.theatreStd": "Teatro padrão",
+  "presets.name.filmStd": "Cinema padrão",
+  "p1.type": "Tipo de roteiro",
+  "types.film": "Cinema",
+  "types.theatre": "Teatro",
+  "types.podcast": "Podcast",
+  "p1.title": "Título",
+  "p1.logline": "Logline / Premissa",
+  "p1.author": "Autor",
+  "p1.email": "Email (opcional)",
+  "p1.date": "Data (opcional)",
+  "p1.license": "Licença (opcional)",
+  "p1.keywords": "Palavras-chave (opcional)",
+  "p1.presets": "Preset de formatação",
+  "presets.auto": "Automático conforme o tipo",
+  "presets.filmClassic": "Cinema clássico (Courier 12)",
+  "presets.theatreEU": "Teatro europeu",
+  "presets.podcastStd": "Podcast padrão",
+  "p1.notes": "Notas (opcional)",
+  "p1.abstract": "Resumo (opcional)",
+  "p1.tplNamePlaceholder": "Nome do modelo",
+  "p1.titlePlaceholder": "Meu roteiro",
+  "p1.loglinePlaceholder": "Uma frase clara que capture a sua história…",
+  "p1.authorPlaceholder": "Nome do autor",
+  "p1.emailPlaceholder": "autor@exemplo.com",
+  "p1.licensePlaceholder": "ex.: CC BY 4.0",
+  "p1.keywordsPlaceholder": "palavra1; palavra2; palavra3",
+  "p1.notesPlaceholder": "Observações / dedicatórias / etc.",
+  "p1.abstractPlaceholder": "Um resumo conciso do roteiro…",
+  "p2.characters": "Personagens / Vozes",
+  "p2.structure": "Estrutura (Atos/Seções/Episódios)",
+  "p2.charNamePlaceholder": "Nome do personagem / voz",
+  "p2.sceneTitlePlaceholder": "Ato 1, Cena 1 — ou Segmento 1…",
+  "p3.selectScene": "Cena / Seção",
+  "p3.elemType": "Elemento",
+  "p3.elemChar": "Personagem/Voz",
+  "p3.elemText": "Texto",
+  "p3.elemTextPlaceholder": "Escreva aqui…",
+  "p3.spacing": "Entrelinhas",
+  "p3.mute": "Silenciar",
+  "p3.silenceTail": "Silêncio final (ms)",
+  "elem.SLUGLINE": "Cabeçalho da cena (SLUGLINE)",
+  "elem.ACTION": "Ação/Descrição",
+  "elem.CHARACTER": "Diálogo",
+  "elem.PARENTHETICAL": "Aparte (parênteses)",
+  "elem.DIALOGUE": "Diálogo",
+  "elem.TRANSITION": "Transição",
+  "elem.SFX": "SFX / Rubrica",
+  "elem.MUSIC": "Música",
+  "elem.NOTE": "Nota",
+  "elem.TIME": "Timecode",
+  "p4.live": "Ditado ao vivo (Web Speech)",
+  "p4.lang": "Idioma do ditado",
+  "p4.start": "Iniciar ditado",
+  "p4.stop": "Parar",
+  "p4.note": "Funciona 100% no cliente. Alguns navegadores podem usar mecanismos locais ou de rede.",
+  "p4.targetChar": "Inserir como personagem/voz",
+  "p4.buffer": "Buffer de transcrição",
+  "p4.commit": "Inserir no editor",
+  "p4.offline": "Transcrição 100% offline (modelo local)",
+  "p4.offlineInfo": "Carregue um modelo WASM/ggml local (Whisper/Vosk) e um áudio para transcrever sem internet.",
+  "p4.model": "Modelo local",
+  "p4.audio": "Arquivo de áudio",
+  "p4.run": "Transcrever offline",
+  "p5.size": "Tamanho",
+  "p5.margins": "Margens (mm)",
+  "p5.top": "Superior",
+  "p5.bottom": "Inferior",
+  "p5.left": "Esquerdo",
+  "p5.right": "Direito",
+  "p5.headerFooter": "Cabeçalho / Rodapé",
+  "p5.hf.none": "Sem cabeçalho nem rodapé",
+  "p5.hf.pn": "Apenas nº da página",
+  "p5.hf.full": "Cabeçalho + rodapé + nº da página",
+  "p5.cols": "Layout",
+  "p5.filename": "Nome do arquivo",
+  "p5.hf.rule": "Linha separadora de cabeçalho/rodapé",
+  "p5.blockNewPage": "Iniciar bloco em nova página",
+  "actions.format": "Formato",
+  "actions.apply": "Aplicar",
+  "actions.add": "Adicionar",
+  "actions.insert": "Inserir",
+  "actions.clear": "Limpar",
+  "actions.save": "Salvar (JSON)",
+  "actions.load": "Carregar",
+  "actions.saveMargin": "Salvar margem",
+  "actions.purge": "Limpar tudo",
+  "actions.saveStyle": "Salvar modelo",
+  "actions.loadStyle": "Carregar modelo",
+  "actions.export": "Exportar PDF",
+  "actions.exportAudio": "Exportar áudio",
+  "demo_podcast_btn": "Carregar Demo Podcast",
+  "demo_podcast": {
+    "meta": {
+      "title": "Demo Podcast — OptimeFlow",
+      "logline": "Um roteiro de exemplo para testar exportação e formatação rapidamente (6 personagens, 3 cenas).",
+      "author": "Equipe OptimeFlow",
+      "email": "demo@optimeflow.local",
+      "license": "MIT — Demo / testes de formatação",
+      "keywords": "podcast, demo, exportação, formato, diálogo, sfx, música, notas",
+      "notes": "Este conteúdo é de teste. Use-o para validar margens, cabeçalhos/rodapés, regras e quebras de bloco.",
+      "abstract": "Episódio fictício com introdução, entrevista e encerramento. Inclui cenas, diálogos, rubricas, música, SFX, notas e marcações de tempo."
+    },
+    "script": {
+      "type": "podcast",
+      "characters": [
+        {
+          "id": "c1",
+          "name": "Lucía (Host)"
+        },
+        {
+          "id": "c2",
+          "name": "Mateo (Co-host)"
+        },
+        {
+          "id": "c3",
+          "name": "Inés (Produtora)"
+        },
+        {
+          "id": "c4",
+          "name": "Dra. Vega (Convidada)"
+        },
+        {
+          "id": "c5",
+          "name": "Samir (Som)"
+        },
+        {
+          "id": "c6",
+          "name": "Ouvinte 1"
+        }
+      ],
+      "scenes": [
+        {
+          "id": "s1",
+          "title": "Cold Open · Boas-vindas e tom do episódio",
+          "showHeading": true,
+          "elements": [
+            {
+              "type": "TIME",
+              "text": "00:00"
+            },
+            {
+              "type": "MUSIC",
+              "text": "Vinheta de entrada — pulsos suaves + atmosfera"
+            },
+            {
+              "type": "SFX",
+              "text": "AMBIENTE DE ESTÚDIO / APLAUSOS SUAVES"
+            },
+            {
+              "type": "ACTION",
+              "text": "A mesa está pronta. Microfones limpos. Ouvimos o estúdio respirando, como se a audiência estivesse prestes a entrar."
+            },
+            {
+              "type": "CHARACTER",
+              "charId": "c1"
+            },
+            {
+              "type": "DIALOGUE",
+              "charId": "c1",
+              "text": "Olá! Boas-vindas ao OptimeFlow Podcast. Hoje vamos testar um formato que mistura ritmo, clareza e um toque de magia sonora.",
+              "gapAfterMm": 2
+            },
+            {
+              "type": "CHARACTER",
+              "charId": "c2"
+            },
+            {
+              "type": "PARENTHETICAL",
+              "text": "rindo"
+            },
+            {
+              "type": "DIALOGUE",
+              "charId": "c2",
+              "text": "E o melhor: este roteiro foi pensado para estressar a exportação. Margens, cabeçalhos, regras… tudo à prova!",
+              "gapAfterMm": 2
+            },
+            {
+              "type": "CHARACTER",
+              "charId": "c3"
+            },
+            {
+              "type": "DIALOGUE",
+              "charId": "c3",
+              "text": "Lembrete rápido: se você ativar que cada bloco comece em nova página, observe as quebras e veja se os pares personagem‑diálogo não ficam cortados de forma estranha.",
+              "gapAfterMm": 2
+            },
+            {
+              "type": "NOTE",
+              "text": "Nota: aqui há uma mistura de MUSIC/SFX/ACTION/DIALOGUE para validar estilos."
+            },
+            {
+              "type": "TRANSITION",
+              "text": "CORTE PARA VINHETA"
+            },
+            {
+              "type": "MUSIC",
+              "text": "Vinheta breve (0,8s) — fade out"
+            }
+          ]
+        },
+        {
+          "id": "s2",
+          "title": "Bloco 1 · Entrevista principal",
+          "showHeading": true,
+          "elements": [
+            {
+              "type": "TIME",
+              "text": "05:12"
+            },
+            {
+              "type": "SLUGLINE",
+              "text": "BLOCO 1 — O TEMA"
+            },
+            {
+              "type": "ACTION",
+              "text": "Lucía apresenta a convidada. A música abaixa e fica uma cama sonora bem suave."
+            },
+            {
+              "type": "MUSIC",
+              "text": "Cama musical suave (bem baixa)"
+            },
+            {
+              "type": "CHARACTER",
+              "charId": "c1"
+            },
+            {
+              "type": "DIALOGUE",
+              "charId": "c1",
+              "text": "Dra. Vega, obrigada por vir. Hoje queremos falar de foco real: não o da moda, mas aquele que se sustenta quando tudo ao redor compete pela sua atenção.",
+              "gapAfterMm": 1.5
+            },
+            {
+              "type": "CHARACTER",
+              "charId": "c4"
+            },
+            {
+              "type": "DIALOGUE",
+              "charId": "c4",
+              "text": "Prazer. Se eu resumisse em uma frase: o foco não se encontra, ele se projeta. E se projeta com energia, ambiente e hábitos mensuráveis.",
+              "gapAfterMm": 1.5
+            },
+            {
+              "type": "CHARACTER",
+              "charId": "c2"
+            },
+            {
+              "type": "DIALOGUE",
+              "charId": "c2",
+              "text": "Vou mandar uma rápida: que erro quase todo mundo comete ao tentar se concentrar?"
+            },
+            {
+              "type": "CHARACTER",
+              "charId": "c4"
+            },
+            {
+              "type": "PARENTHETICAL",
+              "text": "pausa breve"
+            },
+            {
+              "type": "DIALOGUE",
+              "charId": "c4",
+              "text": "Tentar fazer isso só na força de vontade, sem mudar o sistema. A força de vontade se esgota. O sistema sustenta você.",
+              "gapAfterMm": 2
+            },
+            {
+              "type": "SFX",
+              "text": "BATIDINHA SUAVE NA MESA / RISADAS CONTIDAS"
+            },
+            {
+              "type": "ACTION",
+              "text": "Samir ajusta os níveis e se ouve um clique suave do compressor entrando."
+            },
+            {
+              "type": "CHARACTER",
+              "charId": "c5"
+            },
+            {
+              "type": "DIALOGUE",
+              "charId": "c5",
+              "text": "Do som eu confirmo: quando o sistema é bom, até o áudio parece mais fácil. Se o microfone está bem posicionado, a voz sai sozinha.",
+              "gapAfterMm": 2
+            },
+            {
+              "type": "NOTE",
+              "text": "Sugestão de teste: ative/desative hfRule, mude as margens e confira se a SLUGLINE fica bem."
+            },
+            {
+              "type": "TRANSITION",
+              "text": "FIM DO BLOCO / RESPIRAÇÃO"
+            }
+          ]
+        },
+        {
+          "id": "s3",
+          "title": "Bloco 2 · Perguntas rápidas e despedida",
+          "showHeading": true,
+          "elements": [
+            {
+              "type": "TIME",
+              "text": "18:40"
+            },
+            {
+              "type": "SLUGLINE",
+              "text": "BLOCO 2 — PERGUNTAS RÁPIDAS"
+            },
+            {
+              "type": "ACTION",
+              "text": "Entra uma chamada. Inés faz sinal de 'ok'."
+            },
+            {
+              "type": "SFX",
+              "text": "TOQUE DE CHAMADA / CLICK / LINHA ABERTA"
+            },
+            {
+              "type": "CHARACTER",
+              "charId": "c6"
+            },
+            {
+              "type": "DIALOGUE",
+              "charId": "c6",
+              "text": "Olá, equipe. Pergunta: como posso criar um ritual de início que me coloque em 'modo foco' em menos de um minuto?",
+              "gapAfterMm": 1.5
+            },
+            {
+              "type": "CHARACTER",
+              "charId": "c1"
+            },
+            {
+              "type": "DIALOGUE",
+              "charId": "c1",
+              "text": "Ótima. Eu uso um sinal físico: fones colocados, uma frase curta e uma lista de três microtarefas."
+            },
+            {
+              "type": "CHARACTER",
+              "charId": "c4"
+            },
+            {
+              "type": "DIALOGUE",
+              "charId": "c4",
+              "text": "E acrescente consistência: mesma hora, mesmo lugar se puder, e um gatilho sensorial — por exemplo, uma bebida ou uma música bem curta.",
+              "gapAfterMm": 2
+            },
+            {
+              "type": "ACTION",
+              "text": "Mateo fecha com um encerramento direto. A música de saída começa suave."
+            },
+            {
+              "type": "MUSIC",
+              "text": "Vinheta de saída — fade out progressivo"
+            },
+            {
+              "type": "CHARACTER",
+              "charId": "c2",
+              "text": "Se você gostou deste episódio demo, use-o para exportar, imprimir, revisar quebras de bloco e validar que tudo fique lindo. Até a próxima!"
+            },
+            {
+              "type": "DIALOGUE",
+              "charId": "c2",
+              "text": "Se você gostou deste episódio demo, use-o para exportar, imprimir, revisar quebras de página e validar que tudo fique lindo. Até a próxima!",
+              "gapAfterMm": 2
+            },
+            {
+              "type": "NOTE",
+              "text": "Fim: verifique se o número da página e o rodapé/cabeçalho não cobrem o conteúdo."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "footer.license": "Licença",
+  "footer.privacy": "Privacidade",
+  "licensePanelTitle": "Licença MIT",
+  "licensePanelBody": "Copyright (c) 2025 Andrés Calvo Espinosa / OptimeFlow(s)\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n\n────────────────────────────────\nAviso sobre tecnologias do navegador e componentes de terceiros\n────────────────────────────────\nNos arquivos revisados desta versão do GUI‑on, não são redistribuídas\nbibliotecas JavaScript de terceiros nem modelos locais integrados.\n\nFunções que dependem do navegador/plataforma do usuário:\n- Ditado / transcrição ao vivo: Web Speech API / SpeechRecognition.\n- Gravação de áudio do editor: MediaRecorder + getUserMedia.\n- Modo PWA / uso offline: Service Worker + armazenamento do navegador.\n\nDependendo do navegador e da plataforma, o reconhecimento de voz pode usar um\nserviço de reconhecimento da plataforma ou ser executado localmente quando\nessa capacidade existir.\n\nPor isso, nesta versão não é adicionada aqui nenhuma licença redistribuída de\nterceiros adicional.\n\nSe no futuro forem integradas e redistribuídas dentro do app bibliotecas ou\nmodelos como Whisper, Vosk, ONNX Runtime Web, ffmpeg.wasm ou outros, seus\navisos de copyright e seus textos de licença serão adicionados a este painel.",
+  "actions.cancel": "Cancelar",
+  "dictation.status.notSupported": "Ditado não suportado por este navegador",
+  "dictation.status.notSupportedShort": "Não suportado",
+  "dictation.status.listening": "Captando voz",
+  "dictation.status.error": "Erro no ditado",
+  "dictation.status.idle": "Inativo",
+  "msg.micDenied": "Não foi possível acessar o microfone",
+  "p4.pickModel": "Selecionar modelo",
+  "p4.pickAudio": "Selecionar áudio",
+  "p4.modelHint": "Use um modelo Whisper compatível no formato .bin / ggml.",
+  "p4.audioHint": "Aceita os formatos de áudio que o seu navegador pode abrir localmente.",
+  "p4.noFileSelected": "Nenhum arquivo selecionado",
+  "p4.status.idle": "Pronto para transcrever totalmente offline.",
+  "p4.status.needFiles": "Selecione um modelo local e um arquivo de áudio.",
+  "p4.status.preparing": "Preparando mecanismo local offline…",
+  "p4.status.running": "Transcrevendo offline… Este processo pode demorar um pouco.",
+  "p4.status.done": "Transcrição offline concluída e inserida em Texto.",
+  "p4.status.empty": "Não foi obtido texto do áudio.",
+  "p4.status.error": "Não foi possível concluir a transcrição offline.",
+  "p4.status.errorShort": "Não foi possível transcrever offline.",
+  "p4.status.canceling": "Cancelando transcrição offline…",
+  "p4.status.canceled": "Transcrição cancelada.",
+  "p4.status.reload": "Recarregue o app uma vez para ativar o mecanismo local offline. Se continuar igual, use a PWA instalada ou uma hospedagem segura com isolamento.",
+  "p4.inserted": "Transcrição inserida em Texto.",
+  "privacyPanelBody": "O GUI-on funciona principalmente localmente, no seu navegador e neste dispositivo. Você não precisa criar uma conta nem enviar seu roteiro para um servidor próprio do app para escrever, editar, organizar cenas, visualizar ou exportar.\n\nO que pode ser armazenado localmente no seu dispositivo:\n• conteúdo do projeto, como metadados, personagens, cenas, elementos do roteiro e configurações de exportação;\n• preferências de uso, como tema, idioma e modelos salvos;\n• recursos de cache da PWA necessários para abrir o GUI-on offline.\n\nRecursos do navegador que vale a pena conhecer:\n• o ditado ao vivo usa a API de reconhecimento de voz disponível no seu navegador ou sistema; dependendo da plataforma, esse serviço pode funcionar localmente ou depender da infraestrutura do provedor do navegador;\n• a transcrição 100% offline com modelo local processa o áudio e o modelo diretamente no seu dispositivo;\n• os arquivos que você envia manualmente para transcrever, importar ou exportar são processados no cliente durante a sessão de uso.\n\nControle e exclusão:\nVocê pode excluir seu projeto, limpar modelos e apagar os dados do site no navegador quando quiser. Se desinstalar a PWA e apagar os dados do site, o cache local associado também será removido.\n\nCookies e rastreamento:\nO GUI-on não incorpora cookies publicitários nem analytics próprios de rastreamento.\n\nImportante:\nSe você usar recursos do navegador ou do sistema operacional com serviços integrados próprios — por exemplo, reconhecimento de voz em certos navegadores — também se aplicarão as políticas de privacidade e os termos do provedor correspondente."
+}

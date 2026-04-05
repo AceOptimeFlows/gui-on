@@ -1,0 +1,457 @@
+{
+  "header.lang": "Language",
+  "header.theme": "Theme",
+  "actions.install": "Install app",
+  "actions.close": "Close",
+  "install.hint": "When your browser allows it, you will be able to install the app here.",
+  "install.ready": "Installation ready: click “Install app”.",
+  "install.unavailable": "Installation is not available on this device.",
+  "install.accepted": "Installation started.",
+  "install.dismissed": "Installation canceled.",
+  "install.installed": "App installed.",
+  "install.thanks": "Thanks for installing GUI‑on!",
+  "coherence.title": "Universal Coherence",
+  "coherence.p1": "May this work serve as gratitude and as a commitment: to think, feel, and act in the same direction, without 'ornaments'; to keep creating with ethics, with joy, and with respect for everything that connects us.",
+  "coherence.p2": "When you write with this tool, you are free to explore any world, but I invite you to remember this: a story becomes powerful when characters, decisions, and universe vibrate in coherence.",
+  "brand.subtitle": "PRO Script Editor/Creator — 100% offline",
+  "badge.offline": "Offline ready",
+  "steps.1": "1. Start & Metadata",
+  "steps.2": "2. Characters & Structure",
+  "steps.3": "3. Editor",
+  "steps.4": "4. Export",
+  "steps.5": "5. Preview",
+  "preview.auto": "Auto",
+  "preview.refresh": "Refresh",
+  "preview.zoom": "Zoom",
+  "actions.update": "Refresh",
+  "fmt.label.SLUGLINE": "Heading",
+  "fmt.label.SCENE": "Section",
+  "fmt.label.ACTION": "Action/Description",
+  "fmt.label.CHAR": "Character",
+  "fmt.label.PAREN": "Aside",
+  "fmt.label.DIALOGUE": "Dialogue",
+  "fmt.label.TRANS": "Transition",
+  "fmt.label.SFX": "SFX / Stage direction",
+  "fmt.label.MUSIC": "Music",
+  "fmt.label.NOTE": "Note",
+  "fmt.label.TIME": "Timecode",
+  "fmt.character": "Character",
+  "fmt.global": "(Global)",
+  "fmt.font": "Font",
+  "fmt.font.sans": "Sans",
+  "fmt.font.mono": "Mono",
+  "fmt.size": "Size",
+  "fmt.align": "Alignment",
+  "fmt.align.left": "Left",
+  "fmt.align.center": "Centered",
+  "fmt.align.right": "Right",
+  "fmt.align.justify": "Justified",
+  "fmt.color": "Color",
+  "fmt.alpha": "Alpha",
+  "fmt.bold": "Bold",
+  "fmt.italic": "Italic",
+  "fmt.underline": "Underline",
+  "fmt.ok": "OK",
+  "presets.choose": "(choose template)",
+  "presets.name.podcastStd": "Standard podcast",
+  "presets.name.theatreStd": "Standard theatre",
+  "presets.name.filmStd": "Standard film",
+  "p1.type": "Script type",
+  "types.film": "Film",
+  "types.theatre": "Theatre",
+  "types.podcast": "Podcast",
+  "p1.title": "Title",
+  "p1.logline": "Logline / Premise",
+  "p1.author": "Author",
+  "p1.email": "Email (optional)",
+  "p1.date": "Date (optional)",
+  "p1.license": "License (optional)",
+  "p1.keywords": "Keywords (optional)",
+  "p1.presets": "Format preset",
+  "presets.auto": "Automatic by type",
+  "presets.filmClassic": "Classic film (Courier 12)",
+  "presets.theatreEU": "European theatre",
+  "presets.podcastStd": "Standard podcast",
+  "p1.notes": "Notes (optional)",
+  "p1.abstract": "Summary (optional)",
+  "p1.tplNamePlaceholder": "Template name",
+  "p1.titlePlaceholder": "My script",
+  "p1.loglinePlaceholder": "A clear sentence that captures your story…",
+  "p1.authorPlaceholder": "Author name",
+  "p1.emailPlaceholder": "author@example.com",
+  "p1.licensePlaceholder": "e.g. CC BY 4.0",
+  "p1.keywordsPlaceholder": "keyword1; keyword2; keyword3",
+  "p1.notesPlaceholder": "Notes / dedications / etc.",
+  "p1.abstractPlaceholder": "A concise summary of the script…",
+  "p2.characters": "Characters / Voices",
+  "p2.structure": "Structure (Acts/Sections/Episodes)",
+  "p2.charNamePlaceholder": "Character / voice name",
+  "p2.sceneTitlePlaceholder": "Act 1, Scene 1 — or Segment 1…",
+  "p3.selectScene": "Scene / Section",
+  "p3.elemType": "Element",
+  "p3.elemChar": "Character/Voice",
+  "p3.elemText": "Text",
+  "p3.elemTextPlaceholder": "Write here…",
+  "p3.spacing": "Line spacing",
+  "p3.mute": "Mute",
+  "p3.silenceTail": "Trailing silence (ms)",
+  "elem.SLUGLINE": "Scene heading (SLUGLINE)",
+  "elem.ACTION": "Action/Description",
+  "elem.CHARACTER": "Dialogue",
+  "elem.PARENTHETICAL": "Aside (parenthetical)",
+  "elem.DIALOGUE": "Dialogue",
+  "elem.TRANSITION": "Transition",
+  "elem.SFX": "SFX / Stage direction",
+  "elem.MUSIC": "Music",
+  "elem.NOTE": "Note",
+  "elem.TIME": "Timecode",
+  "p4.live": "Live dictation (Web Speech)",
+  "p4.lang": "Dictation language",
+  "p4.start": "Start dictation",
+  "p4.stop": "Stop",
+  "p4.note": "Runs 100% on the client side. Some browsers may use local or network-based engines.",
+  "p4.targetChar": "Insert as character/voice",
+  "p4.buffer": "Transcription buffer",
+  "p4.commit": "Insert into editor",
+  "p4.offline": "100% offline transcription (local model)",
+  "p4.offlineInfo": "Load a local WASM/ggml model (Whisper/Vosk) and an audio file to transcribe without internet.",
+  "p4.model": "Local model",
+  "p4.audio": "Audio file",
+  "p4.run": "Transcribe offline",
+  "p5.size": "Size",
+  "p5.margins": "Margins (mm)",
+  "p5.top": "Top",
+  "p5.bottom": "Bottom",
+  "p5.left": "Left",
+  "p5.right": "Right",
+  "p5.headerFooter": "Header / Footer",
+  "p5.hf.none": "No header or footer",
+  "p5.hf.pn": "Page number only",
+  "p5.hf.full": "Header + footer + page number",
+  "p5.cols": "Layout",
+  "p5.filename": "File name",
+  "p5.hf.rule": "Header/footer separator line",
+  "p5.blockNewPage": "Start block on a new page",
+  "actions.format": "Format",
+  "actions.apply": "Apply",
+  "actions.add": "Add",
+  "actions.insert": "Insert",
+  "actions.clear": "Clear",
+  "actions.save": "Save (JSON)",
+  "actions.load": "Load",
+  "actions.saveMargin": "Save margin",
+  "actions.purge": "Clear all",
+  "actions.saveStyle": "Save template",
+  "actions.loadStyle": "Load template",
+  "actions.export": "Export PDF",
+  "actions.exportAudio": "Export audio",
+  "demo_podcast_btn": "Load Demo Podcast",
+  "demo_podcast": {
+    "meta": {
+      "title": "Demo Podcast — OptimeFlow",
+      "logline": "A sample script to quickly test export and formatting (6 characters, 3 scenes).",
+      "author": "OptimeFlow Team",
+      "email": "demo@optimeflow.local",
+      "license": "MIT — Demo / formatting tests",
+      "keywords": "podcast, demo, export, format, dialogue, sfx, music, notes",
+      "notes": "This content is for testing. Use it to validate margins, headers/footers, rules, and block breaks.",
+      "abstract": "Fictional episode with an introduction, interview, and closing. Includes scenes, dialogue, stage directions, music, SFX, notes, and time markers."
+    },
+    "script": {
+      "type": "podcast",
+      "characters": [
+        {
+          "id": "c1",
+          "name": "Lucía (Host)"
+        },
+        {
+          "id": "c2",
+          "name": "Mateo (Co-host)"
+        },
+        {
+          "id": "c3",
+          "name": "Inés (Producer)"
+        },
+        {
+          "id": "c4",
+          "name": "Dr. Vega (Guest)"
+        },
+        {
+          "id": "c5",
+          "name": "Samir (Sound)"
+        },
+        {
+          "id": "c6",
+          "name": "Listener 1"
+        }
+      ],
+      "scenes": [
+        {
+          "id": "s1",
+          "title": "Cold Open · Welcome and tone of the episode",
+          "showHeading": true,
+          "elements": [
+            {
+              "type": "TIME",
+              "text": "00:00"
+            },
+            {
+              "type": "MUSIC",
+              "text": "Opening theme — soft pulses + atmosphere"
+            },
+            {
+              "type": "SFX",
+              "text": "STUDIO AMBIENCE / SOFT APPLAUSE"
+            },
+            {
+              "type": "ACTION",
+              "text": "The table is set. The microphones are clean. You can hear the studio breathing, as if the audience were about to come in."
+            },
+            {
+              "type": "CHARACTER",
+              "charId": "c1"
+            },
+            {
+              "type": "DIALOGUE",
+              "charId": "c1",
+              "text": "Hello! Welcome to OptimeFlow Podcast. Today we are going to test a format that blends rhythm, clarity, and a touch of sonic magic.",
+              "gapAfterMm": 2
+            },
+            {
+              "type": "CHARACTER",
+              "charId": "c2"
+            },
+            {
+              "type": "PARENTHETICAL",
+              "text": "laughing"
+            },
+            {
+              "type": "DIALOGUE",
+              "charId": "c2",
+              "text": "And the best part: this script is designed to stress-test export. Margins, headers, rules… everything put to the test!",
+              "gapAfterMm": 2
+            },
+            {
+              "type": "CHARACTER",
+              "charId": "c3"
+            },
+            {
+              "type": "DIALOGUE",
+              "charId": "c3",
+              "text": "Quick reminder: if you enable each block to start on a new page, pay attention to page breaks and make sure character-dialogue pairs do not get split awkwardly.",
+              "gapAfterMm": 2
+            },
+            {
+              "type": "NOTE",
+              "text": "Note: here there is a mix of MUSIC/SFX/ACTION/DIALOGUE to validate styles."
+            },
+            {
+              "type": "TRANSITION",
+              "text": "CUT TO STINGER"
+            },
+            {
+              "type": "MUSIC",
+              "text": "Brief stinger (0.8s) — fade out"
+            }
+          ]
+        },
+        {
+          "id": "s2",
+          "title": "Block 1 · Main interview",
+          "showHeading": true,
+          "elements": [
+            {
+              "type": "TIME",
+              "text": "05:12"
+            },
+            {
+              "type": "SLUGLINE",
+              "text": "BLOCK 1 — THE TOPIC"
+            },
+            {
+              "type": "ACTION",
+              "text": "Lucía introduces the guest. The music lowers and a very soft bed remains."
+            },
+            {
+              "type": "MUSIC",
+              "text": "Soft music bed (very low)"
+            },
+            {
+              "type": "CHARACTER",
+              "charId": "c1"
+            },
+            {
+              "type": "DIALOGUE",
+              "charId": "c1",
+              "text": "Dr. Vega, thank you for coming. Today we want to talk about real focus: not the trendy kind, but the kind that holds when everything around you competes for your attention.",
+              "gapAfterMm": 1.5
+            },
+            {
+              "type": "CHARACTER",
+              "charId": "c4"
+            },
+            {
+              "type": "DIALOGUE",
+              "charId": "c4",
+              "text": "Delighted. If I had to sum it up in one sentence: focus is not found, it is designed. And it is designed with energy, environment, and measurable habits.",
+              "gapAfterMm": 1.5
+            },
+            {
+              "type": "CHARACTER",
+              "charId": "c2"
+            },
+            {
+              "type": "DIALOGUE",
+              "charId": "c2",
+              "text": "Let me throw you a quick one: what mistake does almost everyone make when trying to concentrate?"
+            },
+            {
+              "type": "CHARACTER",
+              "charId": "c4"
+            },
+            {
+              "type": "PARENTHETICAL",
+              "text": "brief pause"
+            },
+            {
+              "type": "DIALOGUE",
+              "charId": "c4",
+              "text": "Trying to do it by sheer willpower without changing the system. Willpower runs out. The system sustains you.",
+              "gapAfterMm": 2
+            },
+            {
+              "type": "SFX",
+              "text": "SOFT TAP ON THE TABLE / CONTROLLED LAUGHTER"
+            },
+            {
+              "type": "ACTION",
+              "text": "Samir adjusts levels and you hear a soft click as the compressor kicks in."
+            },
+            {
+              "type": "CHARACTER",
+              "charId": "c5"
+            },
+            {
+              "type": "DIALOGUE",
+              "charId": "c5",
+              "text": "From the sound side I can confirm: when the system is good, even the audio feels easier. If the mic is well placed, the voice comes through on its own.",
+              "gapAfterMm": 2
+            },
+            {
+              "type": "NOTE",
+              "text": "Testing suggestion: turn hfRule on/off, change margins, and check that the SLUGLINE looks right."
+            },
+            {
+              "type": "TRANSITION",
+              "text": "END OF BLOCK / BREATH"
+            }
+          ]
+        },
+        {
+          "id": "s3",
+          "title": "Block 2 · Quick questions and farewell",
+          "showHeading": true,
+          "elements": [
+            {
+              "type": "TIME",
+              "text": "18:40"
+            },
+            {
+              "type": "SLUGLINE",
+              "text": "BLOCK 2 — QUICK QUESTIONS"
+            },
+            {
+              "type": "ACTION",
+              "text": "A call comes in. Inés signals 'ok'."
+            },
+            {
+              "type": "SFX",
+              "text": "RINGTONE / CLICK / OPEN LINE"
+            },
+            {
+              "type": "CHARACTER",
+              "charId": "c6"
+            },
+            {
+              "type": "DIALOGUE",
+              "charId": "c6",
+              "text": "Hi, team. Question: how can I create a startup ritual that gets me into 'focus mode' in under a minute?",
+              "gapAfterMm": 1.5
+            },
+            {
+              "type": "CHARACTER",
+              "charId": "c1"
+            },
+            {
+              "type": "DIALOGUE",
+              "charId": "c1",
+              "text": "Great question. I use a physical cue: headphones on, a short phrase, and a list of three micro-tasks."
+            },
+            {
+              "type": "CHARACTER",
+              "charId": "c4"
+            },
+            {
+              "type": "DIALOGUE",
+              "charId": "c4",
+              "text": "And add consistency: same time, same place if possible, and a sensory trigger — for example, a drink or a very short song.",
+              "gapAfterMm": 2
+            },
+            {
+              "type": "ACTION",
+              "text": "Mateo wraps up with a direct closing. The closing music starts softly."
+            },
+            {
+              "type": "MUSIC",
+              "text": "Closing theme — gradual fade out"
+            },
+            {
+              "type": "CHARACTER",
+              "charId": "c2",
+              "text": "If you liked this demo episode, use it to export, print, review block breaks, and make sure everything looks beautiful. See you next time!"
+            },
+            {
+              "type": "DIALOGUE",
+              "charId": "c2",
+              "text": "If you liked this demo episode, use it to export, print, review page breaks, and make sure everything looks beautiful. See you next time!",
+              "gapAfterMm": 2
+            },
+            {
+              "type": "NOTE",
+              "text": "End: check that the page number and header/footer do not cover the content."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "footer.license": "License",
+  "footer.privacy": "Privacy",
+  "licensePanelTitle": "MIT License",
+  "licensePanelBody": "Copyright (c) 2025 Andrés Calvo Espinosa / OptimeFlow(s)\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n\n────────────────────────────────\nNotice about browser technologies and third-party components\n────────────────────────────────\nIn the files reviewed for this version of GUI‑on, no third-party JavaScript\nlibraries or bundled local models are redistributed.\n\nFeatures that depend on the user's browser/platform:\n- Live dictation / transcription: Web Speech API / SpeechRecognition.\n- Editor audio recording: MediaRecorder + getUserMedia.\n- PWA mode / offline use: Service Worker + browser storage.\n\nDepending on the browser and platform, speech recognition may use a platform\nrecognition service or run locally when that capability exists.\n\nTherefore, no additional redistributed third-party license is included here in\nthis version.\n\nIf libraries or models such as Whisper, Vosk, ONNX Runtime Web, ffmpeg.wasm or\nothers are integrated and redistributed inside the app in the future, their\ncopyright notices and license texts will be added to this panel.",
+  "actions.cancel": "Cancel",
+  "dictation.status.notSupported": "Dictation is not supported by this browser",
+  "dictation.status.notSupportedShort": "Not supported",
+  "dictation.status.listening": "Listening",
+  "dictation.status.error": "Dictation error",
+  "dictation.status.idle": "Idle",
+  "msg.micDenied": "Could not access the microphone",
+  "p4.pickModel": "Select model",
+  "p4.pickAudio": "Select audio",
+  "p4.modelHint": "Use a compatible Whisper model in .bin / ggml format.",
+  "p4.audioHint": "Accepts audio formats that your browser can open locally.",
+  "p4.noFileSelected": "No file selected",
+  "p4.status.idle": "Ready to transcribe fully offline.",
+  "p4.status.needFiles": "Select a local model and an audio file.",
+  "p4.status.preparing": "Preparing local offline engine…",
+  "p4.status.running": "Transcribing offline… This process may take a little while.",
+  "p4.status.done": "Offline transcription finished and inserted into Text.",
+  "p4.status.empty": "No text was obtained from the audio.",
+  "p4.status.error": "Could not complete offline transcription.",
+  "p4.status.errorShort": "Could not transcribe offline.",
+  "p4.status.canceling": "Canceling offline transcription…",
+  "p4.status.canceled": "Transcription canceled.",
+  "p4.status.reload": "Reload the app once to activate the local offline engine. If it still does not work, use the installed PWA or secure hosting with isolation.",
+  "p4.inserted": "Transcription inserted into Text.",
+  "privacyPanelBody": "GUI-on runs primarily locally, in your browser and on this device. You do not need to create an account or upload your script to an app-owned server to write, edit, organize scenes, preview, or export.\n\nWhat may be stored locally on your device:\n• project content, such as metadata, characters, scenes, script elements, and export settings;\n• usage preferences, such as theme, language, and saved templates;\n• PWA cache resources required to open GUI-on offline.\n\nBrowser features you should know about:\n• live dictation uses the speech recognition API available in your browser or operating system; depending on the platform, that service may run locally or rely on the browser provider’s infrastructure;\n• 100% offline transcription with a local model processes both the audio and the model directly on your device;\n• files you manually upload for transcription, import, or export are processed client-side within the active session.\n\nControl and deletion:\nYou can delete your project, clear templates, and remove site data from your browser whenever you want. If you uninstall the PWA and remove site data, the associated local cache is also deleted.\n\nCookies and tracking:\nGUI-on does not include advertising cookies or its own tracking analytics.\n\nImportant:\nIf you use browser or operating-system features with their own integrated services — for example, speech recognition in certain browsers — the privacy policies and terms of the corresponding provider will also apply."
+}

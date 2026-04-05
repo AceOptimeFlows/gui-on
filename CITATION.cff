@@ -1,0 +1,30 @@
+cff-version: 1.2.0
+message: "If you use GUI-on in research, teaching, workshops, demos, or software reviews, please cite it using the metadata below."
+title: "OptimeFlow(s) GUI-on"
+type: software
+authors:
+  - family-names: "Calvo Espinosa"
+    given-names: "Andrés"
+    affiliation: "OptimeFlow(s)"
+    orcid: "https://orcid.org/0009-0005-4079-7418"
+license: "MIT"
+url: "https://www.optimeflow.com"
+abstract: >-
+  GUI-on is a local-first progressive web application for writing, organizing,
+  previewing, and exporting scripts for film, theatre, and podcast workflows.
+  It supports multilingual UI, offline PWA installation, live browser dictation,
+  optional local-model offline transcription, PDF export, audio export, theming,
+  and project/template import-export.
+keywords:
+  - screenwriting
+  - script editor
+  - progressive web app
+  - offline-first
+  - web speech api
+  - local transcription
+  - pdf export
+  - audio export
+  - film
+  - theatre
+  - podcast
+  - multilingual
