@@ -9,7 +9,7 @@
  * - Añade COOP/COEP/CORP a respuestas same-origin para habilitar crossOriginIsolated
  */
 
-const VERSION = 'guion-pwa-v1.0.1';
+const VERSION = 'guion-pwa-v1.0.2';
 const CACHE_PREFIX = 'guion-pwa';
 const SHELL_CACHE = `${CACHE_PREFIX}-shell-${VERSION}`;
 const RUNTIME_CACHE = `${CACHE_PREFIX}-runtime-${VERSION}`;
@@ -108,16 +108,27 @@ function unique(arr) {
   return [...new Set(arr.filter(Boolean))];
 }
 
+function toAbsoluteUrl(input) {
+  if (input instanceof URL) return new URL(input.href);
+  if (typeof input === 'string') return new URL(input, self.location.href);
+  if (input && typeof input.url === 'string') return new URL(input.url);
+  if (input && typeof input.href === 'string') return new URL(input.href);
+  return new URL(String(input), self.location.href);
+}
+
 function normalizedUrl(input) {
-  const url = new URL(typeof input === 'string' ? input : input.url);
+  const url = toAbsoluteUrl(input);
   url.hash = '';
   url.search = '';
   return url.href;
 }
 
 function isSameOrigin(requestOrUrl) {
-  const url = new URL(typeof requestOrUrl === 'string' ? requestOrUrl : requestOrUrl.url);
-  return url.origin === self.location.origin;
+  try {
+    return toAbsoluteUrl(requestOrUrl).origin === self.location.origin;
+  } catch (_) {
+    return false;
+  }
 }
 
 function isNavigationRequest(request) {

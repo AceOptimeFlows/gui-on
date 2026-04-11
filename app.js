@@ -164,6 +164,14 @@ function saveState() {
 
 /* ===== App init (1 sola vez) ===== */
 document.addEventListener('DOMContentLoaded', async () => {
+  // Registrar el SW lo antes posible para no perder el control offline
+  // si alguna parte de la inicialización de UI falla más abajo.
+  try {
+    registerSW();
+  } catch (err) {
+    console.warn('[GUI-on] Error al iniciar el Service Worker:', err);
+  }
+
   // idioma actual (carga)
   try {
     if (window.I18n && typeof window.I18n.setLang === 'function') {
@@ -195,7 +203,6 @@ document.addEventListener('DOMContentLoaded', async () => {
     window.GUIonOfflineSTT.refreshI18n();
   }
 
-  registerSW();
   updateOfflineBadge(navigator.onLine);
   window.addEventListener('online', () => updateOfflineBadge(true));
   window.addEventListener('offline', () => updateOfflineBadge(false));
@@ -1870,5 +1877,7 @@ function registerSW() {
         })
         .catch(() => {});
     })
-    .catch(() => {});
+    .catch((err) => {
+      console.warn('[GUI-on] No se pudo registrar el Service Worker:', err);
+    });
 }
