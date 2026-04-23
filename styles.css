@@ -748,6 +748,7 @@ html,body{
 
 .field.wide{grid-column:1 / -1}
 .actions{display:grid;grid-template-columns:repeat(4,minmax(160px,1fr));gap:10px;margin-top:10px;align-items:stretch}
+.actions-editor{grid-template-columns:repeat(3,minmax(160px,1fr));}
 .actions select{height:44px;border-radius:12px;border:1px solid var(--border);background:var(--field);color:var(--ink);padding:0 10px;font-weight:800}
 .actions button{
   min-width:0;
@@ -835,11 +836,6 @@ a.btn:focus-visible{
 .audio-box audio{ width:100%; margin:10px 0; }
 
 .format-panel{margin-top:12px;padding:12px;border:1px solid var(--border);border-radius:12px;background:var(--panel);box-shadow:var(--glow)}
-#fmtPanel{ margin-top:12px; }
-@media (max-width: 720px){
-  #fmtPanel{ overflow:auto; max-height: 60vh; }
-}
-
 .format-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}
 .format-card{
   border-radius:14px;
